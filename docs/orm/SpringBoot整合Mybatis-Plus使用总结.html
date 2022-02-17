@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="Mybatis-Plus自动生成代码模板.html" />
+    
     
 
     </head>
@@ -163,6 +165,19 @@
             
                     
                     SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
             
                 </a>
             
@@ -522,6 +537,123 @@ int result = sysUserMapper.delete(wrapper);
 <pre><code>Map&lt;String,Object&gt; map = new HashMap&lt;&gt;();
 map.put(&quot;sex&quot;, &quot;&#x5973;&quot;);
 int result = sysUserMapper.deleteByMap(map);
+</code></pre><h3 id="&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;">&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;</h3>
+<ul>
+<li>&#x4EE3;&#x7801;&#x4F9D;&#x8D56;</li>
+</ul>
+<pre><code> &lt;!-- &#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;&#x4F9D;&#x8D56; --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
+    &lt;artifactId&gt;mybatis-plus-generator&lt;/artifactId&gt;
+    &lt;version&gt;3.3.2&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- velocity &#x6A21;&#x677F;&#x5F15;&#x64CE; --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
+    &lt;artifactId&gt;velocity-engine-core&lt;/artifactId&gt;
+    &lt;version&gt;2.3&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;!-- Mybatis plus&#x9006;&#x5411;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x4F9D;&#x8D56; --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
+    &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
+    &lt;version&gt;2.3.30&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre><ul>
+<li>&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code>public class Generator {
+
+        public static void main(String[] args) {
+
+            // &#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;
+            AutoGenerator mpg = new AutoGenerator();
+            // set freemarker &#x6A21;&#x677F;&#x5F15;&#x64CE;
+            mpg.setTemplateEngine(new FreemarkerTemplateEngine());
+
+            // &#x5168;&#x5C40;&#x914D;&#x7F6E;
+            GlobalConfig gc = new GlobalConfig();
+            String projectPath = System.getProperty(&quot;user.dir&quot;);
+            // gc.setOutputDir(projectPath + &quot;/src/main/java&quot;);
+            gc.setAuthor(&quot;CoderString&quot;);
+            gc.setOpen(false);
+            gc.setBaseResultMap(true);
+            // gc.setSwagger2(true); &#x5B9E;&#x4F53;&#x5C5E;&#x6027; Swagger2 &#x6CE8;&#x89E3;
+            mpg.setGlobalConfig(gc);
+
+            // &#x6570;&#x636E;&#x6E90;&#x914D;&#x7F6E;
+            DataSourceConfig dsc = new DataSourceConfig();
+            dsc.setUrl(&quot;jdbc:mysql://localhost:3306/rbac?serverTimezone=UTC&amp;useUnicode=true&amp;useSSL=false&amp;characterEncoding=utf8&quot;);
+            // dsc.setSchemaName(&quot;public&quot;);
+            dsc.setDriverName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+            dsc.setUsername(&quot;root&quot;);
+            dsc.setPassword(&quot;root&quot;);
+            mpg.setDataSource(dsc);
+
+            /**
+             * &#x5305;&#x914D;&#x7F6E;
+             * &#x7B80;&#x5355;&#x6765;&#x8BF4; &#x5C31;&#x662F;&#x5199;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
+             */
+            PackageConfig pc = new PackageConfig();
+            //pc.setModuleName(&quot;rbac-base&quot;);
+            pc.setParent(&quot;com.coderstring.rbac&quot;);
+            //&#x6307;&#x5B9A;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x7684;&#x5305;
+            pc.setEntity(&quot;base.entity&quot;);
+            pc.setService(&quot;service&quot;);
+            pc.setServiceImpl(&quot;service.impl&quot;);
+            pc.setController(&quot;web.controller&quot;);
+            pc.setMapper(&quot;dao&quot;);
+            pc.setXml(null);
+            //&#x6307;&#x5B9A;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
+            Map&lt;String, String&gt; pathInfo  = new HashMap&lt;&gt;();
+            String parentPath = &quot;/src/main/java/com/coderstring/rbac/&quot;;
+            String conStr =&quot;/rbac-&quot;;
+
+            String entityPath = projectPath.concat(conStr).concat(&quot;base&quot;).concat(parentPath).concat(&quot;base/entity&quot;);
+            String mapper_path = projectPath.concat(conStr).concat(&quot;dao&quot;).concat(parentPath).concat(&quot;dao&quot;);
+            String xml_path = projectPath.concat(conStr).concat(&quot;dao&quot;).concat(&quot;/src/main/resources/dao&quot;);
+            String service_path = projectPath.concat(conStr).concat(&quot;service&quot;).concat(parentPath).concat(&quot;service&quot;);
+            String service_impl_path = projectPath.concat(conStr).concat(&quot;service&quot;).concat(parentPath).concat(&quot;service/impl&quot;);
+            String controller_path = projectPath.concat(conStr).concat(&quot;web&quot;).concat(parentPath).concat(&quot;web/controller&quot;);
+
+            pathInfo.put(&quot;entity_path&quot;,entityPath);
+            pathInfo.put(&quot;mapper_path&quot;,mapper_path);
+            pathInfo.put(&quot;xml_path&quot;,xml_path);
+            pathInfo.put(&quot;service_path&quot;,service_path);
+            pathInfo.put(&quot;service_impl_path&quot;,service_impl_path);
+            pathInfo.put(&quot;controller_path&quot;,controller_path);
+            pc.setPathInfo(pathInfo);
+            mpg.setPackageInfo(pc);
+
+            // &#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
+            // &#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
+            InjectionConfig cfg = new InjectionConfig() {
+                @Override
+                public void initMap() {
+                    // to do nothing
+                }
+            };
+            mpg.setCfg(cfg);
+            // &#x914D;&#x7F6E;&#x6A21;&#x677F;
+            TemplateConfig templateConfig = new TemplateConfig();
+            mpg.setTemplate(templateConfig);
+
+            // &#x7B56;&#x7565;&#x914D;&#x7F6E;
+            StrategyConfig strategy = new StrategyConfig();
+            strategy.setNaming(NamingStrategy.underline_to_camel);
+            strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+            strategy.setEntityLombokModel(true);
+            strategy.setRestControllerStyle(true);
+            strategy.setControllerMappingHyphenStyle(true);//&#x9A7C;&#x5CF0;&#x8F6C;
+            strategy.setInclude(&quot;sys_role_menu&quot;);//&#x8868;&#x540D;
+            strategy.setControllerMappingHyphenStyle(true);
+            mpg.setStrategy(strategy);
+            mpg.setTemplateEngine(new FreemarkerTemplateEngine());
+            mpg.execute();
+    }
+}
 </code></pre><h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3>
 <p>1&#x3001;<a href="https://www.hxstrive.com/subject/mybatis_plus.htm?id=269" target="_blank">https://www.hxstrive.com/subject/mybatis_plus.htm?id=269</a></p>
 
@@ -552,6 +684,10 @@ int result = sysUserMapper.deleteByMap(map);
             
                 
                 
+                <a href="Mybatis-Plus自动生成代码模板.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Mybatis-Plus自动生成代码模板">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -559,7 +695,7 @@ int result = sysUserMapper.deleteByMap(map);
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"next":{"title":"git常用教程","level":"1.4","depth":1,"ref":"","articles":[{"title":"git常用命令总结","level":"1.4.1","depth":2,"path":"git/git_usage.md","ref":"./git/git_usage.md","articles":[]}]},"previous":{"title":"orm","level":"1.3","depth":1,"ref":"","articles":[{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","ref":"./orm/SpringBoot整合Mybatis-Plus使用总结.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","mtime":"2022-02-16T03:38:09.907Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-16T05:58:00.439Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"next":{"title":"Mybatis-Plus自动生成代码模板","level":"1.3.2","depth":2,"path":"orm/Mybatis-Plus自动生成代码模板.md","ref":"./orm/Mybatis-Plus自动生成代码模板.md","articles":[]},"previous":{"title":"orm","level":"1.3","depth":1,"ref":"","articles":[{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","ref":"./orm/SpringBoot整合Mybatis-Plus使用总结.md","articles":[]},{"title":"Mybatis-Plus自动生成代码模板","level":"1.3.2","depth":2,"path":"orm/Mybatis-Plus自动生成代码模板.md","ref":"./orm/Mybatis-Plus自动生成代码模板.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","mtime":"2022-02-16T07:25:00.886Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-17T10:41:17.699Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
