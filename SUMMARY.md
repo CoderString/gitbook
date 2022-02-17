@@ -7,6 +7,8 @@
 * orm
 	* [SpringBoot整合Mybatis-Plus使用总结](./orm/SpringBoot整合Mybatis-Plus使用总结.md)
 	* [Mybatis-Plus自动生成代码模板](./orm/Mybatis-Plus自动生成代码模板.md)
+* redis
+	* [Redis缓存相关故障及处理方案](./redis/Redis缓存相关故障及处理方案.md)
 * git常用教程
 	* [git常用命令总结](./git/git_usage.md)
 * spring
