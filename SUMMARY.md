@@ -11,4 +11,7 @@
 	* [Redis缓存相关故障及处理方案](./redis/Redis缓存相关故障及处理方案.md)
 * git常用教程
 	* [git常用命令总结](./git/git_usage.md)
-* spring
+* springsecurity
+	* [spring-security整合JWT实现URL动态鉴权](./springsecurity/spring-security整合JWT实现URL动态鉴权.md)
+* mq
+	* [RocketMQ总结](./mq/RocketMQ.md) 

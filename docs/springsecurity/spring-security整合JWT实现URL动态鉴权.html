@@ -1,0 +1,1141 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>spring-security整合JWT实现URL动态鉴权 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java8/lombok注解讲解.html">
+            
+                <a href="../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java8/commons-lang3包.html">
+            
+                <a href="../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git常用教程
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../git/git_usage.html">
+            
+                <a href="../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.1" data-path="spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../mq/RocketMQ.html">
+            
+                <a href="../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >spring-security整合JWT实现URL动态鉴权</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="spring-security-&#x7ED3;&#x5408;jwt&#x5B9E;&#x73B0;url&#x52A8;&#x6001;&#x9274;&#x6743;">Spring Security &#x7ED3;&#x5408;JWT&#x5B9E;&#x73B0;URL&#x52A8;&#x6001;&#x9274;&#x6743;</h3>
+<p>Spring Security&#x662F;Spring&#x5BB6;&#x65CF;&#x7684;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x7BA1;&#x7406;&#x6846;&#x67B6;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x529F;&#x80FD;&#x662F;&#x8BA4;&#x8BC1;&#x548C;&#x6388;&#x6743;&#xFF0C;&#x4E0E;&#x53E6;&#x4E00;&#x4E2A;&#x5B89;&#x5168;&#x6846;&#x67B6;shiro&#x76F8;&#x6BD4;&#xFF0C;&#x5728;Spring Boot&#x8FD8;&#x672A;&#x5174;&#x8D77;&#x4E4B;&#x524D;&#xFF0C;&#x7531;&#x4E8E;&#x7E41;&#x7410;&#x7684;&#x914D;&#x7F6E;&#x9879;&#xFF0C;&#x5BFC;&#x81F4;&#x8BDE;&#x751F;&#x4EE5;&#x6765;&#x7684;&#x5F88;&#x957F;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x90FD;&#x672A;&#x83B7;&#x5F97;&#x5E7F;&#x5927;&#x7814;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x82B3;&#x5FC3;&#xFF0C;&#x76F8;&#x6BD4;&#x4E8E;shiro&#x7684;&#x8F7B;&#x4FBF;&#xFF0C;Spring Security&#x786E;&#x5B9E;&#x7A0D;&#x663E;&#x590D;&#x6742;.Spring Boot&#x5D1B;&#x8D77;&#x4E4B;&#x540E;&#xFF0C;&#x7EA6;&#x5B9A;&#x5927;&#x4E8E;&#x914D;&#x7F6E;&#x7684;&#x539F;&#x5219;&#xFF0C;&#x4E4B;&#x524D;&#x56F0;&#x6270;&#x5E7F;&#x5927;&#x7A0B;&#x5E8F;&#x5458;&#x7684;&#x95EE;&#x9898;&#x987F;&#x65F6;&#x8FCE;&#x5203;&#x800C;&#x89E3;&#xFF0C;&#x970E;&#x65F6;&#x95F4;Spring Security&#x4FBF;&#x6D41;&#x884C;&#x5F00;&#x6765;&#xFF0C;&#x9274;&#x4E8E;&#x6B64;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x6709;&#x5FC5;&#x8981;&#x9488;&#x5BF9;Spring Seccurity&#x76F8;&#x5173;&#x7684;&#x77E5;&#x8BC6;&#x5C55;&#x5F00;&#x8BB2;&#x89E3;&#xFF0C;&#x4E0D;&#x8FC7;&#x672C;&#x7BC7;&#x6559;&#x7A0B;&#x4E3B;&#x8981;&#x4ECE;&#x5B9E;&#x6218;&#x7684;&#x89D2;&#x5EA6;&#x51FA;&#x53D1;&#xFF0C;&#x7ED3;&#x5408;JWT&#x673A;&#x5236;&#x6765;&#x8BB2;&#x89E3;Spring Security&#x7684;&#x52A8;&#x6001;&#x9274;&#x6743;&#x3002;</p>
+<h3 id="maven&#x6838;&#x5FC3;&#x4F9D;&#x8D56;">maven&#x6838;&#x5FC3;&#x4F9D;&#x8D56;</h3>
+<pre><code>&lt;dependencies&gt;
+        &lt;!-- spring boot --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-security&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- mysql --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+
+        &lt;!-- mybatis plus --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
+            &lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;
+            &lt;version&gt;${mybatis-plus-boot-starter.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.google.guava&lt;/groupId&gt;
+            &lt;artifactId&gt;guava&lt;/artifactId&gt;
+            &lt;version&gt;${guava.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- commons-lang3 --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.apache.commons&lt;/groupId&gt;
+            &lt;artifactId&gt;commons-lang3&lt;/artifactId&gt;
+            &lt;version&gt;${commons-lang3.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-test&lt;/artifactId&gt;
+            &lt;scope&gt;test&lt;/scope&gt;
+        &lt;/dependency&gt;
+
+            &lt;!-- jwt&#x76F8;&#x5173;&#x4F9D;&#x8D56; --&gt;
+            &lt;dependency&gt;
+                &lt;groupId&gt;io.jsonwebtoken&lt;/groupId&gt;
+                &lt;artifactId&gt;jjwt&lt;/artifactId&gt;
+                &lt;version&gt;${jjwt.version}&lt;/version&gt;
+            &lt;/dependency&gt;
+        &lt;/dependencies&gt;
+</code></pre><h3 id="&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;">&#x6570;&#x636E;&#x5E93;&#x8BBE;&#x8BA1;</h3>
+<p>&#x6570;&#x636E;&#x5E93;&#x7684;&#x8BBE;&#x8BA1;&#x91C7;&#x7528;&#x7ECF;&#x5178;&#x7684;rbac&#x6A21;&#x578B;&#xFF0C;&#x6743;&#x9650;&#x7684;&#x7BA1;&#x63A7;&#x4E3B;&#x8981;&#x662F;&#x57FA;&#x4E8E;&#x89D2;&#x8272;&#x6765;&#x63A7;&#x5236;&#x7684;&#x3002;</p>
+<pre><code>DROP TABLE IF EXISTS `sys_menu`;
+CREATE TABLE `sys_menu`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;id&apos;,
+  `pid` bigint(20) NULL DEFAULT 0 COMMENT &apos;&#x7236;&#x7EA7;&#x83DC;&#x5355;id,&#x4E00;&#x7EA7;&#x83DC;&#x5355;&#x9ED8;&#x8BA4;pid&#x4E3A;0&apos;,
+  `menu_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;&#x83DC;&#x5355;&#x540D;&#x79F0;&apos;,
+  `url` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;&#x83DC;&#x5355;&#x6216;&#x6309;&#x94AE;&#x7684;url&apos;,
+  `icon` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;&#x83DC;&#x5355;&#x7684;icon&apos;,
+  `type` int(2) NULL DEFAULT NULL COMMENT &apos;1-&#x83DC;&#x5355;;2-&#x6309;&#x94AE;&apos;,
+  `sort` int(10) NULL DEFAULT NULL COMMENT &apos;&#x83DC;&#x5355;&#x7684;&#x6392;&#x5E8F;&apos;,
+  `created_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  `updated_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  `is_deleted` tinyint(1) NULL DEFAULT 0 COMMENT &apos;&#x662F;&#x5426;&#x5220;&#x9664;&#xFF1A;0-&#x6B63;&#x5E38;,1-&#x5220;&#x9664;&apos;,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for sys_role
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role`;
+CREATE TABLE `sys_role`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;&apos;,
+  `role_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT &apos;&#x89D2;&#x8272;&#x540D;&#x79F0;&apos;,
+  `operator` bigint(20) NOT NULL COMMENT &apos;&#x64CD;&#x4F5C;&#x4EBA;&apos;,
+  `created_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  `updated_at` timestamp(0) NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP(0) COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  `is_deleted` tinyint(1) NOT NULL DEFAULT 0 COMMENT &apos;&#x9ED8;&#x8BA4;0-&#x6B63;&#x5E38;&#xFF0C;1-&#x5220;&#x9664;&apos;,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for sys_role_menu
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_role_menu`;
+CREATE TABLE `sys_role_menu`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;&apos;,
+  `role_id` bigint(20) NULL DEFAULT NULL COMMENT &apos;&#x89D2;&#x8272;id&apos;,
+  `menu_id` bigint(20) NULL DEFAULT NULL,
+  `created_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  `updated_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  `is_deleted` tinyint(1) NULL DEFAULT 0 COMMENT &apos;0-&#x6B63;&#x5E38;&#xFF1B;1-&#x5220;&#x9664;&apos;,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for sys_user
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user`;
+CREATE TABLE `sys_user`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT &apos;&#x4E3B;&#x952E;&apos;,
+  `user_name` varchar(30) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;&#x7528;&#x6237;&#x540D;&apos;,
+  `password` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT &apos;&#x5BC6;&#x7801;&apos;,
+  `operator` bigint(20) NULL DEFAULT NULL COMMENT &apos;&#x8D26;&#x53F7;&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#x4EBA;&apos;,
+  `created_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  `updated_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  `is_deleted` tinyint(1) NULL DEFAULT 0 COMMENT &apos;&#x8D26;&#x53F7;&#x662F;&#x5426;&#x7981;&#x7528;&#xFF1A;0-&#x6B63;&#x5E38;&#xFF1B;1-&#x7981;&#x7528;&apos;,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `un_username`(`user_name`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for sys_user_role
+-- ----------------------------
+DROP TABLE IF EXISTS `sys_user_role`;
+CREATE TABLE `sys_user_role`  (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `user_id` bigint(20) NULL DEFAULT NULL COMMENT &apos;&#x7528;&#x6237;id&apos;,
+  `role_id` bigint(20) NULL DEFAULT NULL COMMENT &apos;&#x89D2;&#x8272;id&apos;,
+  `created_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x521B;&#x5EFA;&#x65F6;&#x95F4;&apos;,
+  `updated_at` timestamp(0) NULL DEFAULT NULL COMMENT &apos;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&apos;,
+  `is_deleted` tinyint(1) NULL DEFAULT 0 COMMENT &apos;&#x662F;&#x5426;&#x5220;&#x9664;:0-&#x6B63;&#x5E38;;1-&#x5220;&#x9664;&apos;,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+</code></pre><h3 id="&#x6574;&#x5408;&#x6848;&#x4F8B;">&#x6574;&#x5408;&#x6848;&#x4F8B;</h3>
+<ul>
+<li>UserDetails&#x5B9E;&#x73B0;&#x7C7B;</li>
+</ul>
+<pre><code>@Data
+public class SecurityUserDetails implements UserDetails {
+
+    // &#x7528;&#x6237;
+    private transient SysUser sysUser;
+
+    //&#x89D2;&#x8272;
+    private transient List&lt;SysRole&gt; roleList;
+
+
+    public SecurityUserDetails() {}
+
+    public SecurityUserDetails(SysUser user) {
+        if (ObjectUtils.isNotEmpty(user)) {
+            this.sysUser = user;
+        }
+    }
+
+    public SecurityUserDetails(SysUser user, List&lt;SysRole&gt; roleList) {
+       if (ObjectUtils.isNotEmpty(user)) {
+           this.sysUser = user;
+           this.roleList = roleList;
+       }
+    }
+
+    /**
+     * &#x7B5B;&#x9009;&#x51FA;&#x5F53;&#x524D;&#x7528;&#x6237;&#x62E5;&#x6709;&#x7684;&#x89D2;&#x8272;&#x540D;&#x79F0;&#xFF1A;&#x4F8B;&#x5982;admin&#x3001;super...
+     */
+    @Override
+    public Collection&lt;? extends GrantedAuthority&gt; getAuthorities() {
+        List&lt;GrantedAuthority&gt; authorities = Lists.newArrayList();
+        Optional.ofNullable(this.roleList).ifPresent(roles -&gt; {
+            roles.forEach(role -&gt; {
+                authorities.add(new SimpleGrantedAuthority(role.getRoleName()));
+            });
+        });
+        return authorities;
+    }
+
+    // &#x4E0B;&#x9762;&#x7684;&#x83B7;&#x53D6;&#x7528;&#x6237;&#x3001;&#x5BC6;&#x7801;&#x3001;&#x8D26;&#x53F7;&#x662F;&#x5426;&#x8FC7;&#x671F;&#x3001;&#x662F;&#x5426;&#x9501;&#x5B9A;&#x3001;&#x51ED;&#x8BC1;&#x662F;&#x5426;&#x8FC7;&#x671F;&#x3001;&#x662F;&#x5426;&#x6709;&#x7528;&#x7684;&#x8FD9;&#x4E9B;&#x51ED;&#x8BC1;&#x9700;&#x8981;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x7684;&#x9700;&#x6C42;&#x6765;&#x914D;&#x7F6E;
+
+    @Override
+    public String getPassword() {
+        return sysUser.getPassword();
+    }
+
+    @Override
+    public String getUsername() {
+        return sysUser.getUsername();
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+
+    /**
+     * &#x8D26;&#x53F7;&#x662F;&#x5426;&#x542F;&#x7528;
+     */
+    @Override
+    public boolean isEnabled() {
+        return !sysUser.getIsDeleted();
+    }
+}
+</code></pre><ul>
+<li>UserDetailsService&#x5B9E;&#x73B0;&#x7C7B;</li>
+</ul>
+<pre><code>@Service(&quot;userDetailsService&quot;)
+public class SecurityUserDetailsService implements UserDetailsService {
+
+    @Resource
+    private SysUserMapper sysUserMapper;
+
+    @Resource
+    private SysUserRoleMapper sysUserRoleMapper;
+
+    @Resource
+    private SysRoleMapper sysRoleMapper;
+
+    /**
+     * &#x6839;&#x636E;&#x7528;&#x6237;&#x540D;&#x83B7;&#x53D6;&#x8D26;&#x53F7;&#x7684;&#x4FE1;&#x606F;
+     *
+     * @param username
+     * @return
+     */
+    @Override
+    public SecurityUserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+
+        SysUser sysUser = sysUserMapper.selectOne(new QueryWrapper&lt;SysUser&gt;().eq(&quot;user_name&quot;, username).eq(&quot;is_deleted&quot;, false));
+        Optional.ofNullable(sysUser).orElseThrow(() -&gt; new BizException(&quot;&#x7528;&#x6237;&#x540D;&#x4E0D;&#x5B58;&#x5728;&quot;));
+        return new SecurityUserDetails(sysUser, getRolesByUserId(sysUser.getId()));
+    }
+
+
+    /**
+     * &#x6839;&#x636E;userId&#x83B7;&#x53D6;&#x7528;&#x6237;&#x89D2;&#x8272;&#x6743;&#x9650;&#x4FE1;&#x606F;
+     *
+     * @param userId
+     * @return
+     */
+    private List&lt;SysRole&gt; getRolesByUserId(Long userId) {
+        List&lt;SysRole&gt; roles = Lists.newArrayList();
+        Optional.ofNullable(sysUserRoleMapper.selectList(new QueryWrapper&lt;SysUserRole&gt;().eq(&quot;user_id&quot;, userId).eq(&quot;is_deleted&quot;, false))).ifPresent(s -&gt; {
+            s.stream().filter(sysUserRole -&gt; !sysUserRole.getIsDeleted()).map(SysUserRole::getRoleId).collect(Collectors.toList()).forEach(r -&gt; {
+                    roles.add(sysRoleMapper.selectById(r));
+                });
+            });
+        return roles;
+    }
+}
+</code></pre><ul>
+<li>&#x5FFD;&#x7565;&#x7684;&#x767D;&#x540D;&#x5355;&#x8DEF;&#x5F84;</li>
+</ul>
+<pre><code>secure:
+  ignored:
+    urls:
+      - /sysUser/v1/login
+      - /sysUser/v1/logout
+      - /sysUser/v1/addUser
+
+
+@Data
+@Component
+@ConfigurationProperties(prefix = &quot;secure.ignored&quot;)
+public class IgnoredUrlsConfig {
+
+    private List&lt;String&gt; urls = Lists.newArrayList();
+
+}
+</code></pre><ul>
+<li>JwtAuthenticationTokenFilter</li>
+</ul>
+<pre><code>@Component
+public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
+
+    @Value(&quot;${jwt.tokenHeader}&quot;)
+    private String tokenHeader;
+
+    @Value(&quot;${jwt.tokenHead}&quot;)
+    private String tokenHead;
+
+    @Resource
+    private JwtTokenUtil jwtTokenUtil;
+
+    @Resource
+    private SecurityUserDetailsService securityUserDetailsService;
+
+    @Resource
+    private IgnoredUrlsConfig ignoredUrlsConfig;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
+                                    FilterChain filterChain) throws ServletException, IOException {
+        // &#x767D;&#x540D;&#x5355;&#x4E2D;&#x7684;URL&#x76F4;&#x63A5;&#x653E;&#x884C;
+        PathMatcher pathMatcher = new AntPathMatcher();
+        for (String url : ignoredUrlsConfig.getUrls()) {
+            if (pathMatcher.match(url, httpServletRequest.getRequestURI())) {
+                System.out.println(&quot;JwtAuthenticationTokenFilter &#x767D;&#x540D;&#x5355;&#x901A;&#x8FC7;...&quot; + httpServletRequest.getRequestURI());
+                filterChain.doFilter(httpServletRequest, httpServletResponse);
+                return;
+            }
+        }
+
+        String header = httpServletRequest.getHeader(tokenHeader);
+        if (header != null &amp;&amp; header.startsWith(tokenHead)) {
+            String authToken = header.substring(tokenHead.length());
+            String username = jwtTokenUtil.getUserNameFromToken(authToken);
+            if (username != null &amp;&amp; SecurityContextHolder.getContext().getAuthentication() == null) {
+                SecurityUserDetails userDetails = securityUserDetailsService.loadUserByUsername(username);
+                if (jwtTokenUtil.validateToken(authToken, userDetails)) {
+                    UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+                    authenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(httpServletRequest));
+                    SecurityContextHolder.getContext().setAuthentication(authenticationToken);
+                    filterChain.doFilter(httpServletRequest, httpServletResponse);
+                    return;
+                }
+            }
+        }
+
+        // token&#x9A8C;&#x8BC1;&#x672A;&#x901A;&#x8FC7;, &#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x9519;&#x8BEF;
+        httpServletResponse.setContentType(&quot;text/json;charset=utf-8&quot;);
+        httpServletResponse.getWriter().write(JSON.toJSONString(ResultUtils.wrapException(ResponseCode.UNAUTHORIZED, &quot;token&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&quot;)));
+    }
+</code></pre><ul>
+<li>SecurityAbstractSecurityInterceptor</li>
+</ul>
+<pre><code>@Component
+public class SecurityAbstractSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
+
+
+    @Resource
+    private UrlFilterInvocationSecurityMetadataSource urlFilterInvocationSecurityMetadataSource;
+
+    @Resource
+    private IgnoredUrlsConfig ignoredUrlsConfig;
+
+    @Resource
+    public void setAccessDecisionManager(UrlAccessDecisionManager urlAccessDecisionManager) {
+        super.setAccessDecisionManager(urlAccessDecisionManager);
+    }
+
+
+    @Override
+    public Class&lt;?&gt; getSecureObjectClass() {
+        return FilterInvocation.class;
+    }
+
+    @Override
+    public SecurityMetadataSource obtainSecurityMetadataSource() {
+        return this.urlFilterInvocationSecurityMetadataSource;
+    }
+
+    @Override
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        FilterInvocation fi = new FilterInvocation(servletRequest, servletResponse, filterChain);
+
+        // OPTIONS&#x8BF7;&#x6C42;&#x76F4;&#x63A5;&#x653E;&#x884C;
+        if (request.getMethod().equals(HttpMethod.OPTIONS.toString())) {
+            System.out.println(&quot;SecurityAbstractSecurityInterceptor OPTIONS&#x8BF7;&#x6C42;&#x653E;&#x884C;&quot;);
+            fi.getChain().doFilter(fi.getRequest(), fi.getResponse());
+        }
+
+        // &#x767D;&#x540D;&#x5355;&#x76F4;&#x63A5;&#x653E;&#x884C;
+        PathMatcher pathMatcher = new AntPathMatcher();
+        for (String path : ignoredUrlsConfig.getUrls()) {
+            if (pathMatcher.match(path, request.getRequestURI())) {
+                System.out.println(&quot;SecurityAbstractSecurityInterceptor &#x767D;&#x540D;&#x5355;&#x901A;&#x8FC7;&#xFF1A;&quot; + request.getRequestURI());
+                fi.getChain().doFilter(fi.getRequest(), fi.getResponse());
+                return;
+            }
+        }
+
+        //&#x6B64;&#x5904;&#x4F1A;&#x8C03;&#x7528;AccessDecisionManager&#x4E2D;&#x7684;decide&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x9274;&#x6743;&#x64CD;&#x4F5C;
+        InterceptorStatusToken token = super.beforeInvocation(fi);
+        try {
+            fi.getChain().doFilter(fi.getRequest(), fi.getResponse());
+        } finally {
+            super.afterInvocation(token, null);
+        }
+    }
+}
+</code></pre><ul>
+<li>UrlFilterInvocationSecurityMetadataSource</li>
+</ul>
+<pre><code>@Component
+public class UrlFilterInvocationSecurityMetadataSource implements FilterInvocationSecurityMetadataSource {
+
+    @Resource
+    private SysMenuMapper sysMenuMapper;
+
+    @Resource
+    private SysRoleMapper sysRoleMapper;
+
+    @Resource
+    private SysRoleMenuMapper sysRoleMenuMapper;
+
+    @Resource
+    private IgnoredUrlsConfig ignoredUrlsConfig;
+
+    /**
+     * &#x7528;&#x6237;&#x8BBF;&#x95EE;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x6743;&#x9650;&#x914D;&#x7F6E;&#x4FE1;&#x606F;role_login
+     *
+     * @param object
+     * @return
+     */
+    @Override
+    public Collection&lt;ConfigAttribute&gt; getAttributes(Object object) throws IllegalArgumentException {
+        String requestURL = ((FilterInvocation)(object)).getRequestUrl();
+
+        // &#x767D;&#x540D;&#x5355;&#x4E2D;&#x7684;URL&#x76F4;&#x63A5;&#x653E;&#x884C;
+        PathMatcher pathMatcher = new AntPathMatcher();
+        for (String url : ignoredUrlsConfig.getUrls()) {
+            if (pathMatcher.match(url, requestURL)) {
+                System.out.println(&quot;UrlFilterInvocationSecurityMetadataSource &#x767D;&#x540D;&#x5355;&#x901A;&#x8FC7;...&quot; + requestURL);
+                return null;
+            }
+        }
+
+        // &#x627E;&#x51FA;&#x5339;&#x914D;&#x7684;URL&#x5BF9;&#x5E94;&#x7684;&#x89D2;&#x8272;Role_name&#xFF0C;&#x653E;&#x5230;&#x6307;&#x5B9A;&#x53D8;&#x91CF;&#x4E2D;
+        List&lt;SysMenu&gt; menuList = sysMenuMapper.selectList(new QueryWrapper&lt;SysMenu&gt;().eq(&quot;is_deleted&quot;, false));
+        for (SysMenu m : menuList) {
+            if (requestURL.equals(m.getUrl())) {
+                List&lt;String&gt; roleNames = Lists.newArrayList();
+                Optional.ofNullable(sysRoleMenuMapper.selectList(new QueryWrapper&lt;SysRoleMenu&gt;().eq(&quot;is_deleted&quot;, false))).ifPresent(srm -&gt; {
+                    srm.forEach(s -&gt; {
+                        Optional.ofNullable(sysRoleMapper.selectOne(new QueryWrapper&lt;SysRole&gt;().eq(&quot;is_deleted&quot;, false).eq(&quot;id&quot;, s.getRoleId()))).ifPresent(sysRole -&gt; {
+                            roleNames.add(sysRole.getRoleName());
+                        });
+                    });
+                });
+                return SecurityConfig.createList(roleNames.toArray(new String[roleNames.size()]));
+            }
+        }
+
+        // &#x8DEF;&#x5F84;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x54EA;&#x4E00;&#x4E2A;&#x89D2;&#x8272;&#x624D;&#x80FD;&#x8BBF;&#x95EE;ROLE_LOGIN
+        return SecurityConfig.createList(&quot;NEED_LOGIN&quot;);
+    }
+
+
+    /**
+     * &#x5168;&#x90E8;&#x5DF2;&#x914D;&#x7F6E;&#x7684;&#x6743;&#x9650;&#x7684;&#x8DEF;&#x5F84;
+     *
+     * @return
+     */
+    @Override
+    public Collection&lt;ConfigAttribute&gt; getAllConfigAttributes() {
+        return null;
+    }
+
+    @Override
+    public boolean supports(Class&lt;?&gt; aClass) {
+        return FilterInvocation.class.isAssignableFrom(aClass);
+
+    }
+}
+</code></pre><ul>
+<li>UrlAccessDecisionManager</li>
+</ul>
+<pre><code>@Component
+public class UrlAccessDecisionManager implements AccessDecisionManager {
+
+    @Override
+    public void decide(Authentication authentication, Object o, Collection&lt;ConfigAttribute&gt; collection) throws AccessDeniedException, InsufficientAuthenticationException {
+        if (CollectionUtils.isEmpty(collection)) {
+            return;
+        }
+
+        if (CollectionUtils.isEmpty(authentication.getAuthorities())) {
+            throw new AccessDeniedException(&quot;&#x8BE5;&#x8D26;&#x53F7;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6743;&#x9650;&quot;);
+        }
+
+        System.out.println(&quot;UrlAccessDecisionManager &#x7528;&#x6237;&#x62E5;&#x6709;&#x7684;&#x8DEF;&#x5F84;&#x8BBF;&#x95EE;&#x6743;&#x9650;:&quot; + authentication.getAuthorities().toString());
+
+        for (ConfigAttribute configAttribute : collection) {
+            String needRole = configAttribute.getAttribute();
+            System.out.println(&quot;UrlAccessDecisionManager &#x7528;&#x6237;&#x8BBF;&#x95EE;&#x9700;&#x8981;&#x7684;&#x89D2;&#x8272;&#x6743;&#x9650;&#xFF1A;&quot; + needRole);
+
+            if (&quot;ROLE_LOGIN&quot;.equals(needRole)) {
+                if (authentication instanceof AnonymousAuthenticationToken) {
+                    throw new BadCredentialsException(&quot;&#x7528;&#x6237;&#x672A;&#x767B;&#x5F55;&#xFF01;&quot;);
+                } else {
+                    return;
+                    // throw new AccessDeniedException(&quot;&#x7528;&#x6237;&#x6CA1;&#x6709;&#x6743;&#x9650;&#x8BBF;&#x95EE;&#x8BE5;URL&quot;);
+                }
+            }
+
+            // &#x5F53;&#x524D;&#x7528;&#x6237;&#x62E5;&#x6709;&#x7684;&#x89D2;&#x8272;
+            Collection&lt;? extends GrantedAuthority&gt; authorities = authentication.getAuthorities();
+            for (GrantedAuthority authority : authorities) {
+                if (authority.getAuthority().equals(needRole)) {
+                    return;
+                }
+            }
+        }
+        System.out.println(&quot;UrlAccessDecisionManager &#x6743;&#x9650;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&quot;);
+        throw new AccessDeniedException(&quot;&#x6743;&#x9650;&#x4E0D;&#x8DB3;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;&#x7BA1;&#x7406;&#x5458;&#xFF01;&quot;);
+    }
+
+    @Override
+    public boolean supports(ConfigAttribute configAttribute) {
+        return true;
+    }
+
+    @Override
+    public boolean supports(Class&lt;?&gt; aClass) {
+        return true;
+    }
+}
+</code></pre><ul>
+<li>UrlAccessDeniedHandler</li>
+</ul>
+<pre><code>@Component
+public class UrlAccessDeniedHandler implements AccessDeniedHandler {
+
+    @Override
+    public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException e) throws IOException, ServletException {
+        response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+        response.setContentType(&quot;text/json;charset=utf-8&quot;);
+        response.getWriter().write(JSON.toJSONString(ResultUtils.wrapException(ResponseCode.FORBIDDEN)));
+    }
+}
+</code></pre><ul>
+<li>JwtAuthorizationEntryPoint</li>
+</ul>
+<pre><code>@Component
+public class JwtAuthorizationEntryPoint implements AuthenticationEntryPoint {
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
+        response.setContentType(&quot;text/json;charset=utf-8&quot;);
+        response.getWriter().write(JSON.toJSONString(ResultUtils.wrapException(ResponseCode.UNAUTHORIZED)));
+    }
+}
+</code></pre><ul>
+<li>WebSecurityConfig</li>
+</ul>
+<pre><code>@Configuration
+@EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+
+    /**
+     * &#x53EF;&#x7ED5;&#x8FC7;&#x7684;&#x767D;&#x540D;&#x5355;&#x8BF7;&#x6C42;url
+     */
+    @Resource
+    private IgnoredUrlsConfig ignoredUrlsConfig;
+
+    /**
+     * &#x81EA;&#x5B9A;&#x4E49;&#x672A;&#x767B;&#x5F55;&#x6216;&#x767B;&#x5F55;&#x8FC7;&#x671F;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;
+     */
+    @Resource
+    private JwtAuthorizationEntryPoint jwtAuthorizationEntryPoint;
+
+    /**
+     * &#x81EA;&#x5B9A;&#x4E49;&#x7684;JWT&#x5B89;&#x5168;&#x8FC7;&#x6EE4;&#x5668;
+     */
+    @Resource
+    private JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter;
+
+
+    /**
+     * &#x6743;&#x9650;&#x62D2;&#x7EDD;&#x5904;&#x7406;&#x903B;&#x8F91;
+     */
+    @Resource
+    private UrlAccessDeniedHandler urlAccessDeniedHandler;
+
+    /**
+     * &#x5B89;&#x5168;&#x62E6;&#x622A;&#x5668;
+     */
+    @Resource
+    private SecurityAbstractSecurityInterceptor securityAbstractSecurityInterceptor;
+
+    @Resource
+    private UrlFilterInvocationSecurityMetadataSource urlFilterInvocationSecurityMetadataSource;
+
+    @Resource
+    private UrlAccessDecisionManager urlAccessDecisionManager;
+
+
+
+    /**
+     * &#x914D;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0;&#x7684;UserDetailsService&#x5BF9;&#x8C61;
+     */
+    @Resource
+    private SecurityUserDetailsService securityUserDetailsService;
+
+
+
+    /**
+     * &#x914D;&#x7F6E;PasswordEncoder&#x5BF9;&#x8C61;
+     */
+    @Bean
+    public PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
+
+
+
+    public WebSecurityConfig(JwtAuthenticationTokenFilter jwtAuthenticationTokenFilter,
+              JwtAuthorizationEntryPoint jwtAuthorizationEntryPoint,
+              SecurityAbstractSecurityInterceptor securityAbstractSecurityInterceptor,
+              UrlFilterInvocationSecurityMetadataSource urlFilterInvocationSecurityMetadataSource,
+              UrlAccessDecisionManager urlAccessDecisionManager,
+              UrlAccessDeniedHandler urlAccessDeniedHandler
+              ) {
+            this.jwtAuthenticationTokenFilter = jwtAuthenticationTokenFilter;
+            this.jwtAuthorizationEntryPoint = jwtAuthorizationEntryPoint;
+            this.securityAbstractSecurityInterceptor = securityAbstractSecurityInterceptor;
+            this.urlFilterInvocationSecurityMetadataSource = urlFilterInvocationSecurityMetadataSource;
+            this.urlAccessDeniedHandler = urlAccessDeniedHandler;
+            this.urlAccessDecisionManager = urlAccessDecisionManager;
+    }
+
+    /**
+     *&#x914D;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x7684;UserDetailsService&#x548C;passwordEncoder&#x5B9E;&#x73B0;
+     */
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+        auth.userDetailsService(userDetailsService()).passwordEncoder(passwordEncoder());
+    }
+
+    @Override
+    public void configure(WebSecurity web) throws Exception {
+        web.ignoring().antMatchers(HttpMethod.GET,
+            &quot;/favicon.ico&quot;,
+            &quot;/*.html&quot;,
+            &quot;/**/*.css&quot;,
+            &quot;/**/*.js&quot;);
+    }
+
+    /**
+     * &#x5404;&#x79CD;&#x8FC7;&#x6EE4;&#x5668;&#x548C;&#x62E6;&#x622A;&#x5668;&#x7684;&#x6838;&#x5FC3;&#x914D;&#x7F6E;
+     */
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.cors().and().csrf().disable();// &#x7981;&#x7528;CSRF&#x5F00;&#x542F;&#x8DE8;&#x57DF;
+        ExpressionUrlAuthorizationConfigurer&lt;HttpSecurity&gt;.ExpressionInterceptUrlRegistry registry = http.authorizeRequests();
+
+        // URL&#x6743;&#x9650;&#x8BA4;&#x8BC1;
+        registry.withObjectPostProcessor(new ObjectPostProcessor&lt;FilterSecurityInterceptor&gt;() {
+
+            @Override
+            public &lt;O extends FilterSecurityInterceptor&gt; O postProcess(O o) {
+                o.setSecurityMetadataSource(urlFilterInvocationSecurityMetadataSource);
+                o.setAccessDecisionManager(urlAccessDecisionManager);
+                return o;
+            }
+        });
+
+        // &#x653E;&#x884C;&#x767D;&#x540D;&#x5355;URL
+        ignoredUrlsConfig.getUrls().forEach(url -&gt; {
+            System.out.println(&quot;&#x767D;&#x540D;&#x5355;&#x653E;&#x884C;URL:&quot; + url);
+            registry.antMatchers(url).permitAll();
+        });
+
+        // &#x5141;&#x8BB8;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42;&#x7684;OPTIONS&#x8BF7;&#x6C42;
+        registry.antMatchers(HttpMethod.OPTIONS).permitAll();
+
+        registry.and()
+                .authorizeRequests()
+                .anyRequest()
+                .authenticated()
+
+                //&#x5173;&#x95ED;&#x8DE8;&#x7AD9;&#x8BF7;&#x6C42;&#x9632;&#x62A4;&#x53CA;&#x4E0D;&#x9002;&#x7528;session
+                .and()
+                .csrf()
+                .disable()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+
+                // &#x81EA;&#x5B9A;&#x4E49;&#x6743;&#x9650;&#x62D2;&#x7EDD;&#x5904;&#x7406;&#x7C7B;
+                .and()
+                .exceptionHandling()
+                .accessDeniedHandler(urlAccessDeniedHandler)    //&#x6388;&#x6743;
+                .authenticationEntryPoint(jwtAuthorizationEntryPoint) //&#x8BA4;&#x8BC1;
+
+                // &#x81EA;&#x5B9A;&#x4E49;&#x6743;&#x9650;&#x62E6;&#x622A;JWT&#x8FC7;&#x6EE4;&#x5668;
+                .and()
+                .addFilterBefore(jwtAuthenticationTokenFilter, UsernamePasswordAuthenticationFilter.class);
+
+        // &#x52A8;&#x6001;&#x6743;&#x9650;&#x6821;&#x9A8C;&#x8FC7;&#x6EE4;&#x5668;
+         registry.and().addFilterBefore(securityAbstractSecurityInterceptor, FilterSecurityInterceptor.class);
+
+    }
+}
+</code></pre><h3 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h3>
+<p>&#x6574;&#x4F53;&#x800C;&#x8A00;&#xFF0C;Spring Security&#x7684;&#x914D;&#x7F6E;&#x662F;&#x6BD4;&#x8F83;&#x7E41;&#x7410;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x719F;&#x7EC3;&#x638C;&#x63E1;&#x4E4B;&#x540E;&#x53D1;&#x73B0;&#x5176;&#x5B9E;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x6700;&#x7EC8;&#x7684;&#x601D;&#x60F3;&#x65E0;&#x6CD5;&#x5C31;&#x662F;&#x6574;&#x5408;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5177;&#x6709;&#x8BBF;&#x95EE;URL&#x7684;&#x6743;&#x9650;&#x53CA;&#x8D44;&#x6E90;&#x7684;&#x6743;&#x9650;</p>
+<h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3>
+<p>1&#x3001;<a href="https://www.1024sou.com/article/513666.html" target="_blank">https://www.1024sou.com/article/513666.html</a></p>
+<p>2&#x3001;<a href="https://www.cnblogs.com/zhengqing/p/11704229.html" target="_blank">https://www.cnblogs.com/zhengqing/p/11704229.html</a></p>
+<p>3&#x3001;<a href="https://blog.51cto.com/u_15082397/2590650" target="_blank">https://blog.51cto.com/u_15082397/2590650</a></p>
+<p>4&#x3001;<a href="https://juejin.cn/post/7023183872422576136" target="_blank">https://juejin.cn/post/7023183872422576136</a></p>
+<p>5&#x3001;<a href="https://www.bbsmax.com/A/WpdK3ywXdV/" target="_blank">https://www.bbsmax.com/A/WpdK3ywXdV/</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"spring-security整合JWT实现URL动态鉴权","level":"1.6.1","depth":2,"next":{"title":"mq","level":"1.7","depth":1,"ref":"","articles":[{"title":"RocketMQ总结","level":"1.7.1","depth":2,"path":"mq/RocketMQ.md","ref":"./mq/RocketMQ.md","articles":[]}]},"previous":{"title":"springsecurity","level":"1.6","depth":1,"ref":"","articles":[{"title":"spring-security整合JWT实现URL动态鉴权","level":"1.6.1","depth":2,"path":"springsecurity/spring-security整合JWT实现URL动态鉴权.md","ref":"./springsecurity/spring-security整合JWT实现URL动态鉴权.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"springsecurity/spring-security整合JWT实现URL动态鉴权.md","mtime":"2022-02-24T03:31:40.200Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-28T11:37:25.780Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
