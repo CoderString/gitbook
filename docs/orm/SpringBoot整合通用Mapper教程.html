@@ -1,0 +1,989 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SpringBoot整合通用Mapper教程 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Mybatis-Plus自动生成代码模板.html" />
+    
+    
+    <link rel="prev" href="SpringBoot整合Mybatis-Plus使用总结.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java8/lombok注解讲解.html">
+            
+                <a href="../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java8/commons-lang3包.html">
+            
+                <a href="../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../java8/枚举类的使用.html">
+            
+                <a href="../java8/枚举类的使用.html">
+            
+                    
+                    枚举类使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="SpringBoot整合通用Mapper教程.html">
+            
+                <a href="SpringBoot整合通用Mapper教程.html">
+            
+                    
+                    SpringBoot整合通用Mapper教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../git/git_usage.html">
+            
+                <a href="../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springboot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../springboot/springboot自定义starter.html">
+            
+                <a href="../springboot/springboot自定义starter.html">
+            
+                    
+                    springboot自定义starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../mq/RocketMQ.html">
+            
+                <a href="../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    pattern
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../pattern/设计模式-序言.html">
+            
+                <a href="../pattern/设计模式-序言.html">
+            
+                    
+                    设计模式分类及原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../pattern/简单工厂模式.html">
+            
+                <a href="../pattern/简单工厂模式.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../pattern/抽象工厂.html">
+            
+                <a href="../pattern/抽象工厂.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >SpringBoot整合通用Mapper教程</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="spring-boot&#x96C6;&#x6210;&#x901A;&#x7528;mybatis-&#x901A;&#x7528;mapper&#x6559;&#x7A0B;">Spring Boot&#x96C6;&#x6210;&#x901A;&#x7528;Mybatis &#x901A;&#x7528;mapper&#x6559;&#x7A0B;</h3>
+<p>Mybatis&#x867D;&#x7136;&#x597D;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x968F;&#x7740;&#x5F00;&#x53D1;&#x7684;&#x63A8;&#x8FDB;&#xFF0C;&#x672C;&#x8EAB;&#x7684;&#x5F0A;&#x7AEF;&#x4E5F;&#x5728;&#x4E0D;&#x65AD;&#x7684;&#x663E;&#x73B0;&#xFF0C;&#x5410;&#x69FD;&#x6700;&#x591A;&#x7684;&#x70B9;&#x65E0;&#x975E;&#x5C31;&#x662F;&#x5373;&#x4F7F;&#x662F;&#x5355;&#x8868;&#x64CD;&#x4F5C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x4E5F;&#x9700;&#x8981;&#x901A;&#x8FC7;xml&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B8C;&#x6210;&#xFF0C;&#x4E3A;&#x4E86;&#x6446;&#x8131;&#x8FD9;&#x79CD;&#x56F0;&#x5883;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x5F15;&#x5165;&#x901A;&#x7528;mapper&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x907F;&#x514D;xml&#x7684;&#x4E66;&#x5199;&#x65B9;&#x5F0F;&#xFF0C;&#x63D0;&#x9AD8;&#x5F00;&#x53D1;&#x7684;&#x6548;&#x7387;&#x3002;</p>
+<h3 id="maven&#x4F9D;&#x8D56;">maven&#x4F9D;&#x8D56;</h3>
+<pre><code>&lt;dependencies&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-web&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- &#x6570;&#x636E;&#x5E93;&#x4F9D;&#x8D56; --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;mysql&lt;/groupId&gt;
+            &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-jdbc&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;com.github.pagehelper&lt;/groupId&gt;
+            &lt;artifactId&gt;pagehelper-spring-boot-starter&lt;/artifactId&gt;
+            &lt;version&gt;1.4.1&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+            &lt;artifactId&gt;lombok&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- &#x901A;&#x7528;mapper&#x4F9D;&#x8D56;--&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;tk.mybatis&lt;/groupId&gt;
+            &lt;artifactId&gt;mapper&lt;/artifactId&gt;
+            &lt;version&gt;4.1.5&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;tk.mybatis&lt;/groupId&gt;
+            &lt;artifactId&gt;mapper-spring-boot-starter&lt;/artifactId&gt;
+            &lt;version&gt;2.1.5&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;!-- &#x901A;&#x7528;mapper&#x9006;&#x5411;&#x4F9D;&#x8D56; --&gt;
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.mybatis.generator&lt;/groupId&gt;
+            &lt;artifactId&gt;mybatis-generator-core&lt;/artifactId&gt;
+            &lt;version&gt;1.3.6&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-starter-freemarker&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+
+    &lt;/dependencies&gt;
+</code></pre><h3 id="yml&#x914D;&#x7F6E;">yml&#x914D;&#x7F6E;</h3>
+<pre><code>server:
+  port: 8070
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/rbac?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimeZone=GMT
+    username: root
+    password: root
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count:countSql
+
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.coderstring.starter.model
+
+
+logging:
+  level:
+    com.coderstring.starter.dao: debug
+</code></pre><h3 id="mybatis-configxml&#x914D;&#x7F6E;">mybatis-config.xml&#x914D;&#x7F6E;</h3>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
+&lt;!DOCTYPE configuration
+        PUBLIC &quot;-//mybatis.org//DTD Config 3.0//EN&quot; &quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;&gt;
+&lt;configuration&gt;
+
+    &lt;settings&gt;
+        &lt;setting name=&quot;logImpl&quot; value=&quot;SLF4J&quot;/&gt;
+    &lt;/settings&gt;
+
+    &lt;typeAliases&gt;
+        &lt;package name=&quot;com.coderstring.starter.model&quot;/&gt;
+    &lt;/typeAliases&gt;
+
+    &lt;plugins&gt;
+        &lt;plugin interceptor=&quot;com.github.pagehelper.PageInterceptor&quot;/&gt;
+    &lt;/plugins&gt;
+&lt;/configuration&gt;
+</code></pre><h3 id="&#x542F;&#x52A8;&#x7C7B;&#x914D;&#x7F6E;">&#x542F;&#x52A8;&#x7C7B;&#x914D;&#x7F6E;</h3>
+<pre><code>import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import tk.mybatis.spring.annotation.MapperScan;
+
+@SpringBootApplication
+@MapperScan(basePackages = &quot;com.coderstring.starter.dao&quot;)
+public class StarterApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(StarterApplication.class, args);
+    }
+}
+</code></pre><h3 id="dao&#x914D;&#x7F6E;">dao&#x914D;&#x7F6E;</h3>
+<pre><code>public interface SysUserMapper extends Mapper&lt;SysUser&gt; {
+
+}
+</code></pre><h3 id="&#x57FA;&#x672C;api&#x7528;&#x6CD5;">&#x57FA;&#x672C;API&#x7528;&#x6CD5;</h3>
+<h4 id="select">select</h4>
+<ul>
+<li>&#x6839;&#x636E;&#x5B9E;&#x4F53;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x503C;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</li>
+</ul>
+<pre><code>List&lt;T&gt; select(T var1);
+</code></pre><ul>
+<li>&#x6839;&#x636E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;&#x4E3B;&#x952E;&#x5C5E;&#x6027;</li>
+</ul>
+<pre><code>T selectByPrimaryKey(Object var1);
+</code></pre><ul>
+<li>&#x67E5;&#x8BE2;&#x5168;&#x90E8;&#x7684;&#x7ED3;&#x679C;</li>
+</ul>
+<pre><code>List&lt;T&gt; selectAll();
+</code></pre><ul>
+<li>&#x6839;&#x636E;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;&#xFF0C;&#x53EA;&#x80FD;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x6709;&#x591A;&#x4E2A;&#x7ED3;&#x679C;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</li>
+</ul>
+<pre><code>T selectOne(T var1);
+</code></pre><ul>
+<li>&#x6839;&#x636E;&#x5B9E;&#x4F53;&#x4E2D;&#x7684;&#x5C5E;&#x6027;&#x67E5;&#x8BE2;&#x603B;&#x6570;</li>
+</ul>
+<pre><code>int selectCount(T var1);
+</code></pre><h4 id="insert">insert</h4>
+<ul>
+<li>&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#xFF0C;null&#x7684;&#x5C5E;&#x6027;&#x4E5F;&#x4F1A;&#x4FDD;&#x5B58;&#xFF0C;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+<pre><code>int insert(T var1);
+</code></pre><ul>
+<li>&#x4FDD;&#x5B58;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#xFF0C;null&#x7684;&#x5C5E;&#x6027;&#x503C;&#x4E0D;&#x4F1A;&#x4FDD;&#x5B58;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+<pre><code>int insertSelective(T var1);
+</code></pre><h4 id="update">update</h4>
+<ul>
+<li>&#x6839;&#x636E;&#x4E3B;&#x952E;&#x66F4;&#x65B0;&#x5168;&#x90E8;&#x5B9E;&#x4F53;&#x5B57;&#x6BB5;&#xFF0C;null&#x503C;&#x4E5F;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;</li>
+</ul>
+<pre><code>int updateByPrimaryKey(T var1);
+</code></pre><ul>
+<li>&#x6839;&#x636E;&#x4E3B;&#x952E;&#x66F4;&#x65B0;&#x5C5E;&#x6027;&#x4E0D;&#x4E3A;null&#x7684;&#x503C;</li>
+</ul>
+<pre><code>int updateByPrimaryKeySelective(T var1);
+</code></pre><h4 id="delete">delete</h4>
+<ul>
+<li>&#x6839;&#x636E;&#x5B9E;&#x4F53;&#x5C5E;&#x6027;&#x4F5C;&#x4E3A;&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x5220;&#x9664;</li>
+</ul>
+<pre><code>int delete(T var1);
+</code></pre><ul>
+<li>&#x6839;&#x636E;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x8FDB;&#x884C;&#x5220;&#x9664;&#xFF0C;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x5FC5;&#x987B;&#x5305;&#x542B;&#x5B8C;&#x6574;&#x7684;&#x4E3B;&#x952E;&#x5C5E;&#x6027;</li>
+</ul>
+<pre><code>int deleteByPrimaryKey(Object var1);
+</code></pre><h3 id="example&#x7684;&#x7528;&#x6CD5;">Example&#x7684;&#x7528;&#x6CD5;</h3>
+<p>Example example = new Example(Goods.class);
+Example.Criteria criteria = example.createCriteria();</p>
+<ul>
+<li>&#x6761;&#x4EF6;&#x8BBE;&#x7F6E;(&#x5B57;&#x6BB5;&#x540D;&#x4E3A;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x975E;&#x6570;&#x636E;&#x5E93;&#x5B57;&#x6BB5;&#x540D;)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x5E8F;&#x53F7;</th>
+<th>&#x65B9;&#x6CD5;</th>
+<th>&#x4F5C;&#x7528;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>example.orderBy(&#x5B57;&#x6BB5;&#x540D;).asc();</td>
+<td>&#x6DFB;&#x52A0;&#x5347;&#x5E8F;&#x6392;&#x5217;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>2</td>
+<td>example.orderBy(&#x5B57;&#x6BB5;&#x540D;).desc();</td>
+<td>&#x6DFB;&#x52A0;&#x964D;&#x5E8F;&#x6392;&#x5E8F;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>3</td>
+<td>example. setDistinct(false);</td>
+<td>&#x53BB;&#x9664;&#x91CD;&#x590D;,boolean&#x578B;,true&#x4E3A;&#x9009;&#x62E9;&#x4E0D;&#x91CD;&#x590D;&#x7684;&#x8BB0;&#x5F55;</td>
+</tr>
+<tr>
+<td>4</td>
+<td>criteria. andIsNull(&#x5B57;&#x6BB5;&#x540D;);</td>
+<td>&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;xx&#x4E3A;null&#x7684;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>5</td>
+<td>criteria. andIsNotNull(&#x5B57;&#x6BB5;&#x540D;);</td>
+<td>&#x6DFB;&#x52A0;&#x5B57;&#x6BB5;xx&#x4E0D;&#x4E3A;null&#x7684;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>6</td>
+<td>criteria.andEqualTo(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x7B49;&#x4E8E;value&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>criteria.andNotEqualTo(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x4E0D;&#x7B49;&#x4E8E;value&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>criteria.andGreaterThan(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x5927;&#x4E8E;value&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>criteria.andGreaterThanOrEqualTo(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x5927;&#x4E8E;&#x7B49;&#x4E8E;vaue&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>criteria.andLessThan(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x5C0F;&#x4E8E;value&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>criteria.andLessThanOrEqualTo(&#x5B57;&#x6BB5;&#x540D;,value);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;value&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>criteria.andIn(&#x5B57;&#x6BB5;&#x540D;,list);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x5728;List&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>criteria. andNotIn(&#x5B57;&#x6BB5;&#x540D;,list);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x4E0D;&#x5728;List&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>criteria.andLike(&#x5B57;&#x6BB5;&#x540D;,&#x201C;%&#x201D;+value+&#x201D;%&#x201D;);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x4E3A;vaue&#x7684;&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>criteria.andNotLike(&#x5B57;&#x6BB5;&#x540D;,&#x201C;%&#x201D;+value+&#x201D;%&#x201D;);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x4E0D;&#x4E3A; value&#x7684;&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>16</td>
+<td>criteria.andBetween(&#x5B57;&#x6BB5;&#x540D;,value1,value2);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x5728;value1&#x548C;value2&#x4E4B;&#x95F4;&#x6761;&#x4EF6;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>criteria.andNotBetween(&#x5B57;&#x6BB5;&#x540D;,value1,value2);</td>
+<td>&#x6DFB;&#x52A0;xx&#x5B57;&#x6BB5;&#x503C;&#x4E0D;&#x5728;value1&#x548C;value2&#x4E4B;&#x95F4;&#x6761;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<h4 id="select">Select</h4>
+<ul>
+<li>&#x6839;&#x636E;Example&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x67E5;&#x8BE2;</li>
+</ul>
+<pre><code>List&lt;T&gt; selectByExample(Object example);
+</code></pre><ul>
+<li>&#x6839;&#x636E;Example&#x6761;&#x4EF6;&#x8FDB;&#x884C;&#x603B;&#x6570;&#x67E5;&#x8BE2;</li>
+</ul>
+<pre><code>int selectCountByExample(Object example);
+</code></pre><ul>
+<li>&#x67E5;&#x8BE2;&#x6307;&#x5B9A;&#x5B57;&#x6BB5;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code>Example example = new Example(User.class);
+     example.selectProperties(&quot;headImg&quot;,&quot;username&quot;,&quot;introduction&quot;)
+       .and()
+      .andEqualTo(&quot;userId&quot;,userId);
+User user = userMapper.selectOneByExample(example);
+</code></pre><h4 id="update">Update</h4>
+<ul>
+<li>&#x6839;&#x636E;Example&#x6761;&#x4EF6;&#x66F4;&#x65B0;&#x5B9E;&#x4F53;record&#x5305;&#x542B;&#x7684;&#x5168;&#x90E8;&#x5C5E;&#x6027;&#xFF0C;null&#x503C;&#x4F1A;&#x88AB;&#x66F4;&#x65B0;</li>
+</ul>
+<pre><code>int updateByExample(@Param(&quot;record&quot;) T record, @Param(&quot;example&quot;) Object example);
+</code></pre><ul>
+<li>&#x6839;&#x636E;Example&#x6761;&#x4EF6;&#x66F4;&#x65B0;&#x5B9E;&#x4F53;record&#x5305;&#x542B;&#x7684;&#x4E0D;&#x662F;null&#x7684;&#x5C5E;&#x6027;&#x503C;</li>
+</ul>
+<pre><code>int updateByExampleSelective(@Param(&quot;record&quot;) T record, @Param(&quot;example&quot;) Object example);
+</code></pre><h4 id="delete">Delete</h4>
+<ul>
+<li>&#x6839;&#x636E;Example&#x6761;&#x4EF6;&#x5220;&#x9664;&#x6570;&#x636E;</li>
+</ul>
+<pre><code>int deleteByExample(Object example);
+</code></pre><h3 id="weekendsqls-&#x7528;&#x6CD5;">WeekendSqls &#x7528;&#x6CD5;</h3>
+<p>&#x76F8;&#x6BD4;&#x4E8E;Example&#xFF0C;&#x4F18;&#x52BF;&#x662F;&#x4E0D;&#x7528;&#x8F93;&#x5165;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x6570;&#x636E;&#x5E93;&#x6709;&#x53D8;&#x52A8;&#x6216;&#x8005;&#x8F93;&#x5165;&#x9519;&#x8BEF;&#x51FA;&#x9519;&#x7684;&#x6982;&#x7387;&#x3002;</p>
+<ul>
+<li>&#x6848;&#x4F8B;&#x4E00;</li>
+</ul>
+<pre><code>
+// &#x83B7;&#x53D6;WeekendSqls&#x5BF9;&#x8C61;
+WeekendSqls&lt;MybatisDemo&gt; sqls = WeekendSqls.&lt;MybatisDemo&gt;custom();
+
+// &#x8FDB;&#x884C;&#x52A8;&#x6001;sql&#x62FC;&#x63A5;
+sqls = sqls.andEqualTo(MybatisDemo::getCount,0).andLike(MybatisDemo::getName,&quot;%d%&quot;);
+
+// &#x83B7;&#x53D6;&#x7ED3;&#x679C;
+List&lt;MybatisDemo&gt; demos = mybatisDemoMapper.selectByExample(Example.builder(MybatisDemo.class).where(sqls).orderByDesc(&quot;count&quot;,&quot;name&quot;).build());
+</code></pre><ul>
+<li>&#x6848;&#x4F8B;&#x4E8C;</li>
+</ul>
+<pre><code>WeekendSqls&lt;ArchiveDO&gt; sqls = WeekendSqls.&lt;ArchiveDO&gt;custom();
+if (StringUtils.isNotBlank(so.getImei())) {
+    sqls.andEqualTo(ArchiveDO::getImei, so.getImei());
+}
+if (so.getIsDeleted() != null) {
+    sqls.andEqualTo(ArchiveDO::getIsDeleted, so.getIsDeleted());
+}
+if (StringUtils.isNotBlank(so.getCreatePerson())) {
+    sqls.andEqualTo(ArchiveDO::getCreatePerson, so.getCreatePerson());
+}
+if (StringUtils.isNotBlank(so.getNote())) {
+    sqls.andLike(ArchiveDO::getNote, &quot;%&quot; + so.getNote() + &quot;%&quot;);
+}
+Example example = Example.builder(ArchiveDO.class).where(sqls).orderByDesc(&quot;id&quot;).build();
+int total = archiveMapper.selectCountByExample(example);
+</code></pre><h3 id="&#x81EA;&#x52A8;&#x751F;&#x6210;model&#x3001;dao&#x3001;mapper&#x4EE3;&#x7801;">&#x81EA;&#x52A8;&#x751F;&#x6210;model&#x3001;dao&#x3001;mapper&#x4EE3;&#x7801;</h3>
+<ul>
+<li>&#x751F;&#x6210;&#x7A0B;&#x5E8F;</li>
+</ul>
+<pre><code>import org.mybatis.generator.api.MyBatisGenerator;
+import org.mybatis.generator.config.Configuration;
+import org.mybatis.generator.config.xml.ConfigurationParser;
+import org.mybatis.generator.internal.DefaultShellCallback;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Generator {
+    public void generator() throws Exception {
+        List&lt;String&gt; warnings = new ArrayList&lt;String&gt;();
+        boolean overwrite = true;
+
+        File configFile = new File(&quot;./src/main/resources/mybatis/generatorConfig.xml&quot;);
+        ConfigurationParser cp = new ConfigurationParser(warnings);
+        Configuration config = cp.parseConfiguration(configFile);
+        DefaultShellCallback callback = new DefaultShellCallback(overwrite);
+        MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
+        myBatisGenerator.generate(null);
+    }
+
+    public static void main(String[] args) {
+        try {
+            Generator generatorSqlmap = new Generator();
+            generatorSqlmap.generator();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+</code></pre><ul>
+<li>&#x751F;&#x6210;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</li>
+</ul>
+<pre><code>&lt;!DOCTYPE generatorConfiguration
+        PUBLIC &quot;-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN&quot;
+        &quot;http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd&quot;&gt;
+
+&lt;!--suppress MybatisGenerateCustomPluginInspection --&gt;
+&lt;generatorConfiguration&gt;
+    &lt;context id=&quot;Mysql&quot; targetRuntime=&quot;MyBatis3Simple&quot; defaultModelType=&quot;flat&quot;&gt;
+        &lt;property name=&quot;javaFileEncoding&quot; value=&quot;UTF-8&quot;/&gt;
+&lt;!--        &lt;property name=&quot;useMapperCommentGenerator&quot; value=&quot;false&quot;/&gt;--&gt;
+
+        &lt;!-- &#x901A;&#x7528;Mapper&#x63D2;&#x4EF6;&#xFF0C;&#x751F;&#x6210;&#x5E26;&#x6CE8;&#x89E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B; --&gt;
+        &lt;plugin type=&quot;tk.mybatis.mapper.generator.MapperPlugin&quot;&gt;
+            &lt;property name=&quot;mappers&quot; value=&quot;tk.mybatis.mapper.common.Mapper&quot;/&gt;
+            &lt;property name=&quot;caseSensitive&quot; value=&quot;true&quot;/&gt;
+            &lt;property name=&quot;forceAnnotation&quot; value=&quot;true&quot;/&gt;
+            &lt;property name=&quot;beginningDelimiter&quot; value=&quot;`&quot;/&gt;
+            &lt;property name=&quot;endingDelimiter&quot; value=&quot;`&quot;/&gt;
+            &lt;property name=&quot;lombok&quot; value=&quot;Getter,Setter,ToString,Accessors&quot;/&gt;
+        &lt;/plugin&gt;
+
+        &lt;!-- &#x901A;&#x7528;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;&#x63D2;&#x4EF6;&#x751F;&#x6210;dao --&gt;
+        &lt;plugin type=&quot;tk.mybatis.mapper.generator.TemplateFilePlugin&quot;&gt;
+&lt;!--            &lt;property name=&quot;baseMapper&quot; value=&quot;com.xiaomi.dlc.dal.common.MobileSecurityBaseMapper&quot;/&gt;--&gt;
+            &lt;property name=&quot;targetProject&quot; value=&quot;src/main/java&quot;/&gt;
+&lt;!--            &lt;property name=&quot;targetPackage&quot; value=&quot;com.coderstring.starter.dao&quot;/&gt;--&gt;
+            &lt;property name=&quot;templatePath&quot; value=&quot;generator/mapper.ftl&quot;/&gt;
+            &lt;property name=&quot;mapperSuffix&quot; value=&quot;Mapper&quot;/&gt;
+            &lt;property name=&quot;fileName&quot; value=&quot;${tableClass.shortClassName}${mapperSuffix}.java&quot;/&gt;
+        &lt;/plugin&gt;
+
+
+        &lt;!-- &#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5; --&gt;
+        &lt;jdbcConnection driverClass=&quot;com.mysql.cj.jdbc.Driver&quot;
+                        connectionURL=&quot;jdbc:mysql://127.0.0.1:3306/rbac?characterEncoding=UTF-8&amp;amp;useSSL=false&amp;amp;zeroDateTimeBehavior=convertToNull&quot;
+                        userId=&quot;root&quot;
+                        password=&quot;root&quot;&gt;
+        &lt;/jdbcConnection&gt;
+
+        &lt;javaTypeResolver&gt;
+            &lt;property name=&quot;forceBigDecimals&quot; value=&quot;false&quot;/&gt;
+        &lt;/javaTypeResolver&gt;
+
+        &lt;!-- &#x6570;&#x636E;&#x5E93;&#x8868;&#x5BF9;&#x5E94;&#x7684;model&#x5C42; --&gt;
+        &lt;javaModelGenerator targetPackage=&quot;com.coderstring.starter.model&quot;
+                            targetProject=&quot;./src/main/java&quot;/&gt;
+
+        &lt;sqlMapGenerator targetPackage=&quot;mapper&quot;
+        targetProject=&quot;./src/main/resources/mybatis&quot;/&gt;
+
+        &lt;javaClientGenerator targetPackage=&quot;com.coderstring.starter.dao&quot;
+                             targetProject=&quot;./src/main/java&quot; type=&quot;XMLMAPPER&quot;/&gt;
+
+        &lt;table tableName=&quot;sys_user&quot; domainObjectName=&quot;SysUser&quot;&gt;
+            &lt;generatedKey column=&quot;id&quot; sqlStatement=&quot;JDBC&quot;/&gt;
+        &lt;/table&gt;
+    &lt;/context&gt;
+&lt;/generatorConfiguration&gt;
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="SpringBoot整合Mybatis-Plus使用总结.html" class="navigation navigation-prev " aria-label="Previous page: SpringBoot整合Mybatis-Plus使用总结">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Mybatis-Plus自动生成代码模板.html" class="navigation navigation-next " aria-label="Next page: Mybatis-Plus自动生成代码模板">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SpringBoot整合通用Mapper教程","level":"1.3.2","depth":2,"next":{"title":"Mybatis-Plus自动生成代码模板","level":"1.3.3","depth":2,"path":"orm/Mybatis-Plus自动生成代码模板.md","ref":"./orm/Mybatis-Plus自动生成代码模板.md","articles":[]},"previous":{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","ref":"./orm/SpringBoot整合Mybatis-Plus使用总结.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"orm/SpringBoot整合通用Mapper教程.md","mtime":"2022-03-10T07:29:11.020Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T11:47:03.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

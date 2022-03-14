@@ -1,0 +1,656 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>设计模式分类及原则 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="简单工厂模式.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../java8/lombok注解讲解.html">
+            
+                <a href="../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../java8/commons-lang3包.html">
+            
+                <a href="../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../java8/枚举类的使用.html">
+            
+                <a href="../java8/枚举类的使用.html">
+            
+                    
+                    枚举类使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../orm/SpringBoot整合通用Mapper教程.html">
+            
+                <a href="../orm/SpringBoot整合通用Mapper教程.html">
+            
+                    
+                    SpringBoot整合通用Mapper教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../git/git_usage.html">
+            
+                <a href="../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springboot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../springboot/springboot自定义starter.html">
+            
+                <a href="../springboot/springboot自定义starter.html">
+            
+                    
+                    springboot自定义starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../mq/RocketMQ.html">
+            
+                <a href="../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    pattern
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="设计模式-序言.html">
+            
+                <a href="设计模式-序言.html">
+            
+                    
+                    设计模式分类及原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="简单工厂模式.html">
+            
+                <a href="简单工厂模式.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="抽象工厂.html">
+            
+                <a href="抽象工厂.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >设计模式分类及原则</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x603B;&#x89C8;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x603B;&#x89C8;</h3>
+<hr>
+<blockquote>
+<p>&#x6240;&#x8C13;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x6307;&#x7684;&#x662F;&#x4E00;&#x5957;&#x88AB;&#x53CD;&#x590D;&#x4F7F;&#x7528;&#x3001;&#x591A;&#x6570;&#x4EBA;&#x77E5;&#x6653;&#x3001;&#x7ECF;&#x8FC7;&#x5206;&#x7C7B;&#x7F16;&#x76EE;&#x7684;&#x3001;&#x4EE3;&#x7801;&#x8BBE;&#x8BA1;&#x7ECF;&#x9A8C;&#x7684;&#x603B;&#x7ED3;&#x3002;&#x76EE;&#x524D;&#x5927;&#x4F53;&#x4E0A;&#x603B;&#x5171;&#x6709;23&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x6A21;&#x5F0F;&#x7684;&#x7279;&#x70B9;&#x5212;&#x5206;&#x4E3A;&#x4E0B;&#x9762;&#x7684;&#x51E0;&#x5927;&#x7C7B;&#xFF1A;&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#x3001;&#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;&#x548C;&#x884C;&#x4E3A;&#x6027;&#x6A21;&#x5F0F;&#x3002;</p>
+</blockquote>
+<h4 id="&#x6A21;&#x5F0F;&#x5212;&#x5206;">&#x6A21;&#x5F0F;&#x5212;&#x5206;</h4>
+<hr>
+<table>
+    <tr>
+        <td>&#x5E8F;&#x53F7;</td>
+        <td>&#x6A21;&#x5F0F; &amp; &#x63CF;&#x8FF0;</td>
+        <td>&#x5305;&#x62EC;</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>
+            &#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;<br>
+            &#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x540C;&#x65F6;&#x9690;&#x85CF;&#x521B;&#x5EFA;&#x903B;&#x8F91;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528; new &#x8FD0;&#x7B97;&#x7B26;&#x76F4;&#x63A5;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x4F7F;&#x5F97;&#x7A0B;&#x5E8F;&#x5728;&#x5224;&#x65AD;&#x9488;&#x5BF9;&#x67D0;&#x4E2A;&#x7ED9;&#x5B9A;&#x5B9E;&#x4F8B;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x54EA;&#x4E9B;&#x5BF9;&#x8C61;&#x65F6;&#x66F4;&#x52A0;&#x7075;&#x6D3B;&#x3002;
+        </td>
+        <td>
+            <ul>
+                <li>&#x5DE5;&#x5382;&#x6A21;&#x5F0F;(Factory Pattern)</li>
+                <li>&#x62BD;&#x8C61;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;(Abstract Factory Pattern)</li>
+                <li>&#x5355;&#x4F8B;&#x6A21;&#x5F0F;(Singleton Pattern)</li>
+                <li>&#x5EFA;&#x9020;&#x8005;&#x6A21;&#x5F0F;(Builder Pattern)</li>
+                <li>&#x539F;&#x578B;&#x6A21;&#x5F0F;(Prototype Pattern)</li>
+            </ul>
+        </td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>
+            &#x7ED3;&#x6784;&#x578B;&#x6A21;&#x5F0F;<br>
+            &#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5173;&#x6CE8;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x7684;&#x7EC4;&#x5408;&#x3002;&#x7EE7;&#x627F;&#x7684;&#x6982;&#x5FF5;&#x88AB;&#x7528;&#x6765;&#x7EC4;&#x5408;&#x63A5;&#x53E3;&#x548C;&#x5B9A;&#x4E49;&#x7EC4;&#x5408;&#x5BF9;&#x8C61;&#x83B7;&#x5F97;&#x65B0;&#x529F;&#x80FD;&#x7684;&#x65B9;&#x5F0F;&#x3002;
+        </td>
+        <td>
+            <ul>
+                <li>&#x9002;&#x914D;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Adapter Pattern&#xFF09;</li>
+                <li>&#x6865;&#x63A5;&#x6A21;&#x5F0F;&#xFF08;Bridge Pattern&#xFF09;</li>
+                <li>&#x8FC7;&#x6EE4;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Filter&#x3001;Criteria Pattern&#xFF09;</li>
+                <li>&#x7EC4;&#x5408;&#x6A21;&#x5F0F;&#xFF08;Composite Pattern&#xFF09;</li>
+                <li>&#x5916;&#x89C2;&#x6A21;&#x5F0F;&#xFF08;Facade Pattern&#xFF09;</li>
+                <li>&#x4EAB;&#x5143;&#x6A21;&#x5F0F;&#xFF08;Flyweight Pattern&#xFF09;</li>
+                <li>&#x4EE3;&#x7406;&#x6A21;&#x5F0F;&#xFF08;Proxy Pattern&#xFF09;</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>
+            &#x884C;&#x4E3A;&#x6027;&#x6A21;&#x5F0F;<br>
+            &#x8FD9;&#x4E9B;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x901A;&#x4FE1;&#x3002;
+        </td>
+        <td>
+            <ul>
+                <li>&#x8D23;&#x4EFB;&#x94FE;&#x6A21;&#x5F0F;&#xFF08;Chain of Responsibility Pattern&#xFF09;</li>
+                <li>&#x547D;&#x4EE4;&#x6A21;&#x5F0F;&#xFF08;Command Pattern&#xFF09;</li>
+                <li>&#x89E3;&#x91CA;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Interpreter Pattern&#xFF09;</li>
+                <li>&#x8FED;&#x4EE3;&#x5668;&#x6A21;&#x5F0F;&#xFF08;Iterator Pattern&#xFF09;</li>
+                <li>&#x4E2D;&#x4ECB;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Mediator Pattern&#xFF09;</li>
+                <li>&#x5907;&#x5FD8;&#x5F55;&#x6A21;&#x5F0F;&#xFF08;Memento Pattern&#xFF09;</li>
+                <li>&#x89C2;&#x5BDF;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Observer Pattern&#xFF09;</li>
+                <li>&#x72B6;&#x6001;&#x6A21;&#x5F0F;&#xFF08;State Pattern&#xFF09;</li>
+                <li>&#x7A7A;&#x5BF9;&#x8C61;&#x6A21;&#x5F0F;&#xFF08;Null Object Pattern&#xFF09;</li>
+                <li>&#x7B56;&#x7565;&#x6A21;&#x5F0F;&#xFF08;Strategy Pattern&#xFF09;</li>
+                <li>&#x6A21;&#x677F;&#x6A21;&#x5F0F;&#xFF08;Template Pattern&#xFF09;</li>
+                <li>&#x8BBF;&#x95EE;&#x8005;&#x6A21;&#x5F0F;&#xFF08;Visitor Pattern&#xFF09;</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+
+<h4 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x539F;&#x5219;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x7684;&#x539F;&#x5219;</h4>
+<hr>
+<ul>
+<li>&#x5F00;&#x95ED;&#x539F;&#x5219;&#xFF08;Open Close Principle&#xFF09;</li>
+</ul>
+<p>&#x5F00;&#x95ED;&#x539F;&#x5219;&#x7684;&#x610F;&#x601D;&#x662F;&#xFF1A;&#x5BF9;&#x6269;&#x5C55;&#x5F00;&#x653E;&#xFF0C;&#x5BF9;&#x4FEE;&#x6539;&#x5173;&#x95ED;&#x3002;&#x5728;&#x7A0B;&#x5E8F;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x62D3;&#x5C55;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0D;&#x80FD;&#x53BB;&#x4FEE;&#x6539;&#x539F;&#x6709;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x70ED;&#x63D2;&#x62D4;&#x7684;&#x6548;&#x679C;&#x3002;&#x7B80;&#x8A00;&#x4E4B;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x4F7F;&#x7A0B;&#x5E8F;&#x7684;&#x6269;&#x5C55;&#x6027;&#x597D;&#xFF0C;&#x6613;&#x4E8E;&#x7EF4;&#x62A4;&#x548C;&#x5347;&#x7EA7;&#x3002;&#x60F3;&#x8981;&#x8FBE;&#x5230;&#x8FD9;&#x6837;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x548C;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x5177;&#x4F53;&#x8BBE;&#x8BA1;&#x4E2D;&#x6211;&#x4EEC;&#x4F1A;&#x63D0;&#x5230;&#x8FD9;&#x70B9;&#x3002;</p>
+<ul>
+<li>&#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;&#xFF08;Liskov Substitution Principle&#xFF09;</li>
+</ul>
+<p>&#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;&#x662F;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x8BBE;&#x8BA1;&#x7684;&#x57FA;&#x672C;&#x539F;&#x5219;&#x4E4B;&#x4E00;&#x3002; &#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;&#x4E2D;&#x8BF4;&#xFF0C;&#x4EFB;&#x4F55;&#x57FA;&#x7C7B;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5B50;&#x7C7B;&#x4E00;&#x5B9A;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x3002;LSP &#x662F;&#x7EE7;&#x627F;&#x590D;&#x7528;&#x7684;&#x57FA;&#x77F3;&#xFF0C;&#x53EA;&#x6709;&#x5F53;&#x6D3E;&#x751F;&#x7C7B;&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x6389;&#x57FA;&#x7C7B;&#xFF0C;&#x4E14;&#x8F6F;&#x4EF6;&#x5355;&#x4F4D;&#x7684;&#x529F;&#x80FD;&#x4E0D;&#x53D7;&#x5230;&#x5F71;&#x54CD;&#x65F6;&#xFF0C;&#x57FA;&#x7C7B;&#x624D;&#x80FD;&#x771F;&#x6B63;&#x88AB;&#x590D;&#x7528;&#xFF0C;&#x800C;&#x6D3E;&#x751F;&#x7C7B;&#x4E5F;&#x80FD;&#x591F;&#x5728;&#x57FA;&#x7C7B;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#x589E;&#x52A0;&#x65B0;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;&#x662F;&#x5BF9;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x7684;&#x8865;&#x5145;&#x3002;&#x5B9E;&#x73B0;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x7684;&#x5173;&#x952E;&#x6B65;&#x9AA4;&#x5C31;&#x662F;&#x62BD;&#x8C61;&#x5316;&#xFF0C;&#x800C;&#x57FA;&#x7C7B;&#x4E0E;&#x5B50;&#x7C7B;&#x7684;&#x7EE7;&#x627F;&#x5173;&#x7CFB;&#x5C31;&#x662F;&#x62BD;&#x8C61;&#x5316;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF0C;&#x6240;&#x4EE5;&#x91CC;&#x6C0F;&#x4EE3;&#x6362;&#x539F;&#x5219;&#x662F;&#x5BF9;&#x5B9E;&#x73B0;&#x62BD;&#x8C61;&#x5316;&#x7684;&#x5177;&#x4F53;&#x6B65;&#x9AA4;&#x7684;&#x89C4;&#x8303;&#x3002;</p>
+<ul>
+<li>&#x4F9D;&#x8D56;&#x5012;&#x8F6C;&#x539F;&#x5219;&#xFF08;Dependence Inversion Principle&#xFF09;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x662F;&#x5F00;&#x95ED;&#x539F;&#x5219;&#x7684;&#x57FA;&#x7840;&#xFF0C;&#x5177;&#x4F53;&#x5185;&#x5BB9;&#xFF1A;&#x9488;&#x5BF9;&#x63A5;&#x53E3;&#x7F16;&#x7A0B;&#xFF0C;&#x4F9D;&#x8D56;&#x4E8E;&#x62BD;&#x8C61;&#x800C;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x5177;&#x4F53;&#x3002;</p>
+<ul>
+<li>&#x63A5;&#x53E3;&#x9694;&#x79BB;&#x539F;&#x5219;&#xFF08;Interface Segregation Principle&#xFF09;</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x539F;&#x5219;&#x7684;&#x610F;&#x601D;&#x662F;&#xFF1A;&#x4F7F;&#x7528;&#x591A;&#x4E2A;&#x9694;&#x79BB;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x6BD4;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x63A5;&#x53E3;&#x8981;&#x597D;&#x3002;&#x5B83;&#x8FD8;&#x6709;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x610F;&#x601D;&#x662F;&#xFF1A;&#x964D;&#x4F4E;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x8026;&#x5408;&#x5EA6;&#x3002;&#x7531;&#x6B64;&#x53EF;&#x89C1;&#xFF0C;&#x5176;&#x5B9E;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5C31;&#x662F;&#x4ECE;&#x5927;&#x578B;&#x8F6F;&#x4EF6;&#x67B6;&#x6784;&#x51FA;&#x53D1;&#x3001;&#x4FBF;&#x4E8E;&#x5347;&#x7EA7;&#x548C;&#x7EF4;&#x62A4;&#x7684;&#x8F6F;&#x4EF6;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#xFF0C;&#x5B83;&#x5F3A;&#x8C03;&#x964D;&#x4F4E;&#x4F9D;&#x8D56;&#xFF0C;&#x964D;&#x4F4E;&#x8026;&#x5408;&#x3002;</p>
+<ul>
+<li>&#x8FEA;&#x7C73;&#x7279;&#x6CD5;&#x5219;&#xFF0C;&#x53C8;&#x79F0;&#x6700;&#x5C11;&#x77E5;&#x9053;&#x539F;&#x5219;&#xFF08;Demeter Principle&#xFF09;</li>
+</ul>
+<p>&#x6700;&#x5C11;&#x77E5;&#x9053;&#x539F;&#x5219;&#x662F;&#x6307;&#xFF1A;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#x5E94;&#x5F53;&#x5C3D;&#x91CF;&#x5C11;&#x5730;&#x4E0E;&#x5176;&#x4ED6;&#x5B9E;&#x4F53;&#x4E4B;&#x95F4;&#x53D1;&#x751F;&#x76F8;&#x4E92;&#x4F5C;&#x7528;&#xFF0C;&#x4F7F;&#x5F97;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x76F8;&#x5BF9;&#x72EC;&#x7ACB;&#x3002;</p>
+<ul>
+<li>&#x5408;&#x6210;&#x590D;&#x7528;&#x539F;&#x5219;&#xFF08;Composite Reuse Principle&#xFF09;</li>
+</ul>
+<p>&#x5408;&#x6210;&#x590D;&#x7528;&#x539F;&#x5219;&#x662F;&#x6307;&#xFF1A;&#x5C3D;&#x91CF;&#x4F7F;&#x7528;&#x5408;&#x6210;/&#x805A;&#x5408;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x4F7F;&#x7528;&#x7EE7;&#x627F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="简单工厂模式.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 简单工厂模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"设计模式分类及原则","level":"1.9.1","depth":2,"next":{"title":"简单工厂模式","level":"1.9.2","depth":2,"path":"pattern/简单工厂模式.md","ref":"./pattern/简单工厂模式.md","articles":[]},"previous":{"title":"pattern","level":"1.9","depth":1,"ref":"","articles":[{"title":"设计模式分类及原则","level":"1.9.1","depth":2,"path":"pattern/设计模式-序言.md","ref":"./pattern/设计模式-序言.md","articles":[]},{"title":"简单工厂模式","level":"1.9.2","depth":2,"path":"pattern/简单工厂模式.md","ref":"./pattern/简单工厂模式.md","articles":[]},{"title":"抽象工厂模式","level":"1.9.3","depth":2,"path":"pattern/抽象工厂.md","ref":"./pattern/抽象工厂.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pattern/设计模式-序言.md","mtime":"2022-03-01T02:31:32.519Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T11:47:03.467Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

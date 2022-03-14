@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Mybatis-Plus自动生成代码模板 · GitBook</title>
+        <title>简单工厂模式 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="抽象工厂.html" />
     
-    <link rel="prev" href="SpringBoot整合通用Mapper教程.html" />
+    
+    <link rel="prev" href="设计模式-序言.html" />
     
 
     </head>
@@ -172,9 +174,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="SpringBoot整合Mybatis-Plus使用总结.html">
+        <li class="chapter " data-level="1.3.1" data-path="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
             
-                <a href="SpringBoot整合Mybatis-Plus使用总结.html">
+                <a href="../orm/SpringBoot整合Mybatis-Plus使用总结.html">
             
                     
                     SpringBoot整合Mybatis-Plus使用总结
@@ -185,9 +187,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="SpringBoot整合通用Mapper教程.html">
+        <li class="chapter " data-level="1.3.2" data-path="../orm/SpringBoot整合通用Mapper教程.html">
             
-                <a href="SpringBoot整合通用Mapper教程.html">
+                <a href="../orm/SpringBoot整合通用Mapper教程.html">
             
                     
                     SpringBoot整合通用Mapper教程
@@ -198,9 +200,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="Mybatis-Plus自动生成代码模板.html">
+        <li class="chapter " data-level="1.3.3" data-path="../orm/Mybatis-Plus自动生成代码模板.html">
             
-                <a href="Mybatis-Plus自动生成代码模板.html">
+                <a href="../orm/Mybatis-Plus自动生成代码模板.html">
             
                     
                     Mybatis-Plus自动生成代码模板
@@ -390,9 +392,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="../pattern/设计模式-序言.html">
+        <li class="chapter " data-level="1.9.1" data-path="设计模式-序言.html">
             
-                <a href="../pattern/设计模式-序言.html">
+                <a href="设计模式-序言.html">
             
                     
                     设计模式分类及原则
@@ -403,9 +405,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="../pattern/简单工厂模式.html">
+        <li class="chapter active" data-level="1.9.2" data-path="简单工厂模式.html">
             
-                <a href="../pattern/简单工厂模式.html">
+                <a href="简单工厂模式.html">
             
                     
                     简单工厂模式
@@ -416,9 +418,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="../pattern/抽象工厂.html">
+        <li class="chapter " data-level="1.9.3" data-path="抽象工厂.html">
             
-                <a href="../pattern/抽象工厂.html">
+                <a href="抽象工厂.html">
             
                     
                     抽象工厂模式
@@ -464,7 +466,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Mybatis-Plus自动生成代码模板</a>
+        <a href=".." >简单工厂模式</a>
     </h1>
 </div>
 
@@ -479,121 +481,95 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="mybatis-plus&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x6A21;&#x677F;">Mybatis-Plus&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;&#x6A21;&#x677F;</h3>
-<p>&#x9879;&#x76EE;&#x5927;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x5982;&#x679C;&#x4E3A;&#x4E86;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x63D0;&#x9AD8;&#x5F00;&#x53D1;&#x7684;&#x6548;&#x7387;&#xFF0C;&#x6709;&#x7684;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x4F1A;&#x501F;&#x52A9;&#x5404;&#x79CD;&#x5404;&#x6837;&#x7684;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF0C;&#x9488;&#x5BF9;Mybatis-Plus&#xFF0C; &#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F1A;&#x91C7;&#x7528;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;entity&#x3001;dao&#x3001;service&#x3001;controller&#x4EE3;&#x7801;&#xFF0C;&#x90A3;&#x4E48;&#x5230;&#x5E95;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x751F;&#x6210;&#x5462;&#xFF1F;&#x4E0B;&#x9762;&#x5C06;&#x5C55;&#x5F00;&#x8BB2;&#x89E3;&#x3002;</p>
-<h3 id="&#x4F9D;&#x8D56;&#x5F15;&#x5165;">&#x4F9D;&#x8D56;&#x5F15;&#x5165;</h3>
-<pre><code>   &lt;dependency&gt;
-        &lt;groupId&gt;com.baomidou&lt;/groupId&gt;
-        &lt;artifactId&gt;mybatis-plus-generator&lt;/artifactId&gt;
-        &lt;version&gt;3.3.2&lt;/version&gt;
-    &lt;/dependency&gt;
-
-    &lt;!-- velocity &#x6A21;&#x677F;&#x5F15;&#x64CE; --&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;
-        &lt;artifactId&gt;velocity-engine-core&lt;/artifactId&gt;
-        &lt;version&gt;2.3&lt;/version&gt;
-    &lt;/dependency&gt;
-
-    &lt;!-- Mybatis plus&#x9006;&#x5411;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x4F9D;&#x8D56; --&gt;
-    &lt;dependency&gt;
-        &lt;groupId&gt;org.freemarker&lt;/groupId&gt;
-        &lt;artifactId&gt;freemarker&lt;/artifactId&gt;
-        &lt;version&gt;2.3.30&lt;/version&gt;
-    &lt;/dependency&gt;
-</code></pre><h3 id="&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;">&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4EE3;&#x7801;</h3>
-<pre><code>public class Generator {
-
-    public static void main(String[] args) {
-
-        // &#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;
-        AutoGenerator mpg = new AutoGenerator();
-        // set freemarker &#x6A21;&#x677F;&#x5F15;&#x64CE;
-        mpg.setTemplateEngine(new FreemarkerTemplateEngine());
-
-        // &#x5168;&#x5C40;&#x914D;&#x7F6E;
-        GlobalConfig gc = new GlobalConfig();
-        String projectPath = System.getProperty(&quot;user.dir&quot;);
-        // gc.setOutputDir(projectPath + &quot;/src/main/java&quot;);
-        gc.setAuthor(&quot;CoderString&quot;);
-        gc.setOpen(false);
-        gc.setBaseResultMap(true);
-        // gc.setSwagger2(true); &#x5B9E;&#x4F53;&#x5C5E;&#x6027; Swagger2 &#x6CE8;&#x89E3;
-        mpg.setGlobalConfig(gc);
-
-        // &#x6570;&#x636E;&#x6E90;&#x914D;&#x7F6E;
-        DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl(&quot;jdbc:mysql://localhost:3306/rbac?serverTimezone=UTC&amp;useUnicode=true&amp;useSSL=false&amp;characterEncoding=utf8&quot;);
-        // dsc.setSchemaName(&quot;public&quot;);
-        dsc.setDriverName(&quot;com.mysql.cj.jdbc.Driver&quot;);
-        dsc.setUsername(&quot;root&quot;);
-        dsc.setPassword(&quot;root&quot;);
-        mpg.setDataSource(dsc);
-
-        /**
-         * &#x5305;&#x914D;&#x7F6E;
-         * &#x7B80;&#x5355;&#x6765;&#x8BF4; &#x5C31;&#x662F;&#x5199;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
-         */
-        PackageConfig pc = new PackageConfig();
-        //pc.setModuleName(&quot;rbac-base&quot;);
-        pc.setParent(&quot;com.coderstring.rbac&quot;);
-        //&#x6307;&#x5B9A;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x7684;&#x5305;
-        pc.setEntity(&quot;base.entity&quot;);
-        pc.setService(&quot;service&quot;);
-        pc.setServiceImpl(&quot;service.impl&quot;);
-        pc.setController(&quot;web.controller&quot;);
-        pc.setMapper(&quot;dao&quot;);
-        pc.setXml(null);
-        //&#x6307;&#x5B9A;&#x751F;&#x6210;&#x6587;&#x4EF6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
-        Map&lt;String, String&gt; pathInfo = new HashMap&lt;&gt;();
-        String parentPath = &quot;/src/main/java/com/coderstring/rbac/&quot;;
-        String conStr = &quot;/rbac-&quot;;
-
-        String entityPath = projectPath.concat(conStr).concat(&quot;base&quot;).concat(parentPath).concat(&quot;base/entity&quot;);
-        String mapper_path = projectPath.concat(conStr).concat(&quot;dao&quot;).concat(parentPath).concat(&quot;dao&quot;);
-        String xml_path = projectPath.concat(conStr).concat(&quot;dao&quot;).concat(&quot;/src/main/resources/dao&quot;);
-        String service_path = projectPath.concat(conStr).concat(&quot;service&quot;).concat(parentPath).concat(&quot;service&quot;);
-        String service_impl_path = projectPath.concat(conStr).concat(&quot;service&quot;).concat(parentPath).concat(&quot;service/impl&quot;);
-        String controller_path = projectPath.concat(conStr).concat(&quot;web&quot;).concat(parentPath).concat(&quot;web/controller&quot;);
-
-        pathInfo.put(&quot;entity_path&quot;, entityPath);
-        pathInfo.put(&quot;mapper_path&quot;, mapper_path);
-        pathInfo.put(&quot;xml_path&quot;, xml_path);
-        pathInfo.put(&quot;service_path&quot;, service_path);
-        pathInfo.put(&quot;service_impl_path&quot;, service_impl_path);
-        pathInfo.put(&quot;controller_path&quot;, controller_path);
-        pc.setPathInfo(pathInfo);
-        mpg.setPackageInfo(pc);
-
-        // &#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
-        // &#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;
-        InjectionConfig cfg = new InjectionConfig() {
-            @Override
-            public void initMap() {
-                // to do nothing
-            }
-        };
-        mpg.setCfg(cfg);
-        // &#x914D;&#x7F6E;&#x6A21;&#x677F;
-        TemplateConfig templateConfig = new TemplateConfig();
-        mpg.setTemplate(templateConfig);
-
-        // &#x7B56;&#x7565;&#x914D;&#x7F6E;
-        StrategyConfig strategy = new StrategyConfig();
-        strategy.setNaming(NamingStrategy.underline_to_camel);
-        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setEntityLombokModel(true);
-        strategy.setRestControllerStyle(true);
-        strategy.setControllerMappingHyphenStyle(true);//&#x9A7C;&#x5CF0;&#x8F6C;
-        strategy.setInclude(&quot;sys_role_menu&quot;);//&#x8868;&#x540D;
-        strategy.setControllerMappingHyphenStyle(true);
-        mpg.setStrategy(strategy);
-        mpg.setTemplateEngine(new FreemarkerTemplateEngine());
-        mpg.execute();
-    }
+                                <h3 id="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E4B;&#xFF0D;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E4B;&#xFF0D;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;</h3>
+<hr>
+<p>&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x5C5E;&#x4E8E;&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x63D0;&#x4F9B;&#x4E00;&#x79CD;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5728;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x4E0D;&#x4F1A;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x66B4;&#x9732;&#x521B;&#x5EFA;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5171;&#x540C;&#x7684;&#x63A5;&#x53E3;&#x5728;&#x6307;&#x5411;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;</p>
+<h3 id="&#x5B9E;&#x9645;&#x6848;&#x4F8B;">&#x5B9E;&#x9645;&#x6848;&#x4F8B;</h3>
+<ul>
+<li>&#x521B;&#x5EFA;&#x63A5;&#x53E3;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Shape</span> </span>{
+   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">draw</span><span class="hljs-params">()</span></span>;
 }
-</code></pre><h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3>
-<p>1&#x3001;<a href="https://juejin.cn/post/6844903921098424328" target="_blank">https://juejin.cn/post/6844903921098424328</a></p>
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA;&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;&#x7C7B;</li>
+</ul>
+<pre><code>public class Rectangle implements Shape {
+
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Rectangle::draw() method.&quot;);
+   }
+}
+
+
+public class Square implements Shape {
+
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Square::draw() method.&quot;);
+   }
+}
+
+
+public class Circle implements Shape {
+
+   @Override
+   public void draw() {
+      System.out.println(&quot;Inside Circle::draw() method.&quot;);
+   }
+}
+</code></pre><ul>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#xFF0C;&#x751F;&#x6210;&#x57FA;&#x4E8E;&#x7ED9;&#x5B9A;&#x4FE1;&#x606F;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;</li>
+</ul>
+<pre><code>public class ShapeFactory {
+
+   //&#x4F7F;&#x7528; getShape &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5F62;&#x72B6;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;
+   public Shape getShape(String shapeType){
+      if(shapeType == null){
+         return null;
+      }        
+      if(shapeType.equalsIgnoreCase(&quot;CIRCLE&quot;)){
+         return new Circle();
+      } else if(shapeType.equalsIgnoreCase(&quot;RECTANGLE&quot;)){
+         return new Rectangle();
+      } else if(shapeType.equalsIgnoreCase(&quot;SQUARE&quot;)){
+         return new Square();
+      }
+      return null;
+   }
+}
+</code></pre><ul>
+<li>&#x901A;&#x8FC7;&#x5DE5;&#x5382;&#x83B7;&#x53D6;&#x5B9E;&#x4F53;&#x7C7B;&#x5BF9;&#x8C61;</li>
+</ul>
+<pre><code>public class FactoryPatternDemo {
+
+   public static void main(String[] args) {
+      ShapeFactory shapeFactory = new ShapeFactory();
+
+      //&#x83B7;&#x53D6; Circle &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;
+      Shape shape1 = shapeFactory.getShape(&quot;CIRCLE&quot;);
+
+      //&#x8C03;&#x7528; Circle &#x7684; draw &#x65B9;&#x6CD5;
+      shape1.draw();
+
+      //&#x83B7;&#x53D6; Rectangle &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;
+      Shape shape2 = shapeFactory.getShape(&quot;RECTANGLE&quot;);
+
+      //&#x8C03;&#x7528; Rectangle &#x7684; draw &#x65B9;&#x6CD5;
+      shape2.draw();
+
+      //&#x83B7;&#x53D6; Square &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;
+      Shape shape3 = shapeFactory.getShape(&quot;SQUARE&quot;);
+
+      //&#x8C03;&#x7528; Square &#x7684; draw &#x65B9;&#x6CD5;
+      shape3.draw();
+   }
+}
+</code></pre><h3 id="&#x5C0F;&#x7ED3;">&#x5C0F;&#x7ED3;</h3>
+<hr>
+<p>&#x7B80;&#x5355;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x5B9E;&#x73B0;&#x4E0A;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x7B80;&#x5355;&#x7684;&#xFF0C;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x7684;&#x601D;&#x8DEF;&#x662F;&#x62BD;&#x8C61;&#x51FA;&#x516C;&#x5171;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#xFF0C;&#x5DE5;&#x5382;&#x7C7B;&#x6839;&#x636E;&#x5B50;&#x7C7B;&#x7684;&#x540D;&#x79F0;&#x521B;&#x5EFA;&#x533F;&#x540D;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x7C7B;&#x540D;&#x79F0;&#x627F;&#x63A5;&#x8C03;&#x7528;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E1A;&#x52A1;&#x4EE3;&#x7801;&#x7684;service&#x548C;impl&#x5B9E;&#x73B0;&#x7C7B;&#x3002;</p>
 
                                 
                                 </section>
@@ -621,10 +597,14 @@
 
             
                 
-                <a href="SpringBoot整合通用Mapper教程.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: SpringBoot整合通用Mapper教程">
+                <a href="设计模式-序言.html" class="navigation navigation-prev " aria-label="Previous page: 设计模式分类及原则">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="抽象工厂.html" class="navigation navigation-next " aria-label="Next page: 抽象工厂模式">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -633,7 +613,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Mybatis-Plus自动生成代码模板","level":"1.3.3","depth":2,"next":{"title":"redis","level":"1.4","depth":1,"ref":"","articles":[{"title":"Redis缓存相关故障及处理方案","level":"1.4.1","depth":2,"path":"redis/Redis缓存相关故障及处理方案.md","ref":"./redis/Redis缓存相关故障及处理方案.md","articles":[]}]},"previous":{"title":"SpringBoot整合通用Mapper教程","level":"1.3.2","depth":2,"path":"orm/SpringBoot整合通用Mapper教程.md","ref":"./orm/SpringBoot整合通用Mapper教程.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"orm/Mybatis-Plus自动生成代码模板.md","mtime":"2022-02-17T08:49:30.391Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T11:47:03.467Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"简单工厂模式","level":"1.9.2","depth":2,"next":{"title":"抽象工厂模式","level":"1.9.3","depth":2,"path":"pattern/抽象工厂.md","ref":"./pattern/抽象工厂.md","articles":[]},"previous":{"title":"设计模式分类及原则","level":"1.9.1","depth":2,"path":"pattern/设计模式-序言.md","ref":"./pattern/设计模式-序言.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pattern/简单工厂模式.md","mtime":"2022-03-03T11:29:00.552Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-03-14T11:47:03.467Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

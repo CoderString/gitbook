@@ -4,14 +4,22 @@
 * Java8
 	* [lombok注解](./java8/lombok注解讲解.md)
 	* [commons-lang3包总结](./java8/commons-lang3包.md)
+	* [枚举类使用](./java8/枚举类的使用.md)
 * orm
 	* [SpringBoot整合Mybatis-Plus使用总结](./orm/SpringBoot整合Mybatis-Plus使用总结.md)
+	* [SpringBoot整合通用Mapper教程](./orm/SpringBoot整合通用Mapper教程.md)
 	* [Mybatis-Plus自动生成代码模板](./orm/Mybatis-Plus自动生成代码模板.md)
 * redis
 	* [Redis缓存相关故障及处理方案](./redis/Redis缓存相关故障及处理方案.md)
-* git常用教程
+* git
 	* [git常用命令总结](./git/git_usage.md)
+* springboot
+	* [springboot自定义starter](./springboot/springboot自定义starter.md)
 * springsecurity
 	* [spring-security整合JWT实现URL动态鉴权](./springsecurity/spring-security整合JWT实现URL动态鉴权.md)
 * mq
-	* [RocketMQ总结](./mq/RocketMQ.md) 
+	* [RocketMQ总结](./mq/RocketMQ.md)
+* pattern
+	* [设计模式分类及原则](./pattern/设计模式-序言.md)
+	* [简单工厂模式](./pattern/简单工厂模式.md) 
+	* [抽象工厂模式](./pattern/抽象工厂.md) 
