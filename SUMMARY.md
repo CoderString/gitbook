@@ -19,7 +19,11 @@
 	* [spring-security整合JWT实现URL动态鉴权](./springsecurity/spring-security整合JWT实现URL动态鉴权.md)
 * mq
 	* [RocketMQ总结](./mq/RocketMQ.md)
+* go	
+	* [gin用法](./golang/gin的基本用法.md)
+	* [go整合swagger](./golang/go整合swagger.md)
 * pattern
 	* [设计模式分类及原则](./pattern/设计模式-序言.md)
 	* [简单工厂模式](./pattern/简单工厂模式.md) 
 	* [抽象工厂模式](./pattern/抽象工厂.md) 
+	* [单例模式](./pattern/单例模式.md) 
