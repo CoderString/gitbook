@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>springboot自定义starter · GitBook</title>
+        <title>RSA公私钥数据加解密 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    
+    <link rel="prev" href="枚举类的使用.html" />
     
 
     </head>
@@ -112,9 +114,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../java8/lombok注解讲解.html">
+        <li class="chapter " data-level="1.2.1" data-path="lombok注解讲解.html">
             
-                <a href="../java8/lombok注解讲解.html">
+                <a href="lombok注解讲解.html">
             
                     
                     lombok注解
@@ -125,9 +127,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../java8/commons-lang3包.html">
+        <li class="chapter " data-level="1.2.2" data-path="commons-lang3包.html">
             
-                <a href="../java8/commons-lang3包.html">
+                <a href="commons-lang3包.html">
             
                     
                     commons-lang3包总结
@@ -138,9 +140,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../java8/枚举类的使用.html">
+        <li class="chapter " data-level="1.2.3" data-path="枚举类的使用.html">
             
-                <a href="../java8/枚举类的使用.html">
+                <a href="枚举类的使用.html">
             
                     
                     枚举类使用
@@ -151,9 +153,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../java8/RSA公私钥数据加解密.html">
+        <li class="chapter active" data-level="1.2.4" data-path="RSA公私钥数据加解密.html">
             
-                <a href="../java8/RSA公私钥数据加解密.html">
+                <a href="RSA公私钥数据加解密.html">
             
                     
                     RSA公私钥数据加解密
@@ -305,9 +307,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.6.1" data-path="springboot自定义starter.html">
+        <li class="chapter " data-level="1.6.1" data-path="../springboot/springboot自定义starter.html">
             
-                <a href="springboot自定义starter.html">
+                <a href="../springboot/springboot自定义starter.html">
             
                     
                     springboot自定义starter
@@ -719,7 +721,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >springboot自定义starter</a>
+        <a href=".." >RSA公私钥数据加解密</a>
     </h1>
 </div>
 
@@ -734,108 +736,164 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;starter">&#x81EA;&#x5B9A;&#x4E49;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;starter</h3>
-<hr>
-<blockquote>
-<p>&#x4E00;&#x822C;&#x9488;&#x5BF9;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x901A;&#x8FC7;&#x590D;&#x5236;&#x62F7;&#x8D1D;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x8FBE;&#x5230;&#x529F;&#x80FD;&#x5171;&#x7528;&#x7684;&#x76EE;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x53C2;&#x8003;springboot&#x9879;&#x76EE;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5C5E;&#x4E8E;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x7684;&#x5B9A;&#x5236;starter&#xFF0C;&#x5F53;&#x5176;&#x4ED6;&#x7684;&#x9879;&#x76EE;&#x9700;&#x8981;&#x8FD9;&#x90E8;&#x5206;&#x7684;&#x529F;&#x80FD;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;starter&#x7684;&#x65B9;&#x5F0F;&#x5F15;&#x5165;&#x3002;&#x90A3;&#x4E48;&#xFF0C;starter&#x7A76;&#x7ADF;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5B9A;&#x5236;&#x5462;?&#x5982;&#x679C;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x8BDD;&#x53EF;&#x4EE5;&#x63A5;&#x7740;&#x5F80;&#x4E0B;&#x770B;&#x3002;</p>
-</blockquote>
-<h4 id="&#x81EA;&#x5B9A;&#x4E49;starter&#x5B9E;&#x8DF5;">&#x81EA;&#x5B9A;&#x4E49;starter&#x5B9E;&#x8DF5;</h4>
-<p>&#x5B9A;&#x4E49;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;starer&#x5176;&#x5B9E;&#x4E5F;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x4E3B;&#x8981;&#x7684;&#x6B65;&#x9AA4;&#x5206;&#x4E3A;&#x4E0B;&#x9762;&#x7684;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;&#x5F15;&#x5165;&#x521B;&#x5EFA;starer&#x6240;&#x9700;&#x7684;&#x4F9D;&#x8D56;&#x3001;&#x7F16;&#x5199;&#x81EA;&#x5B9A;&#x4E49;&#x7684;properties&#x5C5E;&#x6027;&#x6587;&#x4EF6;&#x3001;&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x914D;&#x7F6E;&#x7C7B;bean&#x6784;&#x9020;&#x7C7B;&#x3001;&#x521B;&#x5EFA;spring.factories&#x6587;&#x4EF6;&#x5F15;&#x5165;&#x81EA;&#x52A8;&#x521B;&#x5EFA;bean&#x7684;&#x914D;&#x7F6E;&#x7C7B;&#x3002;</p>
-<ul>
-<li>maven&#x4F9D;&#x8D56;&#x5F15;&#x5165;</li>
-</ul>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-autoconfigure&lt;/artifactId&gt;
-&lt;/dependency&gt;
+                                <h3 id="rsa&#x8FDB;&#x884C;&#x516C;&#x79C1;&#x94A5;&#x52A0;&#x89E3;&#x5BC6;">RSA&#x8FDB;&#x884C;&#x516C;&#x79C1;&#x94A5;&#x52A0;&#x89E3;&#x5BC6;</h3>
+<p>&#x53C2;&#x8003;&#x524D;&#x4EFB;&#x89E3;&#x51B3;&#x7684;&#x65B9;&#x6848;&#xFF0C;&#x5DE5;&#x5177;&#x7C7B;&#x6E90;&#x7801;&#x3002;</p>
+<pre><code>import javax.crypto.Cipher;
+import java.security.*;
+import java.security.interfaces.RSAPrivateKey;
+import java.security.interfaces.RSAPublicKey;
+import java.security.spec.PKCS8EncodedKeySpec;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
 
-&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;spring-boot-configuration-processor&lt;/artifactId&gt;
-    &lt;optional&gt;true&lt;/optional&gt;
-&lt;/dependency&gt;
-</code></pre><ul>
-<li>&#x5C5E;&#x6027;&#x914D;&#x7F6E;&#x7C7B;&#x914D;&#x7F6E;</li>
-</ul>
-<pre><code>@ConfigurationProperties(prefix = &quot;coderstring.person&quot;)
-public class PersonProperties implements Serializable {
+@SuppressWarnings(&quot;all&quot;)
+public class RSAUtil {
+
+        //&#x53D6;&#x503C; SHA256WithRSA  &#x6216;&#x8005; SHA1WithRSA
+        //RSA &#x5BF9;&#x5E94; SHA1WithRSA
+        //RSA2 &#x5BF9;&#x5E94; SHA256WithRSA  &#x81F3;&#x5C11;2048 &#x4F4D;&#x4EE5;&#x4E0A;
+        public static final String SHA_WITH_RSA_ALGORITHM = &quot;SHA256WithRSA&quot;;
+
+        public static final String MD5_WITH_RSA = &quot;MD5WithRSA&quot;;
+
+        public static final int KEY_SIZE_2048 = 2048;
+
+        public static final int KEY_SIZE_1024 = 1024;
+
+        public static final String  ALGORITHM = &quot;RSA&quot;;
+
+        public static final String  CHARSET = &quot;UTF-8&quot;;
 
 
-    /**
-     * &#x5C5E;&#x6027;&#x914D;&#x7F6E;&#x7684;&#x7528;&#x6237;&#x540D;
-     */
-    private String name;
+        /**
+         * SHAWithRSA&#x7B7E;&#x540D;
+         */
+        public static String sign(String in,String pivateKey,String algorithm) throws Exception{
+            PKCS8EncodedKeySpec priPKCS8 = new PKCS8EncodedKeySpec(Base64.getDecoder().decode(pivateKey));
+            KeyFactory keyf = KeyFactory.getInstance(ALGORITHM);
+            PrivateKey priKey = keyf.generatePrivate(priPKCS8);
+            Signature signa = Signature.getInstance(algorithm!=null?algorithm:SHA_WITH_RSA_ALGORITHM);
+            signa.initSign(priKey);
+            signa.update(in.getBytes());
+            byte[] signdata = signa.sign();
+            return Base64.getEncoder().encodeToString(signdata);
+        }
 
-    /**
-     * &#x5C5E;&#x6027;&#x914D;&#x7F6E;&#x7684;&#x5E74;&#x9F84;
-     */
-    private int age;
+        /**
+         * SHAWithRSA&#x7B7E;&#x540D;
+         * &#x9ED8;&#x8BA4; SHAWithRSA&#x7B7E;&#x540D;
+         */
+        public static String sign(String in,String pivateKey) throws Exception{
+            return sign(in,pivateKey,null);
+        }
 
-    public String getName() {
-        return name;
-    }
+        /**
+         * SHAWithRSA&#x9A8C;&#x7B7E;
+         * &#x9ED8;&#x8BA4;SHAWithRSA&#x9A8C;&#x7B7E;
+         */
+        public static boolean isValid(String in,String signData,String publicKey,String algorithm) throws Exception{
+            KeyFactory keyFactory = KeyFactory.getInstance(ALGORITHM);
+            byte[] encodedKey = Base64.getDecoder().decode(publicKey);
+            PublicKey pubKey = keyFactory.generatePublic(new X509EncodedKeySpec(encodedKey));
+            Signature signa = Signature.getInstance(algorithm!=null?algorithm:SHA_WITH_RSA_ALGORITHM);
+            signa.initVerify(pubKey);
+            signa.update(in.getBytes());
+            byte[] sign_byte = Base64.getDecoder().decode(signData);
+            boolean flag = signa.verify(sign_byte);
+            return flag;
+        }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+        /**
+         *  SHAWithRSA&#x9A8C;&#x7B7E;
+         */
+        public static boolean isValid(String in,String signData,String publicKey) throws Exception{
+            return isValid(in,signData,publicKey,null);
+        }
 
-    public int getAge() {
-        return age;
-    }
+        /**
+         * RSA&#x516C;&#x94A5;&#x52A0;&#x5BC6;
+         */
+        public static String encrypt( String str, String publicKey) throws Exception{
+            //base64&#x7F16;&#x7801;&#x7684;&#x516C;&#x94A5;
+            byte[] decoded = Base64.getDecoder().decode(publicKey);
+            RSAPublicKey pubKey = (RSAPublicKey) KeyFactory.getInstance(ALGORITHM).generatePublic(new X509EncodedKeySpec(decoded));
+            //RSA&#x52A0;&#x5BC6;
+            Cipher cipher = Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.ENCRYPT_MODE, pubKey);
+            String outStr = Base64.getEncoder().encodeToString(cipher.doFinal(str.getBytes(CHARSET)));
+            return outStr;
+        }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+        /**
+         * RSA&#x79C1;&#x94A5;&#x89E3;&#x5BC6;
+         */
+        public static String decrypt(String str, String privateKey) throws Exception{
+            //64&#x4F4D;&#x89E3;&#x7801;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;
+            byte[] inputByte = java.util.Base64.getDecoder().decode(str.getBytes(CHARSET));
+            //base64&#x7F16;&#x7801;&#x7684;&#x79C1;&#x94A5;
+            byte[] decoded = Base64.getDecoder().decode(privateKey);
+            RSAPrivateKey priKey = (RSAPrivateKey) KeyFactory.getInstance(ALGORITHM).generatePrivate(new PKCS8EncodedKeySpec(decoded));
+            //RSA&#x89E3;&#x5BC6;
+            Cipher cipher = Cipher.getInstance(ALGORITHM);
+            cipher.init(Cipher.DECRYPT_MODE, priKey);
+            String outStr = new String(cipher.doFinal(inputByte));
+            return outStr;
+        }
+
+        /**
+         * &#x968F;&#x673A;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x5BF9;
+         * &#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x963F;&#x91CC;&#x7684;&#x751F;&#x6210;&#x5DE5;&#x5177;
+         */
+        public static void genKeyPair(Integer keySize) throws NoSuchAlgorithmException {
+            //&#x63A8;&#x8350; 2048&#x4F4D;&#x4EE5;&#x4E0A;&#xFF0C;&#x4FDD;&#x8BC1;&#x5B89;&#x5168;&#x6027;
+            if(keySize==null){
+                keySize = KEY_SIZE_2048;
+            }
+            // KeyPairGenerator&#x7C7B;&#x7528;&#x4E8E;&#x751F;&#x6210;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x5BF9;&#xFF0C;&#x57FA;&#x4E8E;RSA&#x7B97;&#x6CD5;&#x751F;&#x6210;&#x5BF9;&#x8C61;
+            KeyPairGenerator keyPairGen = KeyPairGenerator.getInstance(ALGORITHM);
+            // &#x521D;&#x59CB;&#x5316;&#x5BC6;&#x94A5;&#x5BF9;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x5BC6;&#x94A5;&#x5927;&#x5C0F;&#x4E3A;96-1024&#x4F4D;
+            keyPairGen.initialize(keySize, new SecureRandom());
+            // &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5BC6;&#x94A5;&#x5BF9;&#xFF0C;&#x4FDD;&#x5B58;&#x5728;keyPair&#x4E2D;
+            KeyPair keyPair = keyPairGen.generateKeyPair();
+            RSAPrivateKey privateKey = (RSAPrivateKey) keyPair.getPrivate();   // &#x5F97;&#x5230;&#x79C1;&#x94A5;
+            RSAPublicKey publicKey = (RSAPublicKey) keyPair.getPublic();  // &#x5F97;&#x5230;&#x516C;&#x94A5;
+            String publicKeyString = new String(Base64.getEncoder().encode(publicKey.getEncoded()));
+            // &#x5F97;&#x5230;&#x79C1;&#x94A5;&#x5B57;&#x7B26;&#x4E32;
+            String privateKeyString = new String(Base64.getEncoder().encode(privateKey.getEncoded()));
+            // &#x5C06;&#x516C;&#x94A5;&#x548C;&#x79C1;&#x94A5;&#x4FDD;&#x5B58;&#x5230;Map
+            System.out.println(&quot;&#x516C;&#x94A5;:&quot;+publicKeyString);
+            System.out.println(&quot;&#x79C1;&#x94A5;:&quot;+privateKeyString);
+        }
+
+        //&#x7B80;&#x5355;&#x6D4B;&#x8BD5;
+        public static void main(String[] args) throws Exception {
+            String content = &quot;&#x6211;&#x7684;&#x6570;&#x636E;&quot;;
+            //&#x652F;&#x4ED8;&#x5B9D;RSA&#x751F;&#x6210;&#x7684;&#x516C;&#x79C1;&#x94A5; &#x4E5F;&#x540C;&#x6837;&#x9002;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x5C1D;&#x8BD5;
+            genKeyPair(null);
+            String publicKey = &quot;MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkGv/70Te42PS5fyuLCNr/UiMtDqhasMZpmA92aDTWjh9RT5r4Kl3sKRO63RitWuEgFAZHljJUB9afEzWnP+EGpkeiq3SMpIfpUWy89nqZxUUyOg6aIvfEZBjKFFc3umM9uasFTLC8l4NCfDnlkpHxwQjc5emUGJ5ZnqqGOmrdP5se7dyO7QEtdI7/jfbzPDmMeWyegWE5iN8CHJh2V0foBur7gS/syTnbLFcRr3wzsbXh9RyLP9OMmHx9MO1fhTOnTZnN+xWXNggTgymoUM27+bZd/nrKaZNeUF50DIyTFEe6yqwkbtVf2jeR+CNjcWO+uP7CvTpDKk+9h3DZyZ5RwIDAQAB&quot;;
+            String privateKey = &quot;MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCQa//vRN7jY9Ll/K4sI2v9SIy0OqFqwxmmYD3ZoNNaOH1FPmvgqXewpE7rdGK1a4SAUBkeWMlQH1p8TNac/4QamR6KrdIykh+lRbLz2epnFRTI6Dpoi98RkGMoUVze6Yz25qwVMsLyXg0J8OeWSkfHBCNzl6ZQYnlmeqoY6at0/mx7t3I7tAS10jv+N9vM8OYx5bJ6BYTmI3wIcmHZXR+gG6vuBL+zJOdssVxGvfDOxteH1HIs/04yYfH0w7V+FM6dNmc37FZc2CBODKahQzbv5tl3+esppk15QXnQMjJMUR7rKrCRu1V/aN5H4I2NxY764/sK9OkMqT72HcNnJnlHAgMBAAECggEAYq4o1miMk3rl49fferFJXGtyGMPm/3gH0rL4D/ff8kme7u1T8NJawgvDEQcZWzT3+GTChQXNqD2EKmKmUegVb8coI0HZ2kwV62vQduZzT7QL26syHbVU2j96QVY2yulyNFIxStrAcbLp3d0JoJtoqAef4Z/BODPRF8DA8PzY9rrKM38EIki/lywgnhmmavfB4Z0jOi+yjL7uwj497YAC6XK5A4ZKFXYp1D5b0af7N7VyZNte/r/3nrH+/T2FpLGB3I8y/VB7cAS5GXB0GrUMOvVfnm576tukh4nOi+F0J3YxHW2AJU92RYE4qLT9nq5FsHFtu83+0Lo6C51wl4WcAQKBgQDNiM0J2gc10gNd0lv47CIUxgprKDJgxOs7xm7H+MVGzy2xpfsm3kjB/M4fHVDFLhSbqgo3TYBd9SgMxJRcmuE1HBs2Vd0NXMM+Q/XdIYA57YV3rclx7xUf95XZ2G2PFFFh45VW68KamZKufs4kbXwb3nrFgT48qkFWiKxTrXi7gQKBgQCz4d9da6+WVuDR5tURnZDATwbEefxpmSaIGbF16JAR1sY4Wnj5hB0phD0Pv0b/8+35ZpKGpK/ca7qm1VR9fEfMvP1f311ICXqovoydHktgEhTC+ictDMoHjSjJ8VHMKz+ahmQKB/AFHqReg+lfkcc3zOf/A99cvqWWkyGmq4i4xwKBgGZHjmk5o17oDJ7SwMwFjgwyZRrgHPnE5J6RZ62BoYJUNRPzWiEEesZ2LIiVSQ1mmgDAxGay3Y9kITMBXCcdN7b7LpuCbQdqQwqoPSB2vF2XUlS1Gcrlw+hth5epuRN7c+g3nahsmCHhDHpjReggx6MCuquwXi1IOE18o+zcJXmBAoGAVmTBVqkFp/sJ90YaR1+ZygMqiOrdpAn+S5erd6m+qBKzGRW6zHv7VZlBinKfswaA4Su2bBxkqkTDXKVQ8wPhqB+MwaMRtit3UdxSxJNsODP27L4gWq6tyXqugG76jkinP5wUKA0v5gWVhB9u0ou9Vrt/ISfG+1BFT1BS9S2leLkCgYAbFtXUQTNKd9IuI1pZguuwVI8US/xAOM4uTQoQx/tUO3OwgLt9iziKqg1n8GtRESAGwfbtJli85fhYSB36CdPs3ad22Y1SM6xnpLt5TnA8Vc3IuME4Y1ogH6Z3EBVvTPBb5BX2XoBvbpx8nMxtPIrh5ZkS8Cb9aoOoEhTrvEXrNw==&quot;;
+            /*&#x52A0;&#x89E3;&#x5BC6;&#x6D4B;&#x8BD5;*/
+            String encryptContent = RSAUtil.encrypt(content, publicKey);
+            System.out.println(&quot;&#x52A0;&#x5BC6;&#x540E;&#x6570;&#x636E;:\n&quot; + encryptContent);
+            String decryptContent = RSAUtil.decrypt(encryptContent,privateKey);
+            System.out.println(&quot;&#x89E3;&#x5BC6;&#x540E;&#x6570;&#x636E;:\n&quot;+decryptContent);
+            /*&#x52A0;&#x7B7E;&#x9A8C;&#x7B7E;&#x6D4B;&#x8BD5;*/
+            String signOriginalContent = &quot;&#x9A8C;&#x7B7E;&#x529F;&#x80FD;&#x6D4B;&#x8BD5;&quot;;
+            String geneSignContent = RSAUtil.sign(signOriginalContent, privateKey);
+            System.out.println(&quot;&#x751F;&#x6210;&#x7684;&#x7B7E;&#x540D;:\n&quot;+geneSignContent);
+            boolean valid = RSAUtil.isValid(signOriginalContent,geneSignContent, publicKey);
+            System.out.println(&quot;&#x7ED3;&#x679C;&#x9A8C;&#x7B7E;:\n&quot;+valid);
+        }
 }
-</code></pre><ul>
-<li>&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5904;&#x7406;&#x7C7B;</li>
-</ul>
-<pre><code>public class PersonService {
+</code></pre><h3 id="&#x53EF;&#x80FD;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;">&#x53EF;&#x80FD;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;</h3>
+<pre><code>error=Internal Server Error, message=Illegal base64 character 20,
+trace=java.lang.IllegalArgumentException: Illegal base64 character 20
+at java.util.Base64$Decoder.decode0(Base64.java:714)
+at java.util.Base64$Decoder.decode(Base64.java:526)
+at java.util.Base64$Decoder.decode(Base64.java:549)
+</code></pre><p>&#x9020;&#x6210;&#x7684;&#x539F;&#x56E0;&#xFF1A;base64 &#x7F16;&#x7801;&#x4E2D;&#x4F7F;&#x7528;&#x4E86;&#x52A0;&#x53F7;&#xFF08;+&#xFF09;&#xFF0C;&#x800C; + &#x5728; URL &#x4F20;&#x9012;&#x65F6;&#x4F1A;&#x88AB;&#x5F53;&#x6210;&#x7A7A;&#x683C;&#xFF0C;&#x56E0;&#x6B64;&#x9020;&#x6210;&#x4E86;base64&#x5B57;&#x7B26;&#x4E32;&#x88AB;&#x66F4;&#x6539;&#xFF0C;&#x5728;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x89E3;&#x7801;&#x540E;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x89E3;&#x5BC6;&#x540E;&#x7684;&#x6570;&#x636E;&#x9700;&#x8981;&#x7B80;&#x5355;&#x5904;&#x7406;&#x4E0B;&#xFF0C;String s = str.replaceAll(&quot; &quot;, &quot;+&quot;) &#x6216;&#x8005;</p>
 
-    private PersonProperties properties;
-
-    public PersonService() {}
-
-    public PersonService(PersonProperties properties) {
-        this.properties = properties;
-    }
-
-    public void sayHello() {
-        String message = String.format(&quot;&#x5927;&#x5BB6;&#x597D;&#xFF0C;&#x6211;&#x53EB;&#xFF1A;%s&#xFF0C;&#x4ECA;&#x5E74;&#x3000;%s&#x5C81;&quot;, properties.getName(), properties.getAge());
-        System.out.println(message);
-    }
-}
-</code></pre><ul>
-<li>&#x81EA;&#x52A8;&#x6CE8;&#x5165;bean&#x88C5;&#x914D;&#x7C7B;</li>
-</ul>
-<pre><code>@Configuration
-@EnableConfigurationProperties(PersonProperties.class)
-@ConditionalOnClass(PersonService.class)
-@ConditionalOnProperty(prefix = &quot;coderstring.person&quot;, value = &quot;enabled&quot;, matchIfMissing = true)
-public class PersonServiceAutoConfiguration {
-
-    @Resource
-    private PersonProperties properties;
-
-
-    @Bean
-    @ConditionalOnMissingBean(PersonService.class)
-    public PersonService personService() {
-        return new PersonService(properties);
-    }
-}
-</code></pre><ul>
-<li>&#x914D;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x88C5;&#x914D;&#x7C7B;(resources/META-INF/spring.factories)</li>
-</ul>
-<p>org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.coderstring.starter.config.PersonServiceAutoConfiguration</p>
-<h4 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h4>
-<p>&#x76F4;&#x63A5;&#x5F15;&#x5165;&#x9879;&#x76EE;&#x7684;&#x4F9D;&#x8D56;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;spring-boot-starter-web&#x7684;&#x5F15;&#x5165;&#x65B9;&#x5F0F;</p>
-<pre><code>&lt;dependency&gt;
-    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
-    &lt;artifactId&gt;xxx-spring-boot-starter&lt;/artifactId&gt;
-    &lt;version&gt;yyy&lt;/version&gt;
-&lt;/dependency&gt;
-</code></pre>
                                 
                                 </section>
                             
@@ -862,6 +920,10 @@ public class PersonServiceAutoConfiguration {
 
             
                 
+                <a href="枚举类的使用.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 枚举类使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
                 
             
         
@@ -870,7 +932,7 @@ public class PersonServiceAutoConfiguration {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"springboot自定义starter","level":"1.6.1","depth":2,"next":{"title":"springsecurity","level":"1.7","depth":1,"ref":"","articles":[{"title":"spring-security整合JWT实现URL动态鉴权","level":"1.7.1","depth":2,"path":"springsecurity/spring-security整合JWT实现URL动态鉴权.md","ref":"./springsecurity/spring-security整合JWT实现URL动态鉴权.md","articles":[]}]},"previous":{"title":"springboot","level":"1.6","depth":1,"ref":"","articles":[{"title":"springboot自定义starter","level":"1.6.1","depth":2,"path":"springboot/springboot自定义starter.md","ref":"./springboot/springboot自定义starter.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"springboot/springboot自定义starter.md","mtime":"2022-03-03T11:05:56.984Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-07T11:11:36.635Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"RSA公私钥数据加解密","level":"1.2.4","depth":2,"next":{"title":"orm","level":"1.3","depth":1,"ref":"","articles":[{"title":"SpringBoot整合Mybatis-Plus使用总结","level":"1.3.1","depth":2,"path":"orm/SpringBoot整合Mybatis-Plus使用总结.md","ref":"./orm/SpringBoot整合Mybatis-Plus使用总结.md","articles":[]},{"title":"SpringBoot整合通用Mapper教程","level":"1.3.2","depth":2,"path":"orm/SpringBoot整合通用Mapper教程.md","ref":"./orm/SpringBoot整合通用Mapper教程.md","articles":[]},{"title":"Mybatis-Plus自动生成代码模板","level":"1.3.3","depth":2,"path":"orm/Mybatis-Plus自动生成代码模板.md","ref":"./orm/Mybatis-Plus自动生成代码模板.md","articles":[]}]},"previous":{"title":"枚举类使用","level":"1.2.3","depth":2,"path":"java8/枚举类的使用.md","ref":"./java8/枚举类的使用.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java8/RSA公私钥数据加解密.md","mtime":"2022-03-31T09:22:56.587Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-07T11:11:36.635Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
