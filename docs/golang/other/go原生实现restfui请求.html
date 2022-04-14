@@ -1,0 +1,1127 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>go原生实现restfui请求 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="go-redis操作.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../java8/lombok注解讲解.html">
+            
+                <a href="../../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../java8/commons-lang3包.html">
+            
+                <a href="../../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../java8/枚举类的使用.html">
+            
+                <a href="../../java8/枚举类的使用.html">
+            
+                    
+                    枚举类使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../java8/RSA公私钥数据加解密.html">
+            
+                <a href="../../java8/RSA公私钥数据加解密.html">
+            
+                    
+                    RSA公私钥数据加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                <a href="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                    
+                    SpringBoot整合通用Mapper教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../redis/Redis命令总结.html">
+            
+                <a href="../../redis/Redis命令总结.html">
+            
+                    
+                    Redis命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../git/git_usage.html">
+            
+                <a href="../../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springboot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../springboot/springboot自定义starter.html">
+            
+                <a href="../../springboot/springboot自定义starter.html">
+            
+                    
+                    springboot自定义starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../mq/RocketMQ.html">
+            
+                <a href="../../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    go
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    gin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../gin/gin的基本用法.html">
+            
+                <a href="../gin/gin的基本用法.html">
+            
+                    
+                    gin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../gin/gin框架实现Restfui及中间件.html">
+            
+                <a href="../gin/gin框架实现Restfui及中间件.html">
+            
+                    
+                    gin框架实现Restfui及中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    gorm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../gorm/gorm基本用法.html">
+            
+                <a href="../gorm/gorm基本用法.html">
+            
+                    
+                    gorm基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../gorm/gorm中model默认表修改.html">
+            
+                <a href="../gorm/gorm中model默认表修改.html">
+            
+                    
+                    gorm中model默认表修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="../gorm/gorm错误处理及Scopes应用.html">
+            
+                <a href="../gorm/gorm错误处理及Scopes应用.html">
+            
+                    
+                    gorm错误处理及Scopes应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    casbin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../casbin/rbac框架casbin用法.html">
+            
+                <a href="../casbin/rbac框架casbin用法.html">
+            
+                    
+                    rbac框架casbin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../casbin/实现基于rbac的权限管控.html">
+            
+                <a href="../casbin/实现基于rbac的权限管控.html">
+            
+                    
+                    实现基于rbac的权限管控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    标准库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../standard/go标准库.html">
+            
+                <a href="../standard/go标准库.html">
+            
+                    
+                    go标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" >
+            
+                <span>
+            
+                    
+                    corn
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1.1" data-path="corn/定时任务.html">
+            
+                <a href="corn/定时任务.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2" >
+            
+                <span>
+            
+                    
+                    rpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.2.1" data-path="rpc/rpc入门.html">
+            
+                <a href="rpc/rpc入门.html">
+            
+                    
+                    rpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2.2" data-path="rpc/grpc入门案例.html">
+            
+                <a href="rpc/grpc入门案例.html">
+            
+                    
+                    grpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.3" >
+            
+                <span>
+            
+                    
+                    encryption
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.3.1" data-path="encryption/go常见算法总结.html">
+            
+                <a href="encryption/go常见算法总结.html">
+            
+                    
+                    go常见算法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.4" data-path="flag包用法.html">
+            
+                <a href="flag包用法.html">
+            
+                    
+                    flag包用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.5" data-path="go整合swagger.html">
+            
+                <a href="go整合swagger.html">
+            
+                    
+                    go整合swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.6" data-path="文件读取的几种方式.html">
+            
+                <a href="文件读取的几种方式.html">
+            
+                    
+                    文件读取的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.7" data-path="文件写入的几种方式.html">
+            
+                <a href="文件写入的几种方式.html">
+            
+                    
+                    文件写入的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.8" data-path="go-redis操作.html">
+            
+                <a href="go-redis操作.html">
+            
+                    
+                    go-redis操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5.9" data-path="go原生实现restfui请求.html">
+            
+                <a href="go原生实现restfui请求.html">
+            
+                    
+                    go原生实现restfui请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    pattern
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../pattern/设计模式-序言.html">
+            
+                <a href="../../pattern/设计模式-序言.html">
+            
+                    
+                    设计模式分类及原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../pattern/简单工厂模式.html">
+            
+                <a href="../../pattern/简单工厂模式.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../pattern/抽象工厂.html">
+            
+                <a href="../../pattern/抽象工厂.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../pattern/单例模式.html">
+            
+                <a href="../../pattern/单例模式.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >go原生实现restfui请求</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="go&#x539F;&#x751F;&#x5B9E;&#x73B0;get&#x3001;post&#x3001;delete&#x3001;put&#x8BF7;&#x6C42;">go&#x539F;&#x751F;&#x5B9E;&#x73B0;GET&#x3001;POST&#x3001;DELETE&#x3001;PUT&#x8BF7;&#x6C42;</h3>
+<blockquote>
+<p>go&#x539F;&#x751F;&#x5B9E;&#x73B0;GET&#x3001;POST&#x3001;DELETE&#x3001;PUT&#x76F8;&#x5173;&#x7684;&#x8BBF;&#x95EE;&#x4E0D;&#x501F;&#x52A9;&#x7B2C;&#x4E09;&#x65B9;&#x5305;&#xFF0C;&#x603B;&#x7ED3;&#x5982;&#x4E0B;&#xFF1A;</p>
+</blockquote>
+<h4 id="get">GET</h4>
+<h5 id="&#x76F4;&#x63A5;&#x8BBF;&#x95EE;">&#x76F4;&#x63A5;&#x8BBF;&#x95EE;</h5>
+<blockquote>
+<p>&#x4E0D;&#x9002;&#x5408;&#x9700;&#x8981;header&#x643A;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;net/http&quot;</span>
+)
+
+response, err := http.Get(<span class="hljs-string">&quot;https://b959e645-00ae-4bc3-8a55-7224d08b1d91.mock.pstmn.io/user/1&quot;</span>)
+</code></pre>
+<h5 id="&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x8BBF;&#x95EE;">&#x81EA;&#x5B9A;&#x4E49;&#x53C2;&#x6570;&#x8BBF;&#x95EE;</h5>
+<blockquote>
+<p>header&#x4E2D;&#x643A;&#x5E26;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;net/http&quot;</span>
+)
+
+url := <span class="hljs-string">&quot;https://b959e645-00ae-4bc3-8a55-7224d08b1d91.mock.pstmn.io/user/1&quot;</span>
+req, _ := http.NewRequest(<span class="hljs-string">&quot;GET&quot;</span>, url, <span class="hljs-literal">nil</span>)
+req.Header.Add(<span class="hljs-string">&quot;Authorization&quot;</span>, <span class="hljs-string">&quot;xxxx&quot;</span>)
+response, err := http.DefaultClient.Do(req)
+</code></pre>
+<h4 id="post">POST</h4>
+<h5 id="kv&#x5F62;&#x5F0F;&#x4F20;&#x53C2;">kv&#x5F62;&#x5F0F;&#x4F20;&#x53C2;</h5>
+<blockquote>
+<p>&#x65B9;&#x5F0F;&#x4E00;
+```go
+import (
+    &quot;net/http&quot;
+    &quot;strings&quot;
+)</p>
+</blockquote>
+<p>url := &quot;<a href="https://blog.csdn.net/zyndev" target="_blank">https://blog.csdn.net/zyndev</a>&quot;
+payload := strings.NewReader(&quot;a=111&quot;)
+response, err := http.Post(url, &quot;application/x-www-form-urlencoded&quot;, payload)</p>
+<pre><code>
+&gt; &#x65B9;&#x5F0F;&#x4E8C;
+
+```go
+
+import (
+    &quot;net/http&quot;
+    &quot;net/url&quot;
+)
+
+targetUrl := &quot;https://blog.csdn.net/zyndev&quot;
+payload := url.Values{&quot;key&quot;:{&quot;value&quot;}, &quot;id&quot;: {&quot;123&quot;}}
+response, err := http.PostForm(targetUrl, payload)
+</code></pre><h5 id="json&#x5F62;&#x5F0F;&#x4F20;&#x53C2;">json&#x5F62;&#x5F0F;&#x4F20;&#x53C2;</h5>
+<pre><code class="lang-go">targetUrl := <span class="hljs-string">&quot;https://b959e645-00ae-4bc3-8a55-7224d08b1d91.mock.pstmn.io/user/1&quot;</span>
+payload := strings.NewReader(<span class="hljs-string">&quot;{\&quot;name\&quot;:\&quot;&#x5F20;&#x7440;&#x6960;\&quot;}&quot;</span>)
+req, _ := http.NewRequest(<span class="hljs-string">&quot;POST&quot;</span>, targetUrl, payload)
+req.Header.Add(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
+response, err := http.DefaultClient.Do(req)
+</code></pre>
+<h4 id="put">PUT</h4>
+<pre><code class="lang-go">targetUrl := <span class="hljs-string">&quot;https://b959e645-00ae-4bc3-8a55-7224d08b1d91.mock.pstmn.io/user/1&quot;</span>
+payload := strings.NewReader(<span class="hljs-string">&quot;{\&quot;name\&quot;:\&quot;&#x5F20;&#x7440;&#x6960;\&quot;}&quot;</span>)
+req, _ := http.NewRequest(<span class="hljs-string">&quot;PUT&quot;</span>, targetUrl, payload)
+req.Header.Add(<span class="hljs-string">&quot;Content-Type&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>)
+response, err := http.DefaultClient.Do(req)
+</code></pre>
+<h4 id="delete">DELETE</h4>
+<pre><code class="lang-go">targetUrl := <span class="hljs-string">&quot;https://ddbc5ffb-c596-4f78-a99d-a6ea93bdc14f.mock.pstmn.io/user/1&quot;</span>
+req, _ := http.NewRequest(<span class="hljs-string">&quot;DELETE&quot;</span>, targetUrl, <span class="hljs-literal">nil</span>)
+req.Header.Add(<span class="hljs-string">&quot;Authorization&quot;</span>, <span class="hljs-string">&quot;xxxx&quot;</span>)
+response, err := http.DefaultClient.Do(req)
+</code></pre>
+<h4 id="response&#x5904;&#x7406;">response&#x5904;&#x7406;</h4>
+<pre><code class="lang-go">
+... <span class="hljs-comment">// &#x4E00;&#x5806;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x6784;&#x5EFA;&#x65B9;&#x5F0F;</span>
+response, err := http.DefaultClient.Do(req)
+
+<span class="hljs-keyword">if</span> err != <span class="hljs-literal">nil</span> {
+    <span class="hljs-comment">// &#x9519;&#x8BEF;&#x903B;&#x8F91;&#x5904;&#x7406;</span>
+}
+
+<span class="hljs-comment">// &#x8FD9;&#x6B65;&#x662F;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x9632;&#x6B62;&#x4EE5;&#x540E;&#x7684;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#xFF0C;&#x5207;&#x8BB0;</span>
+<span class="hljs-keyword">defer</span> response.Body.Close() 
+
+fmt.Println(response.StatusCode)      <span class="hljs-comment">// &#x83B7;&#x53D6;&#x72B6;&#x6001;&#x7801; </span>
+fmt.Println(response.Status)        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x72B6;&#x6001;&#x7801;&#x5BF9;&#x5E94;&#x7684;&#x6587;&#x6848;</span>
+fmt.Println(response.Header)        <span class="hljs-comment">// &#x83B7;&#x53D6;&#x54CD;&#x5E94;&#x5934;</span>
+body, _ := ioutil.ReadAll(response.Body) <span class="hljs-comment">// &#x8BFB;&#x53D6;&#x54CD;&#x5E94; body, &#x8FD4;&#x56DE;&#x4E3A; []byte</span>
+fmt.Println(<span class="hljs-keyword">string</span>(body))            <span class="hljs-comment">// &#x8F6C;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x4E00;&#x4E0B;&#x7ED3;&#x679C;</span>
+</code></pre>
+<h4 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h4>
+<p>1&#x3001;<a href="https://blog.csdn.net/zyndev/article/details/113745637" target="_blank">https://blog.csdn.net/zyndev/article/details/113745637</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="go-redis操作.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: go-redis操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"go原生实现restfui请求","level":"1.9.5.9","depth":3,"next":{"title":"pattern","level":"1.10","depth":1,"ref":"","articles":[{"title":"设计模式分类及原则","level":"1.10.1","depth":2,"path":"pattern/设计模式-序言.md","ref":"./pattern/设计模式-序言.md","articles":[]},{"title":"简单工厂模式","level":"1.10.2","depth":2,"path":"pattern/简单工厂模式.md","ref":"./pattern/简单工厂模式.md","articles":[]},{"title":"抽象工厂模式","level":"1.10.3","depth":2,"path":"pattern/抽象工厂.md","ref":"./pattern/抽象工厂.md","articles":[]},{"title":"单例模式","level":"1.10.4","depth":2,"path":"pattern/单例模式.md","ref":"./pattern/单例模式.md","articles":[]}]},"previous":{"title":"go-redis操作","level":"1.9.5.8","depth":3,"path":"golang/other/go-redis操作.md","ref":"./golang/other/go-redis操作.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters","back-to-top-button","code"],"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"golang/other/go原生实现restfui请求.md","mtime":"2022-04-13T06:31:08.252Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-14T11:39:21.571Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

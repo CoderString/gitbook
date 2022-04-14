@@ -1,0 +1,1653 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>go-redis操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="go原生实现restfui请求.html" />
+    
+    
+    <link rel="prev" href="文件写入的几种方式.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../java8/lombok注解讲解.html">
+            
+                <a href="../../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../java8/commons-lang3包.html">
+            
+                <a href="../../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../java8/枚举类的使用.html">
+            
+                <a href="../../java8/枚举类的使用.html">
+            
+                    
+                    枚举类使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../java8/RSA公私钥数据加解密.html">
+            
+                <a href="../../java8/RSA公私钥数据加解密.html">
+            
+                    
+                    RSA公私钥数据加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                <a href="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                    
+                    SpringBoot整合通用Mapper教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../redis/Redis命令总结.html">
+            
+                <a href="../../redis/Redis命令总结.html">
+            
+                    
+                    Redis命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../git/git_usage.html">
+            
+                <a href="../../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springboot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../springboot/springboot自定义starter.html">
+            
+                <a href="../../springboot/springboot自定义starter.html">
+            
+                    
+                    springboot自定义starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../mq/RocketMQ.html">
+            
+                <a href="../../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    go
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    gin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="../gin/gin的基本用法.html">
+            
+                <a href="../gin/gin的基本用法.html">
+            
+                    
+                    gin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="../gin/gin框架实现Restfui及中间件.html">
+            
+                <a href="../gin/gin框架实现Restfui及中间件.html">
+            
+                    
+                    gin框架实现Restfui及中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    gorm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../gorm/gorm基本用法.html">
+            
+                <a href="../gorm/gorm基本用法.html">
+            
+                    
+                    gorm基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../gorm/gorm中model默认表修改.html">
+            
+                <a href="../gorm/gorm中model默认表修改.html">
+            
+                    
+                    gorm中model默认表修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="../gorm/gorm错误处理及Scopes应用.html">
+            
+                <a href="../gorm/gorm错误处理及Scopes应用.html">
+            
+                    
+                    gorm错误处理及Scopes应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    casbin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../casbin/rbac框架casbin用法.html">
+            
+                <a href="../casbin/rbac框架casbin用法.html">
+            
+                    
+                    rbac框架casbin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../casbin/实现基于rbac的权限管控.html">
+            
+                <a href="../casbin/实现基于rbac的权限管控.html">
+            
+                    
+                    实现基于rbac的权限管控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    标准库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../standard/go标准库.html">
+            
+                <a href="../standard/go标准库.html">
+            
+                    
+                    go标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" >
+            
+                <span>
+            
+                    
+                    corn
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1.1" data-path="corn/定时任务.html">
+            
+                <a href="corn/定时任务.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2" >
+            
+                <span>
+            
+                    
+                    rpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.2.1" data-path="rpc/rpc入门.html">
+            
+                <a href="rpc/rpc入门.html">
+            
+                    
+                    rpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.2.2" data-path="rpc/grpc入门案例.html">
+            
+                <a href="rpc/grpc入门案例.html">
+            
+                    
+                    grpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.3" >
+            
+                <span>
+            
+                    
+                    encryption
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.3.1" data-path="encryption/go常见算法总结.html">
+            
+                <a href="encryption/go常见算法总结.html">
+            
+                    
+                    go常见算法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.4" data-path="flag包用法.html">
+            
+                <a href="flag包用法.html">
+            
+                    
+                    flag包用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.5" data-path="go整合swagger.html">
+            
+                <a href="go整合swagger.html">
+            
+                    
+                    go整合swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.6" data-path="文件读取的几种方式.html">
+            
+                <a href="文件读取的几种方式.html">
+            
+                    
+                    文件读取的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.7" data-path="文件写入的几种方式.html">
+            
+                <a href="文件写入的几种方式.html">
+            
+                    
+                    文件写入的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.5.8" data-path="go-redis操作.html">
+            
+                <a href="go-redis操作.html">
+            
+                    
+                    go-redis操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5.9" data-path="go原生实现restfui请求.html">
+            
+                <a href="go原生实现restfui请求.html">
+            
+                    
+                    go原生实现restfui请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    pattern
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../pattern/设计模式-序言.html">
+            
+                <a href="../../pattern/设计模式-序言.html">
+            
+                    
+                    设计模式分类及原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../pattern/简单工厂模式.html">
+            
+                <a href="../../pattern/简单工厂模式.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../pattern/抽象工厂.html">
+            
+                <a href="../../pattern/抽象工厂.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../pattern/单例模式.html">
+            
+                <a href="../../pattern/单例模式.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >go-redis操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="go&#x6574;&#x5408;redis">go&#x6574;&#x5408;Redis</h3>
+<p>redis&#x4F5C;&#x4E3A;&#x7F13;&#x5B58;&#x7684;&#x4E2D;&#x95F4;&#x4EF6;&#xFF0C;&#x5DF2;&#x7ECF;&#x6210;&#x4E3A;&#x4E86;&#x4E8B;&#x5B9E;&#x4E0A;NOSQL&#x5E94;&#x7528;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x9274;&#x4E8E;&#x6B21;&#x6709;&#x5FC5;&#x8981;&#x9488;&#x5BF9;go&#x8BED;&#x8A00;&#x7684;Redis&#x5B9E;&#x73B0;go-redis&#x5C55;&#x5F00;&#x8BB2;&#x89E3;&#x3002;</p>
+<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
+<blockquote>
+<p>go get -u github.com/go-redis/redis</p>
+</blockquote>
+<h4 id="&#x5E38;&#x89C1;&#x7684;&#x5168;&#x5C40;&#x547D;&#x4EE4;">&#x5E38;&#x89C1;&#x7684;&#x5168;&#x5C40;&#x547D;&#x4EE4;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;time&quot;
+)
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip:port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                       // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                           // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    // redis &#x5168;&#x5C40;&#x547D;&#x4EE4;
+    // &#x83B7;&#x53D6;redis&#x6240;&#x6709;&#x7684;&#x952E;,&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x6240;&#x6709;&#x952E;&#x7684;slice
+    keys := client.Keys(&quot;*&quot;).Val()
+    fmt.Println(keys)
+    // &#x83B7;&#x53D6;redis&#x4E2D;&#x7684;&#x6709;&#x591A;&#x5C11;&#x4E2A;&#x952E;,&#x8FD4;&#x56DE;&#x6574;&#x6570;
+    size := client.DbSize().Val()
+    fmt.Println(size)
+    // &#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x952E;&#x662F;&#x5426;&#x5B58;&#x5728;,&#x6709;&#x4E00;&#x4E2A;&#x5B58;&#x5728;&#x8FD4;&#x56DE;&#x6574;&#x6570;1,&#x6709;&#x4E24;&#x4E2A;&#x5B58;&#x5728;&#x8FD4;&#x56DE;&#x6574;&#x6570;2...
+    exist := client.Exists(&quot;age&quot;,&quot;name&quot;).Val()
+    fmt.Println(exist)
+    // &#x5220;&#x9664;&#x952E;,&#x5220;&#x9664;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x5220;&#x9664;&#x7684;&#x6570;,&#x5220;&#x9664;&#x5931;&#x8D25;&#x8FD4;&#x56DE;0
+    del := client.Del(&quot;unknownKey&quot;).Val()
+    fmt.Println(del)
+    // &#x67E5;&#x770B;&#x952E;&#x7684;&#x6709;&#x6548;&#x65F6;&#x95F4;
+    ttl := client.TTL(&quot;age&quot;).Val()
+    fmt.Println(ttl)
+    // &#x7ED9;&#x952E;&#x8BBE;&#x7F6E;&#x6709;&#x6548;&#x65F6;&#x95F4;,&#x8BBE;&#x7F6E;&#x6210;&#x529F;&#x8FD4;&#x56DE;true,&#x5931;&#x8D25;&#x8FD4;&#x56DE;false
+    expire := client.Expire(&quot;age&quot;,time.Second*86400).Val()
+    fmt.Println(expire)
+    // &#x67E5;&#x770B;&#x952E;&#x7684;&#x7C7B;&#x578B;(string,hash,list,set,zset...)
+    Rtype := client.Type(&quot;store:finish:bill:list&quot;).Val()
+    fmt.Println(Rtype)
+    // &#x7ED9;&#x952E;&#x91CD;&#x547D;&#x4EE4;,&#x6210;&#x529F;&#x8FD4;&#x56DE;true,&#x5931;&#x8D25;false
+    Rname := client.RenameNX(&quot;age&quot;,&quot;newAge&quot;).Val()
+    fmt.Println(Rname)
+    // &#x4ECE;redis&#x4E2D;&#x968F;&#x673A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x952E;
+    key := client.RandomKey().Val()
+    fmt.Println(key)
+
+}
+</code></pre><h4 id="string&#x7C7B;&#x578B;&#x64CD;&#x4F5C;">string&#x7C7B;&#x578B;&#x64CD;&#x4F5C;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;time&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    // &#x8BBE;&#x7F6E;&#x4E00;&#x7EC4;&#x952E;&#x503C;&#x5BF9;,&#x5E76;&#x793E;&#x4F1A;&#x6709;&#x6548;&#x671F;
+    set1 := client.Set(&quot;age&quot;, 10, time.Hour*24).Val()
+    fmt.Println(set1) // OK
+    //&#x8BBE;&#x7F6E;&#x4E00;&#x7EC4;&#x952E;&#x503C;&#x5BF9;,&#x8BBE;&#x7F6E;&#x7684;&#x952E;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x65F6;&#x5019;&#x624D;&#x80FD;&#x8BBE;&#x7F6E;&#x6210;&#x529F;
+    set2 := client.SetNX(&quot;age&quot;, &quot;20&quot;, time.Hour*12).Val()
+    fmt.Println(set2) // false
+    //&#x8BBE;&#x7F6E;&#x4E00;&#x7EC4;&#x952E;&#x503C;&#x5BF9;,&#x8BBE;&#x7F6E;&#x7684;&#x952E;&#x5FC5;&#x987B;&#x5B58;&#x5728;&#x7684;&#x65F6;&#x5019;&#x624D;&#x80FD;&#x8BBE;&#x7F6E;&#x6210;&#x529F;
+    set3 := client.SetXX(&quot;age&quot;, &quot;30&quot;, time.Second*86400).Val()
+    fmt.Println(set3) // true
+    // &#x6279;&#x91CF;&#x8BBE;&#x7F6E;
+    set4 := client.MSet(&quot;age1&quot;, &quot;40&quot;, &quot;age2&quot;, &quot;50&quot;).Val()
+    fmt.Println(set4) // OK
+    // &#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x952E;&#x7684;&#x503C;
+    get1 := client.Get(&quot;age2&quot;).Val()
+    fmt.Println(get1) // 50
+    // &#x6279;&#x91CF;&#x83B7;&#x53D6;,&#x83B7;&#x53D6;&#x6210;&#x529F;&#x8FD4;&#x56DE;slice&#x7C7B;&#x578B;&#x7684;&#x7ED3;&#x679C;&#x6570;&#x636E;
+    get2 := client.MGet(&quot;age&quot;, &quot;age1&quot;, &quot;age2&quot;).Val()
+    fmt.Println(get2) // [30 40 50]
+    // &#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x952E;&#x8FDB;&#x884C;&#x81EA;&#x589E;&#x64CD;&#x4F5C;
+    incr1 := client.Incr(&quot;age&quot;).Val()
+    fmt.Println(incr1) // 31
+    // &#x5BF9;&#x6307;&#x5B9A;&#x952E;&#x8FDB;&#x884C;&#x81EA;&#x51CF;&#x64CD;&#x4F5C;
+    decr1 := client.Decr(&quot;age1&quot;).Val()
+    fmt.Println(decr1) //39
+    // &#x81EA;&#x589E;&#x6307;&#x5B9A;&#x7684;&#x503C;
+    incr2 := client.IncrBy(&quot;age&quot;, 10).Val()
+    fmt.Println(incr2) // 41
+    // &#x81EA;&#x51CF;&#x6307;&#x5B9A;&#x7684;&#x503C;
+    decr2 := client.DecrBy(&quot;age1&quot;, 10).Val()
+    fmt.Println(decr2) // 29
+    // &#x5728;key&#x540E;&#x9762;&#x8FFD;&#x52A0;&#x6307;&#x5B9A;&#x7684;&#x503C;,&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x957F;&#x5EA6;
+    append1 := client.Append(&quot;age2&quot;, &quot;abcd&quot;).Val()
+    fmt.Println(append1) // 6
+    // &#x83B7;&#x53D6;&#x4E00;&#x4E2A;&#x952E;&#x7684;&#x503C;&#x5F97;&#x957F;&#x5EA6;
+    strlen1 := client.StrLen(&quot;age2&quot;).Val()
+    fmt.Println(strlen1) //6
+    // &#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x952E;&#x7684;&#x503C;,&#x5E76;&#x8FD4;&#x56DE;&#x539F;&#x6709;&#x7684;&#x503C;
+    getset1 := client.GetSet(&quot;age2&quot;, &quot;hello golang&quot;).Val()
+    fmt.Println(getset1) // 50abcd
+    // &#x8BBE;&#x7F6E;&#x952E;&#x7684;&#x503C;,&#x5728;&#x6307;&#x5B9A;&#x7684;&#x4F4D;&#x7F6E;
+    _ = client.SetRange(&quot;age2&quot;, 0, &quot;H&quot;)
+    fmt.Println(client.Get(&quot;age2&quot;).Val()) // Hello golang
+    // &#x622A;&#x53D6;&#x4E00;&#x4E2A;&#x952E;&#x7684;&#x503C;&#x7684;&#x90E8;&#x5206;,&#x8FD4;&#x56DE;&#x622A;&#x53D6;&#x7684;&#x90E8;&#x5206;
+    newStr := client.GetRange(&quot;age2&quot;, 6, 11).Val()
+    fmt.Println(newStr) //golang
+}
+</code></pre><h4 id="hash&#x7C7B;&#x578B;&#x64CD;&#x4F5C;">hash&#x7C7B;&#x578B;&#x64CD;&#x4F5C;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    key := &quot;account&quot;
+    field1 := &quot;name&quot;
+    fields := map[string]interface{}{
+        &quot;addr&quot;:&quot;beijing&quot;,
+        &quot;age&quot;:99,
+        &quot;skills&quot;:&quot;golang&quot;,
+        &quot;demo1&quot;:&quot;aaa&quot;,
+        &quot;demo2&quot;:&quot;bbb&quot;,
+    }
+    //hash &#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x952E;&#x7684;field
+    _ = client.HSet(key,field1,&quot;zhangsan&quot;)
+    // hash &#x6279;&#x91CF;&#x8BBE;&#x7F6E; ,&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;map&#x7C7B;&#x578B;
+    status := client.HMSet(key,fields).Val()
+    fmt.Println(status) //ok
+    // hash &#x5220;&#x9664;&#x952E;&#x7684;field,&#x8FD4;&#x56DE;&#x5220;&#x9664;field&#x7684;&#x4E2A;&#x6570;
+     _ = client.HDel(key,&quot;demo2&quot;).Val()
+     //hash &#x83B7;&#x53D6;field&#x7684;&#x503C;
+    name := client.HGet(key,&quot;name&quot;).Val()
+    fmt.Println(name) //zhangsan
+    //hash &#x83B7;&#x53D6;&#x591A;&#x4E2A;field&#x503C;,&#x8FD4;&#x56DE;slice
+    values := client.HMGet(key,&quot;name&quot;,&quot;age&quot;).Val()
+    fmt.Println(values)//[zhangsan 99]
+    //hash &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x503C; &#x8FD4;&#x56DE;map
+    valueAll := client.HGetAll(key).Val()
+    fmt.Println(valueAll) //map[addr:beijing age:99 demo1:aaa name:zhangsan skills:golang]
+    // hash &#x83B7;&#x53D6;&#x6240;&#x6709;field &#x8FD4;&#x56DE;slice
+    fs := client.HKeys(key).Val()
+    fmt.Println(fs) //[name addr age skills demo1]
+    // hash &#x83B7;&#x53D6;&#x6240;&#x6709;filed&#x7684;&#x503C; &#x8FD4;&#x56DE;slice
+    vs := client.HVals(key).Val()
+    fmt.Println(vs) //[zhangsan beijing 99 golang aaa]
+    // &#x5224;&#x65AD;&#x4E00;&#x4E2A;filed&#x662F;&#x5426;&#x5B58;&#x5728; &#x8FD4;&#x56DE;bool
+    e := client.HExists(key,&quot;skills&quot;).Val()
+    fmt.Println(e) //true
+    // hash field&#x81EA;&#x589E;
+    n := client.HIncrBy(key,&quot;age&quot;,1).Val()
+    fmt.Println(n) //100
+}
+</code></pre><h4 id="list&#x7C7B;&#x578B;&#x64CD;&#x4F5C;">List&#x7C7B;&#x578B;&#x64CD;&#x4F5C;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;strconv&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    key := &quot;demo&quot;
+    client.Del(key)
+    for i := 0; i &lt; 5; i++ {
+        client.LPush(key, &quot;e-&quot;+strconv.Itoa(i))
+    }
+    // &#x83B7;&#x53D6;list &#x957F;&#x5EA6;
+    length := client.LLen(key).Val()
+    fmt.Println(length) //5
+    // &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x5143;&#x7D20;
+    value1 := client.LIndex(key, 0).Val()
+    fmt.Println(value1) //e-4
+    // &#x83B7;&#x53D6;&#x6240;&#x6709;&#x5143;&#x7D20;
+    vs := client.LRange(key, 0, -1).Val()
+    fmt.Println(vs) //[e-4 e-3 e-2 e-1 e-0]
+    // &#x4FEE;&#x6539;&#x6307;&#x5B9A;&#x4E0B;&#x6807;&#x7684;&#x5143;&#x7D20;&#x503C;
+    status := client.LSet(key, 0, &quot;golang&quot;).Val()
+    fmt.Println(status) //ok
+    // &#x4ECE;&#x53F3;&#x8FB9;&#x63D2;&#x5165;&#x5143;&#x7D20;
+    client.RPush(key, &quot;e-right&quot;)
+    // &#x4ECE;&#x5DE6;&#x8FB9;&#x63D2;&#x5165;&#x5143;&#x7D20;
+    client.LPush(key, &quot;e-left&quot;)
+    // &#x4ECE;list&#x6700;&#x53F3;&#x8FB9;&#x5F39;&#x51FA;&#x5143;&#x7D20;
+    v1 := client.RPop(key).Val()
+    fmt.Println(v1) // e-right
+    // &#x4ECE;list&#x6700;&#x5DE6;&#x8FB9;&#x5F39;&#x51FA;&#x5143;&#x7D20;
+    v2 := client.LPop(key).Val()
+    fmt.Println(v2) // e-left
+    // &#x5220;&#x9664;&#x6307;&#x5B9A;&#x5143;&#x7D20;
+    n := client.LRem(key, 0, &quot;e-3&quot;).Val()
+    fmt.Println(n) //1
+    status1 := client.LTrim(key, 0, 1).Val()
+    fmt.Println(status1) //ok
+}
+</code></pre><h4 id="set&#x7C7B;&#x578B;&#x64CD;&#x4F5C;">Set&#x7C7B;&#x578B;&#x64CD;&#x4F5C;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;strconv&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    key := &quot;sdemo&quot;
+    key1 := &quot;sdemo1&quot;
+    client.Del(key)
+    client.Del(key1)
+    for i := 0; i &lt; 6; i++ {
+        // set &#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x5143;&#x7D20;
+        client.SAdd(key, &quot;ele-&quot;+strconv.Itoa(i))
+    }
+    for i := 3; i &lt; 9; i++ {
+        // set &#x7C7B;&#x578B;&#x6DFB;&#x52A0;&#x5143;&#x7D20;
+        client.SAdd(key1, &quot;ele-&quot;+strconv.Itoa(i))
+    }
+    // &#x8BA1;&#x7B97;key&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x4E2A;&#x6570;
+    n1 := client.SCard(key).Val()
+    fmt.Println(n1) //5
+    // &#x5224;&#x65AD;&#x5143;&#x7D20;&#x662F;&#x5426;&#x5728;&#x96C6;&#x5408;&#x4E2D;
+    e1 := client.SIsMember(key, &quot;ele-0&quot;).Val()
+    fmt.Println(e1) // true
+    // &#x968F;&#x673A;&#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    v1 := client.SRandMember(key).Val()
+    fmt.Println(v1)
+    // &#x968F;&#x673A;&#x8FD4;&#x56DE;&#x6307;&#x5B9A;&#x4E2A;&#x6570;&#x7684;&#x5143;&#x7D20;,&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x5143;&#x7D20;&#x7684;slice
+    v2 := client.SRandMemberN(key, 3).Val()
+    fmt.Println(v2)
+    // &#x83B7;&#x53D6;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;,&#x65E0;&#x5E8F;&#x7684;slice
+    v3 := client.SMembers(key).Val()
+    fmt.Println(v3) //[ele-1 ele-0 ele-3 ele-2 ele-4]
+    // &#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#x968F;&#x673A;&#x5F39;&#x51FA;&#x4E00;&#x4E2A;&#x5143;&#x7D20;
+    v4 := client.SPop(key).Val()
+    fmt.Println(v4)
+    // &#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#x5220;&#x9664;&#x5143;&#x7D20;
+    n2 := client.SRem(key, &quot;ele-5&quot;).Val()
+    fmt.Println(n2) //1
+    // &#x6C42;&#x591A;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x4EA4;&#x96C6;
+    s1 := client.SInter(key, key1).Val()
+    fmt.Println(s1) // [ele-3 ele-4]
+    //&#x6C42;&#x591A;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;
+    s2 := client.SUnion(key, key1).Val()
+    fmt.Println(s2) // [ele-3 ele-5 ele-1 ele-2 ele-4 ele-8 ele-6 ele-0 ele-7]
+    // &#x6C42;&#x591A;&#x4E2A;&#x96C6;&#x5408;&#x7684;&#x5DEE;&#x96C6;
+    s3 := client.SDiff(key, key1).Val()
+    fmt.Println(s3) // [ele-0 ele-1]
+    // &#x5C06;&#x591A;&#x4E2A;&#x4EA4;&#x96C6;&#x7ED3;&#x679C;&#x5B58;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+    s4 := client.SInterStore(&quot;sdemo2&quot;, key, key1).Val()
+    fmt.Println(s4)                              //2
+    fmt.Println(client.SMembers(&quot;sdemo2&quot;).Val()) // [ele-4 ele-3]
+    // &#x5C06;&#x591A;&#x4E2A;&#x4EA4;&#x96C6;&#x7684;&#x5E76;&#x96C6;&#x7ED3;&#x679C;&#x5B58;&#x4E3A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+    s5 := client.SUnionStore(&quot;sdemo3&quot;, key, key1).Val()
+    fmt.Println(s5)                              //8
+    fmt.Println(client.SMembers(&quot;sdemo3&quot;).Val()) // [ele-3 ele-5 ele-1 ele-4 ele-7 ele-8 ele-6 ele-0]
+    // &#x5C06;&#x591A;&#x4E2A;&#x5DEE;&#x96C6;&#x7684;&#x7ED3;&#x679C;&#x5B58;&#x4E3A;&#x65B0;&#x7684;&#x96C6;&#x5408;
+    s6 := client.SDiffStore(&quot;sdemo4&quot;, key, key1).Val()
+    fmt.Println(s6)                              //2
+    fmt.Println(client.SMembers(&quot;sdemo4&quot;).Val()) // [ele-0 ele-1]
+}
+</code></pre><h4 id="zset&#x7C7B;&#x578B;&#x64CD;&#x4F5C;">Zset&#x7C7B;&#x578B;&#x64CD;&#x4F5C;</h4>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;math/rand&quot;
+    &quot;strconv&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func randString(n int) string {
+    s := &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;
+    b := make([]byte, n)
+    for i := range b {
+        b[i] = s[rand.Intn(len(s))]
+    }
+    return string(b)
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    key := &quot;zdemo&quot;
+    key1 := &quot;zdemo1&quot;
+    client.Del(key)
+    client.Del(key1)
+    for i := 0; i &lt; 10; i++ {
+        score := float64(rand.Intn(100) - 50)
+        member := &quot;golang-&quot; + strconv.Itoa(i)
+        data := &amp;redis.Z{
+            score,
+            member,
+        }
+        // &#x5411;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x4E2D;&#x6DFB;&#x52A0;&#x6210;&#x5458;
+        client.ZAdd(key, data).Val()
+    }
+    for i := 0; i &lt; 5; i++ {
+        score := float64(rand.Intn(100) - 50)
+        member := &quot;golang-&quot; + strconv.Itoa(i)
+        data := &amp;redis.Z{
+            score,
+            member,
+        }
+        // &#x5411;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x4E2D;&#x6DFB;&#x52A0;&#x6210;&#x5458;
+        client.ZAdd(key1, data).Val()
+    }
+    // &#x8BA1;&#x7B97;&#x6210;&#x5458;&#x4E2A;&#x6570;
+    n1 := client.ZCard(key).Val()
+    fmt.Println(n1) //10
+    // &#x83B7;&#x53D6;&#x6210;&#x5458;&#x5206;&#x6570;
+    s1 := client.ZScore(key, &quot;golang-6&quot;).Val()
+    fmt.Println(s1) // -25
+    // &#x4FEE;&#x6539;&#x6210;&#x5458;&#x5206;&#x6570;
+    v1 := client.ZIncrBy(key, 60.00, &quot;golang-6&quot;).Val()
+    fmt.Println(v1)
+    // &#x4ECE;&#x4F4E;&#x5230;&#x9AD8;&#x8FD4;&#x56DE;&#x6392;&#x540D;
+    s2 := client.ZRank(key, &quot;golang-6&quot;).Val()
+    fmt.Println(s2) //8
+    // &#x4ECE;&#x9AD8;&#x5230;&#x4F4E;&#x8FD4;&#x56DE;&#x6392;&#x540D;
+    s3 := client.ZRevRank(key, &quot;golang-6&quot;).Val()
+    fmt.Println(s3) //1
+    // &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x7684;&#x6210;&#x5458;&#x6392;&#x540D;,&#x4ECE;&#x4F4E;&#x5230;&#x9AD8;&#x6392;&#x540D;
+    s4 := client.ZRange(key, 0, n1-5).Val()
+    fmt.Println(s4) //[golang-9 golang-5 golang-7 golang-2 golang-8 golang-3]
+    // &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x7684;&#x6210;&#x5458;&#x6392;&#x540D;,&#x4ECE;&#x9AD8;&#x5230;&#x4F4E;&#x6392;&#x540D;
+    s5 := client.ZRevRange(key, 0, n1-5).Val()
+    fmt.Println(s5) //[golang-1 golang-6 golang-4 golang-0 golang-3 golang-8]
+    // &#x5220;&#x9664;&#x6210;&#x5458;
+    v2 := client.ZRem(key, &quot;golang-6&quot;).Val()
+    fmt.Println(v2) //1
+    // &#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x7684;&#x4EA4;&#x96C6;
+    key2 := &quot;zdemo2&quot;
+    kslice := []string{key, key1}
+    wslice := []float64{1.00, 1.00}
+    z := &amp;redis.ZStore{
+        kslice,
+        wslice,
+        &quot;SUM&quot;,
+    }
+    r1 := client.ZInterStore(key2, z).Val()
+    fmt.Println(r1) //5
+    // &#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x7684;&#x5E76;&#x96C6;
+    key3 := &quot;zdemo3&quot;
+    r2 := client.ZUnionStore(key3,z).Val()
+    fmt.Println(r2) // 9
+}
+</code></pre><h4 id="&#x53D1;&#x5E03;&#x548C;&#x8BA2;&#x9605;">&#x53D1;&#x5E03;&#x548C;&#x8BA2;&#x9605;</h4>
+<blockquote>
+<p>&#x8BA2;&#x9605;</p>
+</blockquote>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    // &#x8BA2;&#x9605;&#x591A;&#x4E2A;&#x9891;&#x9053;
+    sub := client.PSubscribe(&quot;news&quot;, &quot;it&quot;, &quot;sports&quot;, &quot;shopping&quot;)
+    _, err := sub.Receive()
+    if err != nil {
+        fmt.Println(err)
+    }
+    // &#x6D88;&#x606F;&#x901A;&#x9053;
+    ch := sub.Channel()
+    //  &#x4ECE;&#x901A;&#x9053;&#x4E2D;&#x8BFB;&#x53D6;&#x6D88;&#x606F;
+    for message := range ch {
+        fmt.Println(message.Channel, message.Payload)
+    }
+}
+</code></pre><blockquote>
+<p>&#x53D1;&#x5E03;</p>
+</blockquote>
+<pre><code>package main
+
+import (
+    &quot;fmt&quot;
+    &quot;github.com/go-redis/redis&quot;
+    &quot;math/rand&quot;
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x7EC4;&#x5E38;&#x91CF;
+const (
+    REDIS_IP   = &quot;127.0.0.1&quot;
+    REDIS_PORT = &quot;6379&quot;
+    REDIS_PWD  = &quot;&quot;
+    REDIS_DB   = 0
+)
+
+// &#x5B9A;&#x4E49;&#x4E00;&#x4E2A;redis.client&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;
+var client *redis.Client
+
+// &#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;
+func init() {
+    // &#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;redis&#x5BA2;&#x6237;&#x7AEF;
+    client = redis.NewClient(&amp;redis.Options{
+        Addr:     REDIS_IP + &quot;:&quot; + REDIS_PORT, // ip_port
+        Password: REDIS_PWD,                   // redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;
+        DB:       REDIS_DB,                    // &#x9009;&#x62E9;&#x7684;redis&#x5E93;
+        PoolSize: 20,                          // &#x8BBE;&#x7F6E;&#x8FDE;&#x63A5;&#x6570;,&#x9ED8;&#x8BA4;&#x662F;10&#x4E2A;&#x8FDE;&#x63A5;
+    })
+}
+
+// &#x751F;&#x6210;&#x6307;&#x5B9A;&#x957F;&#x5EA6;&#x7684;&#x968F;&#x673A;&#x5B57;&#x7B26;&#x4E32;
+func randString(n int) string {
+    s := &quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890&quot;
+    b := make([]byte, n)
+    for i := range b {
+        b[i] = s[rand.Intn(len(s))]
+    }
+    return string(b)
+}
+func main() {
+    defer client.Close()
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println(err)
+        }
+    }()
+    var data string
+    var channels []string = []string{&quot;news&quot;, &quot;it&quot;, &quot;sports&quot;, &quot;shopping&quot;}
+    for {
+        fmt.Printf(&quot;please input some data:&quot;)
+        fmt.Scanln(&amp;data)
+        // &#x9000;&#x51FA;
+        if data == &quot;quit&quot; {
+            break
+        }
+        channel := channels[rand.Intn(4)]
+        // &#x5411;&#x4E00;&#x4E2A;&#x9891;&#x9053;&#x53D1;&#x5E03;&#x6D88;&#x606F;
+        result := client.Publish(channel, data+randString(10)).Val()
+        if result == 1 {
+            fmt.Println(&quot;send info to&quot;, channel,&quot;success&quot;)
+        }
+    }
+}
+</code></pre><h4 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h4>
+<p>1&#x3001;<a href="https://redis.uptrace.dev/guide/server.html#connecting-to-redis-server" target="_blank">https://redis.uptrace.dev/guide/server.html#connecting-to-redis-server</a>
+2&#x3001;<a href="https://blog.csdn.net/weixin_37717557/article/details/102874062" target="_blank">https://blog.csdn.net/weixin_37717557/article/details/102874062</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="文件写入的几种方式.html" class="navigation navigation-prev " aria-label="Previous page: 文件写入的几种方式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="go原生实现restfui请求.html" class="navigation navigation-next " aria-label="Next page: go原生实现restfui请求">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"go-redis操作","level":"1.9.5.8","depth":3,"next":{"title":"go原生实现restfui请求","level":"1.9.5.9","depth":3,"path":"golang/other/go原生实现restfui请求.md","ref":"./golang/other/go原生实现restfui请求.md","articles":[]},"previous":{"title":"文件写入的几种方式","level":"1.9.5.7","depth":3,"path":"golang/other/文件写入的几种方式.md","ref":"./golang/other/文件写入的几种方式.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters","back-to-top-button","code"],"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"golang/other/go-redis操作.md","mtime":"2022-04-08T03:03:27.711Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-14T11:39:21.571Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

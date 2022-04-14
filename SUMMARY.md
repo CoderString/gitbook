@@ -12,6 +12,7 @@
 	* [Mybatis-Plus自动生成代码模板](./orm/Mybatis-Plus自动生成代码模板.md)
 * redis
 	* [Redis缓存相关故障及处理方案](./redis/Redis缓存相关故障及处理方案.md)
+	* [Redis命令总结](./redis/Redis命令总结.md)
 * git
 	* [git常用命令总结](./git/git_usage.md)
 * springboot
@@ -23,18 +24,30 @@
 * go	
 	* gin
 		* [gin用法](./golang/gin/gin的基本用法.md)
+		* [gin框架实现Restfui及中间件](./golang/gin/gin框架实现Restfui及中间件.md)
 	* gorm
 		* [gorm基本用法](./golang/gorm/gorm基本用法.md)
 		* [gorm中model默认表修改](./golang/gorm/gorm中model默认表修改.md)
 		* [gorm错误处理及Scopes应用](./golang/gorm/gorm错误处理及Scopes应用.md)
 	* casbin
 		* [rbac框架casbin用法](./golang/casbin/rbac框架casbin用法.md)
+		* [实现基于rbac的权限管控](./golang/casbin/实现基于rbac的权限管控.md)
 	* 标准库	
 		* [go标准库](./golang/standard/go标准库.md)
 	* 其他
+		* corn
+			* [定时任务](./golang/other/corn/定时任务.md)
+		* rpc
+			* [rpc入门](./golang/other/rpc/rpc入门.md)
+			* [grpc入门](./golang/other/rpc/grpc入门案例.md)
+		* encryption
+			* [go常见算法总结](./golang/other/encryption/go常见算法总结.md)
 		* [flag包用法](./golang/other/flag包用法.md)
 		* [go整合swagger](./golang/other/go整合swagger.md)
 		* [文件读取的几种方式](./golang/other/文件读取的几种方式.md)
+		* [文件写入的几种方式](./golang/other/文件写入的几种方式.md)
+		* [go-redis操作](./golang/other/go-redis操作.md)
+		* [go原生实现restfui请求](./golang/other/go原生实现restfui请求.md)
 * pattern
 	* [设计模式分类及原则](./pattern/设计模式-序言.md)
 	* [简单工厂模式](./pattern/简单工厂模式.md) 
