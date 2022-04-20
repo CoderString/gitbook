@@ -21,7 +21,23 @@
 	* [spring-security整合JWT实现URL动态鉴权](./springsecurity/spring-security整合JWT实现URL动态鉴权.md)
 * mq
 	* [RocketMQ总结](./mq/RocketMQ.md)
-* go	
+* go
+	* go基础
+		* [安装](./golang/base/安装01.md)	
+		* [变量](./golang/base/变量定义02.md)	
+		* [类型](./golang/base/类型03.md)	
+		* [常量](./golang/base/常量04.md)	
+		* [函数](./golang/base/函数05.md)	
+		* [变参函数](./golang/base/可变函数10.md)	
+		* [包](./golang/base/包06.md)	
+		* [判断](./golang/base/逻辑判断07.md)	
+		* [指针](./golang/base/指针13.md)	
+		* [字符串](./golang/base/字符串11.md)	
+		* [数组](./golang/base/数组08.md)	
+		* [切片](./golang/base/切片09.md)	
+		* [哈希](./golang/base/Map17.md)	
+		* [结构体](./golang/base/结构体12.md)	
+		* [接口](./golang/base/接口14.md)	
 	* gin
 		* [gin用法](./golang/gin/gin的基本用法.md)
 		* [gin框架实现Restfui及中间件](./golang/gin/gin框架实现Restfui及中间件.md)
@@ -42,6 +58,10 @@
 			* [grpc入门](./golang/other/rpc/grpc入门案例.md)
 		* encryption
 			* [go常见算法总结](./golang/other/encryption/go常见算法总结.md)
+		* viper
+			* [viper解析多种格式配置文件](./golang/other/viper/viper解析多种格式配置文件.md)
+		* pprof
+			* [go的pprof的简单使用](./golang/other/pprof/pprof的简单使用.md)
 		* [flag包用法](./golang/other/flag包用法.md)
 		* [go整合swagger](./golang/other/go整合swagger.md)
 		* [文件读取的几种方式](./golang/other/文件读取的几种方式.md)

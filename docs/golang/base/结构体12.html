@@ -1,0 +1,1659 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>结构体 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="接口14.html" />
+    
+    
+    <link rel="prev" href="Map17.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    长缨在手，缚住苍龙
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Java8
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../java8/lombok注解讲解.html">
+            
+                <a href="../../java8/lombok注解讲解.html">
+            
+                    
+                    lombok注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../java8/commons-lang3包.html">
+            
+                <a href="../../java8/commons-lang3包.html">
+            
+                    
+                    commons-lang3包总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../java8/枚举类的使用.html">
+            
+                <a href="../../java8/枚举类的使用.html">
+            
+                    
+                    枚举类使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../java8/RSA公私钥数据加解密.html">
+            
+                <a href="../../java8/RSA公私钥数据加解密.html">
+            
+                    
+                    RSA公私钥数据加解密
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    orm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                <a href="../../orm/SpringBoot整合Mybatis-Plus使用总结.html">
+            
+                    
+                    SpringBoot整合Mybatis-Plus使用总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                <a href="../../orm/SpringBoot整合通用Mapper教程.html">
+            
+                    
+                    SpringBoot整合通用Mapper教程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                <a href="../../orm/Mybatis-Plus自动生成代码模板.html">
+            
+                    
+                    Mybatis-Plus自动生成代码模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    redis
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                <a href="../../redis/Redis缓存相关故障及处理方案.html">
+            
+                    
+                    Redis缓存相关故障及处理方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../redis/Redis命令总结.html">
+            
+                <a href="../../redis/Redis命令总结.html">
+            
+                    
+                    Redis命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../git/git_usage.html">
+            
+                <a href="../../git/git_usage.html">
+            
+                    
+                    git常用命令总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    springboot
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../springboot/springboot自定义starter.html">
+            
+                <a href="../../springboot/springboot自定义starter.html">
+            
+                    
+                    springboot自定义starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    springsecurity
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                <a href="../../springsecurity/spring-security整合JWT实现URL动态鉴权.html">
+            
+                    
+                    spring-security整合JWT实现URL动态鉴权
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    mq
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../mq/RocketMQ.html">
+            
+                <a href="../../mq/RocketMQ.html">
+            
+                    
+                    RocketMQ总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    go
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    go基础
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="安装01.html">
+            
+                <a href="安装01.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="变量定义02.html">
+            
+                <a href="变量定义02.html">
+            
+                    
+                    变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="类型03.html">
+            
+                <a href="类型03.html">
+            
+                    
+                    类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.4" data-path="常量04.html">
+            
+                <a href="常量04.html">
+            
+                    
+                    常量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.5" data-path="函数05.html">
+            
+                <a href="函数05.html">
+            
+                    
+                    函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.6" data-path="可变函数10.html">
+            
+                <a href="可变函数10.html">
+            
+                    
+                    变参函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.7" data-path="包06.html">
+            
+                <a href="包06.html">
+            
+                    
+                    包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.8" data-path="逻辑判断07.html">
+            
+                <a href="逻辑判断07.html">
+            
+                    
+                    判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.9" data-path="指针13.html">
+            
+                <a href="指针13.html">
+            
+                    
+                    指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.10" data-path="字符串11.html">
+            
+                <a href="字符串11.html">
+            
+                    
+                    字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.11" data-path="数组08.html">
+            
+                <a href="数组08.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.12" data-path="切片09.html">
+            
+                <a href="切片09.html">
+            
+                    
+                    切片
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.13" data-path="Map17.html">
+            
+                <a href="Map17.html">
+            
+                    
+                    哈希
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9.1.14" data-path="结构体12.html">
+            
+                <a href="结构体12.html">
+            
+                    
+                    结构体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.15" data-path="接口14.html">
+            
+                <a href="接口14.html">
+            
+                    
+                    接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    gin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../gin/gin的基本用法.html">
+            
+                <a href="../gin/gin的基本用法.html">
+            
+                    
+                    gin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="../gin/gin框架实现Restfui及中间件.html">
+            
+                <a href="../gin/gin框架实现Restfui及中间件.html">
+            
+                    
+                    gin框架实现Restfui及中间件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    gorm
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../gorm/gorm基本用法.html">
+            
+                <a href="../gorm/gorm基本用法.html">
+            
+                    
+                    gorm基本用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../gorm/gorm中model默认表修改.html">
+            
+                <a href="../gorm/gorm中model默认表修改.html">
+            
+                    
+                    gorm中model默认表修改
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../gorm/gorm错误处理及Scopes应用.html">
+            
+                <a href="../gorm/gorm错误处理及Scopes应用.html">
+            
+                    
+                    gorm错误处理及Scopes应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    casbin
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.4.1" data-path="../casbin/rbac框架casbin用法.html">
+            
+                <a href="../casbin/rbac框架casbin用法.html">
+            
+                    
+                    rbac框架casbin用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4.2" data-path="../casbin/实现基于rbac的权限管控.html">
+            
+                <a href="../casbin/实现基于rbac的权限管控.html">
+            
+                    
+                    实现基于rbac的权限管控
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" >
+            
+                <span>
+            
+                    
+                    标准库
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.5.1" data-path="../standard/go标准库.html">
+            
+                <a href="../standard/go标准库.html">
+            
+                    
+                    go标准库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" >
+            
+                <span>
+            
+                    
+                    其他
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.1" >
+            
+                <span>
+            
+                    
+                    corn
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.1.1" data-path="../other/corn/定时任务.html">
+            
+                <a href="../other/corn/定时任务.html">
+            
+                    
+                    定时任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.2" >
+            
+                <span>
+            
+                    
+                    rpc
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.2.1" data-path="../other/rpc/rpc入门.html">
+            
+                <a href="../other/rpc/rpc入门.html">
+            
+                    
+                    rpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.2.2" data-path="../other/rpc/grpc入门案例.html">
+            
+                <a href="../other/rpc/grpc入门案例.html">
+            
+                    
+                    grpc入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.3" >
+            
+                <span>
+            
+                    
+                    encryption
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.3.1" data-path="../other/encryption/go常见算法总结.html">
+            
+                <a href="../other/encryption/go常见算法总结.html">
+            
+                    
+                    go常见算法总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.4" >
+            
+                <span>
+            
+                    
+                    viper
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.4.1" data-path="../other/viper/viper解析多种格式配置文件.html">
+            
+                <a href="../other/viper/viper解析多种格式配置文件.html">
+            
+                    
+                    viper解析多种格式配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.5" >
+            
+                <span>
+            
+                    
+                    pprof
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.6.5.1" data-path="../other/pprof/pprof的简单使用.html">
+            
+                <a href="../other/pprof/pprof的简单使用.html">
+            
+                    
+                    go的pprof的简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.6" data-path="../other/flag包用法.html">
+            
+                <a href="../other/flag包用法.html">
+            
+                    
+                    flag包用法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.7" data-path="../other/go整合swagger.html">
+            
+                <a href="../other/go整合swagger.html">
+            
+                    
+                    go整合swagger
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.8" data-path="../other/文件读取的几种方式.html">
+            
+                <a href="../other/文件读取的几种方式.html">
+            
+                    
+                    文件读取的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.9" data-path="../other/文件写入的几种方式.html">
+            
+                <a href="../other/文件写入的几种方式.html">
+            
+                    
+                    文件写入的几种方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.10" data-path="../other/go-redis操作.html">
+            
+                <a href="../other/go-redis操作.html">
+            
+                    
+                    go-redis操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6.11" data-path="../other/go原生实现restfui请求.html">
+            
+                <a href="../other/go原生实现restfui请求.html">
+            
+                    
+                    go原生实现restfui请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    pattern
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../pattern/设计模式-序言.html">
+            
+                <a href="../../pattern/设计模式-序言.html">
+            
+                    
+                    设计模式分类及原则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../pattern/简单工厂模式.html">
+            
+                <a href="../../pattern/简单工厂模式.html">
+            
+                    
+                    简单工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../pattern/抽象工厂.html">
+            
+                <a href="../../pattern/抽象工厂.html">
+            
+                    
+                    抽象工厂模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../pattern/单例模式.html">
+            
+                <a href="../../pattern/单例模式.html">
+            
+                    
+                    单例模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >结构体</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x7ED3;&#x6784;&#x4F53;">&#x7ED3;&#x6784;&#x4F53;</h3>
+<blockquote>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x662F;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x8868;&#x793A;&#x82E5;&#x5E72;&#x4E2A;&#x5B57;&#x6BB5;&#xFF08;Field&#xFF09;&#x7684;&#x96C6;&#x5408;&#x3002;&#x6709;&#x65F6;&#x5E94;&#x8BE5;&#x628A;&#x6570;&#x636E;&#x6574;&#x5408;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BA9;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x6CA1;&#x6709;&#x8054;&#x7CFB;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x7ED3;&#x6784;&#x4F53;&#x3002;</p>
+</blockquote>
+<h4 id="&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7ED3;&#x6784;&#x4F53;">&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7ED3;&#x6784;&#x4F53;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {
+
+    <span class="hljs-comment">//creating structure using field names</span>
+    emp1 := Employee{
+        firstName: <span class="hljs-string">&quot;Sam&quot;</span>,
+        age:       <span class="hljs-number">25</span>,
+        salary:    <span class="hljs-number">500</span>,
+        lastName:  <span class="hljs-string">&quot;Anderson&quot;</span>,
+    }
+
+    <span class="hljs-comment">//creating structure without using field names</span>
+    emp2 := Employee{<span class="hljs-string">&quot;Thomas&quot;</span>, <span class="hljs-string">&quot;Paul&quot;</span>, <span class="hljs-number">29</span>, <span class="hljs-number">800</span>}
+
+    fmt.Println(<span class="hljs-string">&quot;Employee 1&quot;</span>, emp1)
+    fmt.Println(<span class="hljs-string">&quot;Employee 2&quot;</span>, emp2)
+}
+</code></pre>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x7684;&#x7ED3;&#x6784;&#x4F53; Employee &#x79F0;&#x4E3A; &#x547D;&#x540D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF08;Named Structure&#xFF09;&#x3002;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x4E86;&#x540D;&#x4E3A; Employee &#x7684;&#x65B0;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x521B;&#x5EFA; Employee &#x7C7B;&#x578B;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x3002;</p>
+</blockquote>
+<h4 id="&#x521B;&#x5EFA;&#x533F;&#x540D;&#x7ED3;&#x6784;&#x4F53;">&#x521B;&#x5EFA;&#x533F;&#x540D;&#x7ED3;&#x6784;&#x4F53;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> main() {
+    emp3 := <span class="hljs-keyword">struct</span> {
+        firstName, lastName <span class="hljs-keyword">string</span>
+        age, salary         <span class="hljs-keyword">int</span>
+    }{
+        firstName: <span class="hljs-string">&quot;Andreah&quot;</span>,
+        lastName:  <span class="hljs-string">&quot;Nikola&quot;</span>,
+        age:       <span class="hljs-number">31</span>,
+        salary:    <span class="hljs-number">5000</span>,
+    }
+
+    fmt.Println(<span class="hljs-string">&quot;Employee 3&quot;</span>, emp3)
+}
+</code></pre>
+<blockquote>
+<p>&#x5728;&#x4E0A;&#x8FF0;&#x7A0B;&#x5E8F;&#x7684;&#x7B2C; 3 &#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x533F;&#x540D;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF; emp3&#x3002;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x63D0;&#x5230;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x79F0;&#x8FD9;&#x79CD;&#x7ED3;&#x6784;&#x4F53;&#x662F;&#x533F;&#x540D;&#x7684;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;&#x5B83;&#x53EA;&#x662F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF; em3&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;&#x4EFB;&#x4F55;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x3002;</p>
+</blockquote>
+<h4 id="&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x96F6;&#x503C;">&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x96F6;&#x503C;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> emp4 Employee <span class="hljs-comment">//zero valued structure</span>
+    fmt.Println(<span class="hljs-string">&quot;Employee 4&quot;</span>, emp4)
+}
+</code></pre>
+<blockquote>
+<p>&#x5F53;&#x5B9A;&#x4E49;&#x597D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x663E;&#x5F0F;&#x5730;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x8BE5;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x5C06;&#x9ED8;&#x8BA4;&#x8D4B;&#x4E3A;&#x96F6;&#x503C;&#x3002;</p>
+</blockquote>
+<h4 id="&#x8BBF;&#x95EE;&#x7ED3;&#x6784;&#x4F53;&#x5B57;&#x6BB5;">&#x8BBF;&#x95EE;&#x7ED3;&#x6784;&#x4F53;&#x5B57;&#x6BB5;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    emp6 := Employee{<span class="hljs-string">&quot;Sam&quot;</span>, <span class="hljs-string">&quot;Anderson&quot;</span>, <span class="hljs-number">55</span>, <span class="hljs-number">6000</span>}
+    fmt.Println(<span class="hljs-string">&quot;First Name:&quot;</span>, emp6.firstName)
+    fmt.Println(<span class="hljs-string">&quot;Last Name:&quot;</span>, emp6.lastName)
+    fmt.Println(<span class="hljs-string">&quot;Age:&quot;</span>, emp6.age)
+    fmt.Printf(<span class="hljs-string">&quot;Salary: $%d&quot;</span>, emp6.salary)
+}
+</code></pre>
+<blockquote>
+<p>&#x70B9;&#x53F7;&#x64CD;&#x4F5C;&#x7B26; . &#x7528;&#x4E8E;&#x8BBF;&#x95EE;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> emp7 Employee
+    emp7.firstName = <span class="hljs-string">&quot;Jack&quot;</span>
+    emp7.lastName = <span class="hljs-string">&quot;Adams&quot;</span>
+    fmt.Println(<span class="hljs-string">&quot;Employee 7:&quot;</span>, emp7)
+}
+</code></pre>
+<blockquote>
+<p>&#x5B9A;&#x4E49;&#x4E86; emp7&#xFF0C;&#x63A5;&#x7740;&#x7ED9; firstName &#x548C; lastName &#x8D4B;&#x503C;</p>
+</blockquote>
+<h4 id="&#x7ED3;&#x6784;&#x4F53;&#x6307;&#x9488;">&#x7ED3;&#x6784;&#x4F53;&#x6307;&#x9488;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    emp8 := &amp;Employee{<span class="hljs-string">&quot;Sam&quot;</span>, <span class="hljs-string">&quot;Anderson&quot;</span>, <span class="hljs-number">55</span>, <span class="hljs-number">6000</span>}
+    fmt.Println(<span class="hljs-string">&quot;First Name:&quot;</span>, (*emp8).firstName)
+    fmt.Println(<span class="hljs-string">&quot;Age:&quot;</span>, (*emp8).age)
+}
+</code></pre>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Employee <span class="hljs-keyword">struct</span> {  
+    firstName, lastName <span class="hljs-keyword">string</span>
+    age, salary         <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    emp8 := &amp;Employee{<span class="hljs-string">&quot;Sam&quot;</span>, <span class="hljs-string">&quot;Anderson&quot;</span>, <span class="hljs-number">55</span>, <span class="hljs-number">6000</span>}
+    fmt.Println(<span class="hljs-string">&quot;First Name:&quot;</span>, (*emp8).firstName)
+    fmt.Println(<span class="hljs-string">&quot;Age:&quot;</span>, (*emp8).age)
+}
+</code></pre>
+<blockquote>
+<p>Go &#x8BED;&#x8A00;&#x5141;&#x8BB8;&#x6211;&#x4EEC;&#x5728;&#x8BBF;&#x95EE; firstName &#x5B57;&#x6BB5;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; emp8.firstName &#x6765;&#x4EE3;&#x66FF;&#x663E;&#x5F0F;&#x7684;&#x89E3;&#x5F15;&#x7528; (*emp8).firstName&#x3002;</p>
+</blockquote>
+<h4 id="&#x7ED3;&#x6784;&#x4F53;&#x533F;&#x540D;&#x5B57;&#x6BB5;">&#x7ED3;&#x6784;&#x4F53;&#x533F;&#x540D;&#x5B57;&#x6BB5;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {  
+    <span class="hljs-keyword">string</span>
+    <span class="hljs-keyword">int</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x5F53;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7ED3;&#x6784;&#x4F53;&#x65F6;&#xFF0C;&#x5B57;&#x6BB5;&#x53EF;&#x4EE5;&#x53EA;&#x6709;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x6CA1;&#x6709;&#x5B57;&#x6BB5;&#x540D;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x5B57;&#x6BB5;&#x79F0;&#x4E3A;&#x533F;&#x540D;&#x5B57;&#x6BB5;&#xFF08;Anonymous Field&#xFF09;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {  
+    <span class="hljs-keyword">string</span>
+    <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    p := Person{<span class="hljs-string">&quot;Naveen&quot;</span>, <span class="hljs-number">50</span>}
+    fmt.Println(p)
+}
+</code></pre>
+<blockquote>
+<p>&#x8D4B;&#x503C;&#x7684;&#x7B2C;&#x4E8C;&#x79CD;&#x65B9;&#x5F0F;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {  
+    <span class="hljs-keyword">string</span>
+    <span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> p1 Person
+    p1.<span class="hljs-keyword">string</span> = <span class="hljs-string">&quot;naveen&quot;</span>
+    p1.<span class="hljs-keyword">int</span> = <span class="hljs-number">50</span>
+    fmt.Println(p1)
+}
+</code></pre>
+<h4 id="&#x5D4C;&#x5957;&#x7ED3;&#x6784;&#x4F53;">&#x5D4C;&#x5957;&#x7ED3;&#x6784;&#x4F53;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Address <span class="hljs-keyword">struct</span> {  
+    city, state <span class="hljs-keyword">string</span>
+}
+<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {  
+    name <span class="hljs-keyword">string</span>
+    age <span class="hljs-keyword">int</span>
+    address Address
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> p Person
+    p.name = <span class="hljs-string">&quot;Naveen&quot;</span>
+    p.age = <span class="hljs-number">50</span>
+    p.address = Address {
+        city: <span class="hljs-string">&quot;Chicago&quot;</span>,
+        state: <span class="hljs-string">&quot;Illinois&quot;</span>,
+    }
+    fmt.Println(<span class="hljs-string">&quot;Name:&quot;</span>, p.name)
+    fmt.Println(<span class="hljs-string">&quot;Age:&quot;</span>,p.age)
+    fmt.Println(<span class="hljs-string">&quot;City:&quot;</span>,p.address.city)
+    fmt.Println(<span class="hljs-string">&quot;State:&quot;</span>,p.address.state)
+}
+</code></pre>
+<blockquote>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x5B57;&#x6BB5;&#x6709;&#x53EF;&#x80FD;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x79F0;&#x4E3A;&#x5D4C;&#x5957;&#x7ED3;&#x6784;&#x4F53;&#x3002;</p>
+</blockquote>
+<h4 id="&#x5BFC;&#x51FA;&#x7ED3;&#x6784;&#x4F53;&#x548C;&#x5B57;&#x6BB5;">&#x5BFC;&#x51FA;&#x7ED3;&#x6784;&#x4F53;&#x548C;&#x5B57;&#x6BB5;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> Address <span class="hljs-keyword">struct</span> {
+    city, state <span class="hljs-keyword">string</span>
+}
+<span class="hljs-keyword">type</span> Person <span class="hljs-keyword">struct</span> {
+    name <span class="hljs-keyword">string</span>
+    age  <span class="hljs-keyword">int</span>
+    Address
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    <span class="hljs-keyword">var</span> p Person
+    p.name = <span class="hljs-string">&quot;Naveen&quot;</span>
+    p.age = <span class="hljs-number">50</span>
+    p.Address = Address{
+        city:  <span class="hljs-string">&quot;Chicago&quot;</span>,
+        state: <span class="hljs-string">&quot;Illinois&quot;</span>,
+    }
+    fmt.Println(<span class="hljs-string">&quot;Name:&quot;</span>, p.name)
+    fmt.Println(<span class="hljs-string">&quot;Age:&quot;</span>, p.age)
+    fmt.Println(<span class="hljs-string">&quot;City:&quot;</span>, p.city) <span class="hljs-comment">//city is promoted field</span>
+    fmt.Println(<span class="hljs-string">&quot;State:&quot;</span>, p.state) <span class="hljs-comment">//state is promoted field</span>
+}
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x679C;&#x662F;&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x6709;&#x533F;&#x540D;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x8BE5;&#x533F;&#x540D;&#x7ED3;&#x6784;&#x4F53;&#x91CC;&#x7684;&#x5B57;&#x6BB5;&#x5C31;&#x79F0;&#x4E3A;&#x63D0;&#x5347;&#x5B57;&#x6BB5;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x63D0;&#x5347;&#x5B57;&#x6BB5;&#x5C31;&#x50CF;&#x662F;&#x5C5E;&#x4E8E;&#x5916;&#x90E8;&#x7ED3;&#x6784;&#x4F53;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5916;&#x90E8;&#x7ED3;&#x6784;&#x4F53;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x3002;</p>
+</blockquote>
+<h4 id="&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x76F8;&#x7B49;&#x6027;">&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x76F8;&#x7B49;&#x6027;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> name <span class="hljs-keyword">struct</span> {  
+    firstName <span class="hljs-keyword">string</span>
+    lastName <span class="hljs-keyword">string</span>
+}
+
+
+<span class="hljs-keyword">func</span> main() {  
+    name1 := name{<span class="hljs-string">&quot;Steve&quot;</span>, <span class="hljs-string">&quot;Jobs&quot;</span>}
+    name2 := name{<span class="hljs-string">&quot;Steve&quot;</span>, <span class="hljs-string">&quot;Jobs&quot;</span>}
+    <span class="hljs-keyword">if</span> name1 == name2 {
+        fmt.Println(<span class="hljs-string">&quot;name1 and name2 are equal&quot;</span>)
+    } <span class="hljs-keyword">else</span> {
+        fmt.Println(<span class="hljs-string">&quot;name1 and name2 are not equal&quot;</span>)
+    }
+
+    name3 := name{firstName:<span class="hljs-string">&quot;Steve&quot;</span>, lastName:<span class="hljs-string">&quot;Jobs&quot;</span>}
+    name4 := name{}
+    name4.firstName = <span class="hljs-string">&quot;Steve&quot;</span>
+    <span class="hljs-keyword">if</span> name3 == name4 {
+        fmt.Println(<span class="hljs-string">&quot;name3 and name4 are equal&quot;</span>)
+    } <span class="hljs-keyword">else</span> {
+        fmt.Println(<span class="hljs-string">&quot;name3 and name4 are not equal&quot;</span>)
+    }
+}
+</code></pre>
+<blockquote>
+<p>&#x7ED3;&#x6784;&#x4F53;&#x662F;&#x503C;&#x7C7B;&#x578B;&#x3002;&#x5982;&#x679C;&#x5B83;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x6BB5;&#x90FD;&#x662F;&#x53EF;&#x6BD4;&#x8F83;&#x7684;&#xFF0C;&#x5219;&#x8BE5;&#x7ED3;&#x6784;&#x4F53;&#x4E5F;&#x662F;&#x53EF;&#x6BD4;&#x8F83;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x7684;&#x5BF9;&#x5E94;&#x5B57;&#x6BB5;&#x76F8;&#x7B49;&#xFF0C;&#x5219;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x4E5F;&#x662F;&#x76F8;&#x7B49;&#x7684;&#x3002;</p>
+</blockquote>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (  
+    <span class="hljs-string">&quot;fmt&quot;</span>
+)
+
+<span class="hljs-keyword">type</span> image <span class="hljs-keyword">struct</span> {  
+    data <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>
+}
+
+<span class="hljs-keyword">func</span> main() {  
+    image1 := image{data: <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>{
+        <span class="hljs-number">0</span>: <span class="hljs-number">155</span>,
+    }}
+    image2 := image{data: <span class="hljs-keyword">map</span>[<span class="hljs-keyword">int</span>]<span class="hljs-keyword">int</span>{
+        <span class="hljs-number">0</span>: <span class="hljs-number">155</span>,
+    }}
+    <span class="hljs-keyword">if</span> image1 == image2 {
+        fmt.Println(<span class="hljs-string">&quot;image1 and image2 are equal&quot;</span>)
+    }
+}
+</code></pre>
+<blockquote>
+<p>&#x5982;&#x679C;&#x7ED3;&#x6784;&#x4F53;&#x5305;&#x542B;&#x4E0D;&#x53EF;&#x6BD4;&#x8F83;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x5219;&#x7ED3;&#x6784;&#x4F53;&#x53D8;&#x91CF;&#x4E5F;&#x4E0D;&#x53EF;&#x6BD4;&#x8F83;&#x3002;</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Map17.html" class="navigation navigation-prev " aria-label="Previous page: 哈希">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="接口14.html" class="navigation navigation-next " aria-label="Next page: 接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"结构体","level":"1.9.1.14","depth":3,"next":{"title":"接口","level":"1.9.1.15","depth":3,"path":"golang/base/接口14.md","ref":"./golang/base/接口14.md","articles":[]},"previous":{"title":"哈希","level":"1.9.1.13","depth":3,"path":"golang/base/Map17.md","ref":"./golang/base/Map17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["splitter","expandable-chapters","back-to-top-button","code","pageview-count"],"pluginsConfig":{"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"golang/base/结构体12.md","mtime":"2022-04-19T09:52:44.863Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-20T11:50:39.927Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
